@@ -14,7 +14,10 @@
 
 # Homework 0: Kronecker Product Properties
 
-## Problem 1 
+## Problem 1 - Evaluate the computational performance of the following Kronecker Product propertie by varying the number of columns or the number of products for randomly generated mattrices
+
+
+### Solution:
 
 &nbsp;&nbsp;&nbsp;&nbsp; In here I will briefly analyze the run time performance of the inverse operator while also using the Kronecker Product. In the first case the number of products is fixed while the number of columns is varying. In the second case we have a varying number of products for a fixed number of columns. In both cases is possible to see that is preferable to first invert the matrices before applying the Kronecker operator.  
 
@@ -22,7 +25,9 @@
 
 ![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a2.png?raw=true)
 
-## Problem 2
+## Problem 2 - Show algebraically that the following expression holds true
+
+### Solution:
 
 &nbsp;&nbsp;&nbsp;&nbsp; To show algebraically that the Kronecker product of the eigen values of two given matrices are equal 
 
