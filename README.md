@@ -14,7 +14,7 @@
 
 # Homework 0: Kronecker Product Properties
 
-![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a1.pdf?raw=true)
+![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a1.png?raw=true)
 
 ![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a2.png?raw=true)
 
