@@ -51,6 +51,26 @@
 
 # Homework 2: Khatri-Rao Product Properties
 
+## Problem 1
+
+### Solution:
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw2a1.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw2a2.png" />
+</p>
+
+## Problem 2
+
+### Solution:
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw2a3.png" />
+</p>
+
 # Homework 3: Least-Squares Khatri-Rao Factorization (LSKRF)
 
 # Homework 4: Least Squares Kronecker Product Factorization (LSKronF)
