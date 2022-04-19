@@ -1,17 +1,5 @@
 # Set of functions Developed during the Multilinear Algebra class.
 
-1. Hadamard Product
-2. Kronecker Product
-3. Khatri-Rao Product
-4. Least-Squares Khatri-Rao Factorization (LSKRF)
-5. Least-Square Kronecker Product Factorization (LSKronF)
-6. Unfolding
-7. Folding
-8. Matrix and Vector N-Mode Product
-9. High Order Single Value Decomposition (HOSVD)
-10. High Order Orthogonal Iteration (HOOI)
-11. Alternate Least-Square (ALS)
-
 # Homework 0: Kronecker Product Properties
 
 ## Problem 1 - Evaluate the computational performance of the following Kronecker Product propertie by varying the number of columns or the number of products for randomly generated mattrices
@@ -26,6 +14,8 @@
 ![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a2.png?raw=true)
 
 ## Problem 2 - Show algebraically that the following expression holds true
+
+<img src="https://latex.codecogs.com/svg.image?\LARGE&space;\begin{align*}&space;\text{eig}(\boldsymbol{A}&space;\otimes&space;\boldsymbol{B})&space;=&space;\text{eig}(\boldsymbol{A})&space;\otimes&space;\text{eig}(\boldsymbol{B})&space;\end{align*}" title="https://latex.codecogs.com/svg.image?\LARGE \begin{align*} \text{eig}(\boldsymbol{A} \otimes \boldsymbol{B}) = \text{eig}(\boldsymbol{A}) \otimes \text{eig}(\boldsymbol{B}) \end{align*}" />
 
 ### Solution:
 
