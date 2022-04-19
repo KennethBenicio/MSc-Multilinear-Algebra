@@ -135,6 +135,46 @@
 
 # Homework 5: Unfolding, Folding, and n-mode Product
 
+## Problem 1 -
+
+### Solution:
+
+&nbsp;&nbsp;&nbsp;&nbsp; The following tensor will be used to test unfolding and folding functions and its file is provided in the folders of the project.
+
+<p align="center">
+<img src="https://latex.codecogs.com/svg.image?\LARGE&space;\bg{white}\begin{align*}\boldsymbol{X}_{1}&space;=&space;\begin{bmatrix}&space;1&space;&&space;4&space;&&space;7&space;&&space;10&space;\\&space;2&space;&&space;5&space;&&space;8&space;&&space;11&space;\\&space;3&space;&&space;6&space;&&space;9&space;&&space;12&space;\\\end{bmatrix},\boldsymbol{X}_{2}&space;=&space;\begin{bmatrix}&space;13&space;&&space;16&space;&&space;19&space;&&space;22&space;\\&space;14&space;&&space;17&space;&&space;20&space;&&space;23&space;\\&space;15&space;&&space;18&space;&&space;21&space;&&space;24&space;\\\end{bmatrix}&space;\\\end{align*}" title="https://latex.codecogs.com/svg.image?\LARGE \bg{white}\begin{align*}\boldsymbol{X}_{1} = \begin{bmatrix} 1 & 4 & 7 & 10 \\ 2 & 5 & 8 & 11 \\ 3 & 6 & 9 & 12 \\\end{bmatrix},\boldsymbol{X}_{2} = \begin{bmatrix} 13 & 16 & 19 & 22 \\ 14 & 17 & 20 & 23 \\ 15 & 18 & 21 & 24 \\\end{bmatrix} \\\end{align*}" />
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp; From the tensor just above it is possible to obtain the following results for its unfoldings by calling the method unfolding(X,n) inside the tensor class provided in the Matlab files
+
+<p align="center">
+</p>
+
+<p align="center">
+</p>
+
+<p align="center">
+</p>
+
+## Problem 2 -
+
+### Solution:
+
+&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Xn,size(X),n) inside the tensor class
+
+<p align="center">
+</p>
+
+<p align="center">
+</p>
+
+<p align="center">
+</p>
+
+## Problem 3 -  
+
+### Solution:
+
 # Homework 6: High Order Singular Value Decomposition (HOSVD)
 
 # Homework 7: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
