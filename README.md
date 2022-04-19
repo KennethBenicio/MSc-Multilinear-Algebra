@@ -163,7 +163,7 @@
 
 ### Solution:
 
-&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Xn,size(X),n) inside the tensor class. From this will be possible to confirm that the tensor is correctly reconstruct. Inside this [file](MSs-Multilinear-Algebra/bloob/master/MATLAB/homeworks.m) it will be possible to find an example of using both the unfolding and folding methods.
+&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Xn,size(X),n) inside the tensor class. From this will be possible to confirm that the tensor is correctly reconstruct. Inside this [file](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homeworks.m) it will be possible to find an example of using both the unfolding and folding methods.
 
 ## Problem 3 -  
 
