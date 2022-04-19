@@ -103,13 +103,33 @@
 
 ### Solution:
 
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw3a1.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw3a2.png" />
+</p>
+
 # Homework 4: Least Squares Kronecker Product Factorization (LSKronF)
 
 ## Problem 1 -
 
 ### Solution:
 
+| NMSE(**X**,**Xhat**)  | NMSE(**A**,**Bhat**) | NMSE(**B**,**Bhat**) |
+| --------------------- | -------------------- | -------------------- |
+|  -619.2196 | +13.5472 | +9.5922 |
+
 ## Problem 2 -
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw4a1.png" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw4a2.png" />
+</p>
 
 ### Solution:
 
