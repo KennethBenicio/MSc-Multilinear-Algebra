@@ -31,6 +31,8 @@
 <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\bg{white}\begin{align*}&space;\boldsymbol{A}&space;\otimes&space;\boldsymbol{B}&space;&=&space;(\boldsymbol{C}_{1}&space;\boldsymbol{\Lambda_{1}}&space;\boldsymbol{C}^{-1}_{1})&space;\otimes&space;(\boldsymbol{C}_{2}&space;\boldsymbol{\Lambda_{2}}&space;\boldsymbol{C}^{-1}_{2}),&space;\\\boldsymbol{A}&space;\otimes&space;\boldsymbol{B}&space;&=&space;(\boldsymbol{C}_{1}&space;\boldsymbol{\Lambda_{1}}&space;\otimes&space;\boldsymbol{C}_{2}&space;\boldsymbol{\Lambda_{2}})&space;(\boldsymbol{C}^{-1}_{2}&space;\otimes&space;\boldsymbol{C}^{-1}_{2}),&space;\\\boldsymbol{A}&space;\otimes&space;\boldsymbol{B}&space;&=&space;(\boldsymbol{C}_{1}&space;\otimes&space;\boldsymbol{C}_{2})&space;(\boldsymbol{\Lambda_{1}}&space;\otimes&space;\boldsymbol{\Lambda_{2}})&space;(\boldsymbol{C}^{-1}_{2}&space;\otimes&space;\boldsymbol{C}^{-1}_{2}),&space;\\\text{eig}(\boldsymbol{A}&space;\otimes&space;\boldsymbol{B})&space;&=&space;(\boldsymbol{\Lambda_{1}}&space;\otimes&space;\boldsymbol{\Lambda_{2}})&space;=&space;\text{eig}(\boldsymbol{A})&space;\otimes&space;\text{eig}(\boldsymbol{B})&space;\end{align*}" title="https://latex.codecogs.com/svg.image?\LARGE \bg{white}\begin{align*} \boldsymbol{A} \otimes \boldsymbol{B} &= (\boldsymbol{C}_{1} \boldsymbol{\Lambda_{1}} \boldsymbol{C}^{-1}_{1}) \otimes (\boldsymbol{C}_{2} \boldsymbol{\Lambda_{2}} \boldsymbol{C}^{-1}_{2}), \\\boldsymbol{A} \otimes \boldsymbol{B} &= (\boldsymbol{C}_{1} \boldsymbol{\Lambda_{1}} \otimes \boldsymbol{C}_{2} \boldsymbol{\Lambda_{2}}) (\boldsymbol{C}^{-1}_{2} \otimes \boldsymbol{C}^{-1}_{2}), \\\boldsymbol{A} \otimes \boldsymbol{B} &= (\boldsymbol{C}_{1} \otimes \boldsymbol{C}_{2}) (\boldsymbol{\Lambda_{1}} \otimes \boldsymbol{\Lambda_{2}}) (\boldsymbol{C}^{-1}_{2} \otimes \boldsymbol{C}^{-1}_{2}), \\\text{eig}(\boldsymbol{A} \otimes \boldsymbol{B}) &= (\boldsymbol{\Lambda_{1}} \otimes \boldsymbol{\Lambda_{2}}) = \text{eig}(\boldsymbol{A}) \otimes \text{eig}(\boldsymbol{B}) \end{align*}" />
 </p>
 
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework0.m).
+
 # Homework 1: Hadamard, Kronecker and Khatri-Rao Products
 
 ## Problem 1 - Create algorithms to compute the Hadamard, Kronecker and Khatri-Rao products and compare the run time performance with the native functions available on MATLAB. 
@@ -48,6 +50,8 @@
 <p align="center">
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw1a3.png" />
 </p>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework1.m).
 
 # Homework 2: Khatri-Rao Product Properties
 
@@ -89,6 +93,8 @@
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw2a3.png" />
 </p>
 
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework2.m).
+
 # Homework 3: Least-Squares Khatri-Rao Factorization (LSKRF)
 
 ## Problem 1 -
@@ -111,6 +117,8 @@
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw3a2.png" />
 </p>
 
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework3.m).
+
 # Homework 4: Least Squares Kronecker Product Factorization (LSKronF)
 
 ## Problem 1 -
@@ -132,6 +140,8 @@
 <p align="center">
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw4a2.png" />
 </p>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework4.m).
 
 # Homework 5: Unfolding, Folding, and n-mode Product
 
@@ -163,13 +173,13 @@
 
 ### Solution:
 
-&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Unfolding, Dimensions, Mode) inside the tensor class. From this will be possible to confirm that the tensor is correctly reconstruct. Inside this [file](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homeworks.m) inside the section for Homework 05 it will be possible to find an example of using both the unfolding and folding methods.
+&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Unfolding, Dimensions, Mode) inside the tensor class. From this will be possible to confirm that the tensor is correctly reconstruct. Inside this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework5.m) will be possible to find an example of using both the unfolding and folding methods.
 
 ## Problem 3 -  
 
 ### Solution:
 
-&nbsp;&nbsp;&nbsp;&nbsp; Once more it will be possible to find an example in this [file](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homeworks.m) inside the section for Homework 05 about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
+&nbsp;&nbsp;&nbsp;&nbsp; Once more it will be possible to find an example in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework5.m) about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
 
 # Homework 6: High Order Singular Value Decomposition (HOSVD)
 
