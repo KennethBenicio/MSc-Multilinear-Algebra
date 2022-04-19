@@ -160,16 +160,9 @@
 
 ### Solution:
 
-&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Xn,size(X),n) inside the tensor class
+&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Xn,size(X),n) inside the tensor class. From this will be possible to confirm that the tensor is correctly reconstruct. Inside the file 
 
-<p align="center">
-</p>
-
-<p align="center">
-</p>
-
-<p align="center">
-</p>
+[this subtext](../homework.m)
 
 ## Problem 3 -  
 
