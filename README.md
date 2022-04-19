@@ -14,6 +14,8 @@
 
 # Homework 0: Kronecker Product Properties
 
+![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a1.png?raw=true)
+
 # Homework 1: Hadamard, Kronecker and Khatri-Rao Products
 
 # Homework 2: Khatri-Rao Product Properties
