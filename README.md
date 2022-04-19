@@ -33,7 +33,7 @@
 
 # Homework 1: Hadamard, Kronecker and Khatri-Rao Products
 
-## Create algorithms to compute the Hadamard, Kronecker and Khatri-Rao products and compare the run time performance with the native functions available on MATLAB. 
+## Problem 1 - Create algorithms to compute the Hadamard, Kronecker and Khatri-Rao products and compare the run time performance with the native functions available on MATLAB. 
 
 ### Solution:
 
@@ -51,7 +51,7 @@
 
 # Homework 2: Khatri-Rao Product Properties
 
-## Problem 1
+## Problem 1 - Evaluate the performance of the following methods to compute the pseudoinverse of a given Khatri-Rao product.
 
 ### Solution:
 
@@ -63,7 +63,7 @@
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw2a2.png" />
 </p>
 
-## Problem 2
+## Problem 2 - Evaluate the performance of the Khatri-Rao as the number of products increases.
 
 ### Solution:
 
