@@ -14,7 +14,7 @@
 
 # Homework 0: Kronecker Product Properties
 
-Run time performance of inverse operator using the Kronecker Product. In the first case the number of products is fixed while the number of columns is varying. In the second case we have a varying number of products for a fixed number of columns. In both cases is possible to see that is preferable to first invert the matrices before applying the Kronecker operator.
+  Run time performance of inverse operator using the Kronecker Product. In the first case the number of products is fixed while the number of columns is varying. In the second case we have a varying number of products for a fixed number of columns. In both cases is possible to see that is preferable to first invert the matrices before applying the Kronecker operator.
 
 ![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a1.png?raw=true)
 
