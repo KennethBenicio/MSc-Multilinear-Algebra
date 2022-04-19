@@ -123,6 +123,8 @@
 
 ## Problem 2 -
 
+### Solution:
+
 <p align="center">
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw4a1.png" />
 </p>
@@ -130,8 +132,6 @@
 <p align="center">
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw4a2.png" />
 </p>
-
-### Solution:
 
 # Homework 5: Unfolding, Folding, and n-mode Product
 
