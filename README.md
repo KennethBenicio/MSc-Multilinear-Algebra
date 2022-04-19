@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  ![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a2.png?raw=true)
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a2.png" />
 </p>
 
 ## Problem 2 - Show algebraically that the following expression holds true
