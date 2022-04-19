@@ -91,7 +91,27 @@
 
 # Homework 3: Least-Squares Khatri-Rao Factorization (LSKRF)
 
+## Problem 1 -
+
+### Solution:
+
+| NMSE(**X**,**Xhat**)  | NMSE(**A**,**Bhat**) | NMSE(**B**,**Bhat**) |
+| --------------------- | -------------------- | -------------------- |
+|  -623.4093 | +11.5658 | +7.8479 |
+
+## Problem 2 -
+
+### Solution:
+
 # Homework 4: Least Squares Kronecker Product Factorization (LSKronF)
+
+## Problem 1 -
+
+### Solution:
+
+## Problem 2 -
+
+### Solution:
 
 # Homework 5: Unfolding, Folding, and n-mode Product
 
