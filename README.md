@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; In here I will briefly analyze the run time performance of the inverse operator while also using the Kronecker Product. In the first case the number of products is fixed while the number of columns is varying. In the second case we have a varying number of products for a fixed number of columns. In both cases is possible to see that is preferable to first invert the matrices before applying the Kronecker operator.  
 
 <p align="center">
-  ![alt text](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a1.png?raw=true)
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw0a1.png" />
 </p>
 
 <p align="center">
