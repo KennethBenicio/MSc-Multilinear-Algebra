@@ -15,12 +15,13 @@ function C = mtx_prod_had(A,B)
         disp('Invalid Matrices!')
         return;
     else
-        C = zeros(ia,ja);
-        for i = 1:ia 
-            for j = 1:ja
-                C(i,j) = A(i,j)*B(i,j);
-            end
-        end
+        C = A.*B;
+        %C = zeros(ia,ja);
+        %for i = 1:ia 
+            %for j = 1:ja
+                %C(i,j) = A(i,j)*B(i,j);
+            %end
+        %end
     end
 end
 
@@ -181,13 +182,18 @@ end
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
 % Created: 21/04/2022
 
-function [S,U] = HOSVD(ten)
+function [S,U] = HOSVD(ten,ranks)
     number = numel(size(ten));
     for i = 1:number
        [aux,~,~] = svd(tensor.unfold(ten,i)); 
-       U{i} = aux';
+       aux = aux(1:ranks(i),:);
+       U{i} = aux;
     end
-    S = tensor.n_mod_prod(ten,U);
+    % Core tensor uses the hermitian operator.
+    Ut = cellfun(@(x) conj(x),U,'UniformOutput',false); 
+    S = tensor.n_mod_prod(ten,Ut);
+    % The normal factors should be transposed.
+    U = cellfun(@(x) x.',U,'UniformOutput',false);
 end
 
 %% High Order Orthogonal Iteration (HOOI)
