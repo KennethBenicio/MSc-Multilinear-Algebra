@@ -1,5 +1,3 @@
-# Set of functions Developed during the Multilinear Algebra class.
-
 # Homework 0: Kronecker Product Properties
 
 ## Problem 1 - Evaluate the computational performance of the following Kronecker Product propertie by varying the number of columns or the number of products for randomly generated mattrices
