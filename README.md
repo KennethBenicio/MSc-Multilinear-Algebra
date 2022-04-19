@@ -169,7 +169,7 @@
 
 ### Solution:
 
-Once more it will be possible to find an example in this [file](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homeworks.m) inside the section for Homework 05 about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
+&nbsp;&nbsp;&nbsp;&nbsp; Once more it will be possible to find an example in this [file](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homeworks.m) inside the section for Homework 05 about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
 
 # Homework 6: High Order Singular Value Decomposition (HOSVD)
 
