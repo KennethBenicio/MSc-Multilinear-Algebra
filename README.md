@@ -55,7 +55,13 @@
 
 ### Solution:
 
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw2a1.png" />
+</p>
 
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw2a2.png" />
+</p>
 
 ## Problem 2
 
