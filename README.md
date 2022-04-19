@@ -15,7 +15,7 @@
 
 ## Problem 2 - Show algebraically that the following expression holds true
 
-![alt text](https://latex.codecogs.com/svg.image?%5CLARGE%20%5Cbg%7Bwhite%7D%5Cbegin%7Balign*%7D%20%5Ctext%7Beig%7D(%5Cboldsymbol%7BA%7D%20%5Cotimes%20%5Cboldsymbol%7BB%7D)%20=%20%5Ctext%7Beig%7D(%5Cboldsymbol%7BA%7D)%20%5Cotimes%20%5Ctext%7Beig%7D(%5Cboldsymbol%7BB%7D)%20%5Cend%7Balign*%7D?raw=true)
+<img src="https://latex.codecogs.com/svg.image?\huge&space;\bg{white}\begin{align*}&space;\text{eig}(\boldsymbol{A}&space;\otimes&space;\boldsymbol{B})&space;=&space;\text{eig}(\boldsymbol{A})&space;\otimes&space;\text{eig}(\boldsymbol{B})&space;\end{align*}" title="https://latex.codecogs.com/svg.image?\huge \bg{white}\begin{align*} \text{eig}(\boldsymbol{A} \otimes \boldsymbol{B}) = \text{eig}(\boldsymbol{A}) \otimes \text{eig}(\boldsymbol{B}) \end{align*}" />
 
 ### Solution:
 
