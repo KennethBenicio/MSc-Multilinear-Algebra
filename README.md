@@ -11,3 +11,25 @@
 9. High Order Single Value Decomposition (HOSVD)
 10. High Order Orthogonal Iteration (HOOI)
 11. Alternate Least-Square (ALS)
+
+# Homework 0: Kronecker Product Properties
+
+# Homework 1: Hadamard, Kronecker and Khatri-Rao Products
+
+# Homework 2: Khatri-Rao Product Properties
+
+# Homework 3: Least-Squares Khatri-Rao Factorization (LSKRF)
+
+# Homework 4: Least Squares Kronecker Product Factorization (LSKronF)
+
+# Homework 5: Unfolding, Folding, and n-mode Product
+
+# Homework 6: High Order Singular Value Decomposition (HOSVD)
+
+# Homework 7: Multidimensional Least-Squares Khatri-Rao Factorization
+(MLS-KRF)
+
+# Homework 8: Multidimensional Least-Squares Kronecker Factorization
+(MLS-KronF)
+
+# Homework 9: Alternating Least Squares (ALS) Algorithm
