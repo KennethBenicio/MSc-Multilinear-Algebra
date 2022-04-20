@@ -181,8 +181,24 @@
 
 # Homework 6: High Order Singular Value Decomposition (HOSVD)
 
+## Problem 1 -
+
+### Solution:
+
+## Problem 2 -
+
+### Solution:
+
 # Homework 7: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
 
 # Homework 8: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
 
 # Homework 9: Alternating Least Squares (ALS) Algorithm
+
+## Problem 1 -
+
+### Solution:
+
+## Problem 2 -
+
+### Solution:
