@@ -141,7 +141,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework4.m).
 
-# Homework 5: Unfolding, Folding, and n-mode Product
+# Homework 6: Unfolding, Folding, and n-mode Product
 
 ## Problem 1 -
 
@@ -179,7 +179,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp; Once more it will be possible to find an example in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework5.m) about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
 
-# Homework 6: High Order Singular Value Decomposition (HOSVD)
+# Homework 7: High Order Singular Value Decomposition (HOSVD)
 
 ## Problem 1 -
 
@@ -189,11 +189,11 @@
 
 ### Solution:
 
-# Homework 7: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
+# Homework 8: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
 
-# Homework 8: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
+# Homework 9: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
 
-# Homework 9: Alternating Least Squares (ALS) Algorithm
+# Homework 10: Alternating Least Squares (ALS) Algorithm
 
 ## Problem 1 -
 
