@@ -1,28 +1,30 @@
-%% ----- Homework 6 ----- %%
+%% ----- Homework 5 ----- %%
 clc;
 clear;
 close all;
 
-% Full HOSVD
-[X] = load('hosvd_test.mat');
+% My tensor for testing
+disp('Generic Tensor:');
+tsr_xxx = load('test_unfold_fold.mat').xxx
+dimension = size(tsr_xxx);
 
-[S,U] = HOSVD_full(X);
-Xhat = tensor.n_mod_prod(S,U);
-nmsex = (norm(X- Xhat,'fro')^2)/(norm(X,'fro')^2);
-nmsex = 20*log10(nmsex)
+% Unfolding
+disp('1st mode unfolding:');
+tsr_xxx_1 = tensor.unfold(tsr_xxx,1)
+disp('2nd mode unfolding:');
+tsr_xxx_2 = tensor.unfold(tsr_xxx,2)
+disp('3rd mode unfolding:');
+tsr_xxx_3 = tensor.unfold(tsr_xxx,3)
 
-% Truncated HOSVD and Denoising
-[X,Y] = load('hosvd_denoising.mat');
+% Folding
+disp('1st mode folding:');
+tsr_xxx_1 = tensor.fold(tsr_xxx_1,dimension,1)
+disp('2nd mode folding:');
+tsr_xxx_2 = tensor.fold(tsr_xxx_2,dimension,2)
+disp('3rd mode folding:');
+tsr_xxx_3 = tensor.fold(tsr_xxx_3,dimension,3)
 
-[S1,U1] = tensor.HOSVD_truncated(X);
-multilinear_rank1 = size(S1);
-[S2,U2] = tensor.HOSVD_truncated(Y);
-multilinear_rank2 = size(S2);
-
-Xhat = tensor.n_mod_prod(S1,U1);
-Yhat =;tensor.n_mod_prod(S2,U2);
-
-nmsex = (norm(X- Xhat,'fro')^2)/(norm(X,'fro')^2);
-nmsex = 20*log10(nmsex)
-nmsey = (norm(Y- Yhat,'fro')^2)/(norm(Y,'fro')^2);
+% N-mode product
+Ytest = tensor.n_mode_prod(X,Matrices,Modes);
+nmsey = (norm(Y- Ytest,'fro')^2)/(norm(Y,'fro')^2);
 nmsey = 20*log10(nmsey)

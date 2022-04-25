@@ -176,24 +176,58 @@ function [ten] = n_mod_prod(ten,matrices,modes)
     end
 end
 
-%% High Order Single Value Decomposition (HOSVD)
+%% Full High Order Single Value Decomposition (HOSVD)
 
-% This function computes the HOSVD of a given tensor.   
+% This function computes the Truncated HOSVD of a given tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
 % Created: 21/04/2022
 
-function [S,U] = HOSVD(ten,ranks)
+function [S,U] = HOSVD_full(ten)
     number = numel(size(ten));
     for i = 1:number
        [aux,~,~] = svd(tensor.unfold(ten,i)); 
-       aux = aux(1:ranks(i),:);
        U{i} = aux;
     end
     % Core tensor uses the hermitian operator.
     Ut = cellfun(@(x) conj(x),U,'UniformOutput',false); 
     S = tensor.n_mod_prod(ten,Ut);
     % The normal factors should be transposed.
-    U = cellfun(@(x) x.',U,'UniformOutput',false);
+    U = cellfun(@(x) x.',U,'UniformOutput',false);  
+end
+
+%% Truncated High Order Single Value Decomposition (HOSVD)
+
+% This function computes the Truncated HOSVD of a given tensor.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: 21/04/2022
+
+function [S,U] = HOSVD_truncated(ten,ranks)
+    if nargin < 2
+        number = numel(size(ten));
+        for i = 1:number
+           [aux,eig,~] = svd(tensor.unfold(ten,i)); 
+           [aa,~] = size(eig(eig > eps));
+           aux = aux(1:aa,:);
+           U{i} = aux;
+        end
+        % Core tensor uses the hermitian operator.
+        Ut = cellfun(@(x) conj(x),U,'UniformOutput',false); 
+        S = tensor.n_mod_prod(ten,Ut);
+        % The normal factors should be transposed.
+        U = cellfun(@(x) x.',U,'UniformOutput',false);
+    else
+        number = numel(size(ten));
+        for i = 1:number
+           [aux,~,~] = svd(tensor.unfold(ten,i)); 
+           aux = aux(1:ranks(i),:);
+           U{i} = aux;
+        end
+        % Core tensor uses the hermitian operator.
+        Ut = cellfun(@(x) conj(x),U,'UniformOutput',false); 
+        S = tensor.n_mod_prod(ten,Ut);
+        % The normal factors should be transposed.
+        U = cellfun(@(x) x.',U,'UniformOutput',false);
+    end    
 end
 
 %% High Order Orthogonal Iteration (HOOI)
@@ -218,35 +252,39 @@ function [S,U] = HOOI(ten)
     S = tensor.n_mod_prod(ten,U);
 end
 
-%% Alternate Least-Square (ALS) [NEEDS CORRECTION]
+%% Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
+
+%% Multidimensional Least-Squares Kronecker Factorization (MLS-KronF)
+
+%% Alternate Least-Square (ALS)
 
 % This function computes the ALS of a given tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
 % Created: 2022
 
-function [A,B,C,error] = ALS(ten,R)
+function [A,B,C,error] = ALS(X,R)
     I = zeros(R,R,R); 
     for i = 1:R
         I(i,i,i) = 1; 
     end
-    [ia,ib,ic] = size(ten);
-    
-    mode_1 = tensor.unfold(ten,1);
-    mode_2 = tensor.unfold(ten,2);
-    mode_3 = tensor.unfold(ten,3);
+    [ia,ib,ic] = size(X);
 
-    A = randn(ia,R) + 1j*randn(ia,R);
-    B = randn(ib,R) + 1j*randn(ib,R);
-    C = randn(ic,R) + 1j*randn(ic,R);
+    mode_1 = tensor.unfold(X,1);
+    mode_2 = tensor.unfold(X,2);
+    mode_3 = tensor.unfold(X,3);
+
+    Ahat = randn(ia,R) + 1j*randn(ia,R);
+    Bhat = randn(ib,R) + 1j*randn(ib,R);
+    Chat = randn(ic,R) + 1j*randn(ic,R);
 
     aux = 10000;
     error = zeros(1,aux);
-    error(1) = ((norm((mode_1 - B*(tensor.mtx_prod_kr(A,C).')),'fro'))^2)/((norm(mode_1,'fro')^2));
+    error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
     for i = 2:aux
-        B = mode_1*pinv((tensor.mtx_prod_kr(A,C)).');
-        C = mode_2*pinv((tensor.mtx_prod_kr(A,B)).');
-        A = mode_3*pinv((tensor.mtx_prod_kr(C,B)).');
-        error(i) = ((norm((mode_1 - B*(tensor.mtx_prod_kr(A,C).')),'fro'))^2)/((norm(mode_1,'fro')^2));
+        Bhat = mode_2*pinv((tensor.mtx_prod_kr(Chat,Ahat)).');
+        Chat = mode_3*pinv((tensor.mtx_prod_kr(Bhat,Ahat)).');
+        Ahat = mode_1*pinv((tensor.mtx_prod_kr(Chat,Bhat)).');
+        error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
         if abs(error(i) - error(i-1)) < eps
             error = error(1:i);
             break;
