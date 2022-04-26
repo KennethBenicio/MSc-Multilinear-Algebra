@@ -114,7 +114,36 @@ function [Ahat,Bhat] = LSKronF(C,ia,ja,ib,jb)
     Ahat = reshape(ahat,[ia ja]);
     Bhat = reshape(bhat, [ib jb]);
 end
-   
+
+%% Kronecker Product Single Value Decomposition (KPSVD)
+
+% This function computes the LSKRF of a given matrix.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created:2022
+
+function [U,S,V,rkp] = KPSVD(X,ia,ja,ib,jb)
+    [ix,jx] = size(X);
+    
+    I = (ix/ia) + zeros(1,ia);
+    J = (jx/ja) + zeros(1,ja);
+    blocks_of_X = mat2cell(X,I,J);
+    
+    k = 1;
+    Xhat = complex(zeros(ib*jb,ia*ja),0);
+    for j = 1:ja
+        for i = 1:ia
+            vec_of_block = cell2mat(blocks_of_X(i,j));
+            vec_of_block = vec_of_block(:);
+            Xhat(:,k) = vec_of_block;
+            k = k + 1;
+        end
+    end
+    
+    [U,S,V] = svd(Xhat');
+    rkp = sum(sum(S>0));
+end
+
+
 %% Unfolding
 
 % This function computes the unfolding of a given tensor in its matrix.   
@@ -262,7 +291,7 @@ end
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
 % Created: 2022
 
-function [A,B,C,error] = ALS(X,R)
+function [Ahat,Bhat,Chat,error] = ALS(X,R)
     I = zeros(R,R,R); 
     for i = 1:R
         I(i,i,i) = 1; 
