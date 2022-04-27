@@ -199,9 +199,11 @@ function [ten] = n_mod_prod(ten,matrices,modes)
     
     for i = modes
         ten = cell2mat(matrices(i))*tensor.unfold(ten,i);
+        %ten = cell2mat(matrices(i))*tens2mat(ten,i);
         [aux,~] = size(cell2mat(matrices(i)));
         dim(i) = aux;
         ten = tensor.fold(ten,[dim],i);
+        %ten = mat2tens(ten,[dim],i);
     end
 end
 
@@ -215,13 +217,14 @@ function [S,U] = HOSVD_full(ten)
     number = numel(size(ten));
     for i = 1:number
        [aux,~,~] = svd(tensor.unfold(ten,i)); 
+       %[aux,~,~] = svd(tens2mat(ten,i)); 
        U{i} = aux;
     end
     % Core tensor uses the hermitian operator.
-    Ut = cellfun(@(x) conj(x),U,'UniformOutput',false); 
+    Ut = cellfun(@(x) x', U,'UniformOutput',false); 
     S = tensor.n_mod_prod(ten,Ut);
     % The normal factors should be transposed.
-    U = cellfun(@(x) x.',U,'UniformOutput',false);  
+    U = cellfun(@(x) x, U,'UniformOutput',false);  
 end
 
 %% Truncated High Order Single Value Decomposition (HOSVD)
@@ -240,10 +243,10 @@ function [S,U] = HOSVD_truncated(ten,ranks)
            U{i} = aux;
         end
         % Core tensor uses the hermitian operator.
-        Ut = cellfun(@(x) conj(x),U,'UniformOutput',false); 
+        Ut = cellfun(@(x) x', U,'UniformOutput',false); 
         S = tensor.n_mod_prod(ten,Ut);
         % The normal factors should be transposed.
-        U = cellfun(@(x) x.',U,'UniformOutput',false);
+        U = cellfun(@(x) x, U,'UniformOutput',false);
     else
         number = numel(size(ten));
         for i = 1:number
@@ -267,7 +270,7 @@ end
 
 function [S,U] = HOOI(ten)
     max_iter = 5;
-    [~, U] = tensor.HOSVD(ten);
+    [~, U] = tensor.HOSVD_full(ten);
     number = numel(size(ten));
     for k = 1:max_iter
         for i = 1:number
@@ -281,9 +284,85 @@ function [S,U] = HOOI(ten)
     S = tensor.n_mod_prod(ten,U);
 end
 
-%% Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
+%% Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF) (CORRIGIR)
 
-%% Multidimensional Least-Squares Kronecker Factorization (MLS-KronF)
+% This function computes the MLS-KRF of a given matrix.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: 2022
+
+% The dimensions should be inserted in the order that the products are
+% performed.
+function [A] = MLSKRF(X,N,dim)
+    [~,R] = size(X); 
+    for r = 1:R
+        xr = X(:,r);
+        % A leitura da coluna pode estar incoerente...
+        %tenXr = permute(reshape(xr,dim), [3 2 1]);
+        tenXr = reshape(xr,flip(dim));
+        
+        % Aplicar SVDs consecutivas em estrategia recursiva? Como lidar com
+        % o nd  array nesse caso?
+        [Sr,Ur] = tensor.HOSVD_full(tenXr);
+        for n = 1:N
+            %for n = [3 1 2]
+            Ar{r,n} = (Sr(1)^(1/N))*Ur{N - n + 1}(:,1);
+            %Ar{r,n} = (Sr(1)^(1/N))*Ur{n}(:,1);
+        end
+    end
+    
+    for n = 1:N
+       aux = cell2mat(Ar(:,n)); 
+       A{n} = reshape(aux,[dim(n) R]);
+    end
+end
+
+%% Multidimensional Least-Squares Kronecker Factorization (MLS-KronF) (CORRIGIR)
+
+% This function computes the MLS-KronF of a given matrix.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: 2022
+
+%rows = [ia ib ic] e columns = [ja jb jc]
+function [Ahat] = MLSKronF(X,rows,columns)
+    % 3rd structure
+    %[ix,jx] = size(X);
+    
+    % 2nd structure
+    I = rows(2)*rows(3) + zeros(1,rows(1));
+    J = columns(2)*columns(3) + zeros(1,columns(1));
+    blocks_of_X = mat2cell(X,I,J);
+    
+    % 1st structure
+    N = 0;
+    for j = 1:columns(1)
+        for i = 1:rows(1)
+           N = N + 1;
+           aux = cell2mat(blocks_of_X(i,j));
+           I = rows(3) + zeros(1,rows(2));
+           J = columns(3) + zeros(1,columns(2));
+           blocks_of_aux = mat2cell(aux,I,J);
+           k = 1;
+           for jj = 1:columns(2)
+                for ii = 1:rows(2)
+                    vec_of_block = cell2mat(blocks_of_aux(ii,jj));
+                    vec_of_block = vec_of_block(:);
+                    mtx_1st(:,k,N) = vec_of_block;
+                    k = k + 1;
+                end
+           end
+        end
+    end
+    for aux = 1:N
+       Xhat(:,aux) = reshape(mtx_1st(:,:,aux),[],1); 
+    end
+    tenXhat = reshape(Xhat,[rows(1)*columns(1), rows(2)*columns(2), rows(3)*columns(3)]);
+    [S,U] = tensor.HOSVD_full(tenXhat);
+    
+    for u = 1:length(U)
+        aux = (real(S(1))^(1/length(U)))*U{u}(:,1);
+        Ahat{u} = reshape(aux,[rows(u) columns(u)]);
+    end
+end
 
 %% Alternate Least-Square (ALS)
 

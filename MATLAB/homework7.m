@@ -1,4 +1,4 @@
-%% ----- Homework 6 ----- %%
+%% ----- Homework 7 ----- %%
 clc;
 clear;
 close all;
@@ -7,6 +7,10 @@ close all;
 load('Practice_6_hosvd.mat');
 [tenS_hat,U_hat] = tensor.HOSVD_full(tenX);
 tenX_hat = tensor.n_mod_prod(tenS_hat,U_hat);
+
+% Checking the orthogonality
+reshape(tenS_hat(:,:,1),[],1)'*reshape(tenS_hat(:,:,4),[],1)
+
 nmsex = (norm(tensor.unfold(tenX- tenX_hat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2);
 nmsex = 20*log10(nmsex)
 
