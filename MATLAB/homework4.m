@@ -9,10 +9,13 @@ X = tensor.mtx_prod_kron(A,B);
 [Ahat,Bhat] = tensor.LSKronF(X,4,2,6,3);
 Xhat = tensor.mtx_prod_kron(Ahat,Bhat);
 
+disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with LSKronF:')
 nmsex = (norm(X- Xhat,'fro')^2)/(norm(X,'fro')^2);
 nmsex = 20*log10(nmsex)
+disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
 nmsea = (norm(A- Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmsea = 20*log10(nmsea)
+disp('Checking the NMSE (dB) between the original matrix B and its estimation:')
 nmseb = (norm(B- Bhat,'fro')^2)/(norm(B,'fro')^2);
 nmseb = 20*log10(nmseb)
 
@@ -30,9 +33,9 @@ for snr = 1:length(SNR)
         A = randn(I,P) + 1j*randn(I,P);
         B = randn(J,Q) + 1j*randn(J,Q);
         X = tensor.mtx_prod_kron(A,B);
-        X = X + noise;
+        X_noisy = X + noise;
         
-        [Ahat,Bhat] = tensor.LSKronF(X,I,P,J,Q);
+        [Ahat,Bhat] = tensor.LSKronF(X_noisy,I,P,J,Q);
         Xhat = tensor.mtx_prod_kron(Ahat,Bhat);
         aux = (norm(X- Xhat,'fro')^2)/(norm(X,'fro')^2);
         nmse(snr,1) = nmse(snr,1) + 20*log10(aux);

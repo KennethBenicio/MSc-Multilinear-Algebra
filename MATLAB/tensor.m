@@ -1,5 +1,15 @@
 classdef tensor
     methods(Static)
+%% Vectorize
+
+% This function computes the vec operator of a given matrix or tensor.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: 2022
+
+function Y = vec(X)
+    Y = reshape(X,[],1);
+end
+
 %% Hadamard Product
 
 % This function computes the Hadarmard Product of two given matrices.   
@@ -138,7 +148,6 @@ function [U,S,V,rkp] = KPSVD(X,ia,ja,ib,jb)
             k = k + 1;
         end
     end
-    
     [U,S,V] = svd(Xhat');
     rkp = sum(sum(S>0));
 end
@@ -199,11 +208,9 @@ function [ten] = n_mod_prod(ten,matrices,modes)
     
     for i = modes
         ten = cell2mat(matrices(i))*tensor.unfold(ten,i);
-        %ten = cell2mat(matrices(i))*tens2mat(ten,i);
         [aux,~] = size(cell2mat(matrices(i)));
         dim(i) = aux;
         ten = tensor.fold(ten,[dim],i);
-        %ten = mat2tens(ten,[dim],i);
     end
 end
 
@@ -239,7 +246,7 @@ function [S,U] = HOSVD_truncated(ten,ranks)
         for i = 1:number
            [aux,eig,~] = svd(tensor.unfold(ten,i)); 
            [aa,~] = size(eig(eig > eps));
-           aux = aux(1:aa,:);
+           aux = aux(:,1:aa);
            U{i} = aux;
         end
         % Core tensor uses the hermitian operator.
@@ -251,14 +258,14 @@ function [S,U] = HOSVD_truncated(ten,ranks)
         number = numel(size(ten));
         for i = 1:number
            [aux,~,~] = svd(tensor.unfold(ten,i)); 
-           aux = aux(1:ranks(i),:);
+           aux = aux(:,1:ranks(i));
            U{i} = aux;
         end
         % Core tensor uses the hermitian operator.
-        Ut = cellfun(@(x) conj(x),U,'UniformOutput',false); 
+        Ut = cellfun(@(x) x',U,'UniformOutput',false); 
         S = tensor.n_mod_prod(ten,Ut);
         % The normal factors should be transposed.
-        U = cellfun(@(x) x.',U,'UniformOutput',false);
+        U = cellfun(@(x) x,U,'UniformOutput',false);
     end    
 end
 
@@ -284,7 +291,7 @@ function [S,U] = HOOI(ten)
     S = tensor.n_mod_prod(ten,U);
 end
 
-%% Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF) (CORRIGIR)
+%% Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
 
 % This function computes the MLS-KRF of a given matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
@@ -296,17 +303,13 @@ function [A] = MLSKRF(X,N,dim)
     [~,R] = size(X); 
     for r = 1:R
         xr = X(:,r);
-        % A leitura da coluna pode estar incoerente...
-        %tenXr = permute(reshape(xr,dim), [3 2 1]);
         tenXr = reshape(xr,flip(dim));
         
         % Aplicar SVDs consecutivas em estrategia recursiva? Como lidar com
         % o nd  array nesse caso?
         [Sr,Ur] = tensor.HOSVD_full(tenXr);
         for n = 1:N
-            %for n = [3 1 2]
             Ar{r,n} = (Sr(1)^(1/N))*Ur{N - n + 1}(:,1);
-            %Ar{r,n} = (Sr(1)^(1/N))*Ur{n}(:,1);
         end
     end
     
@@ -357,9 +360,8 @@ function [Ahat] = MLSKronF(X,rows,columns)
     end
     tenXhat = reshape(Xhat,[rows(1)*columns(1), rows(2)*columns(2), rows(3)*columns(3)]);
     [S,U] = tensor.HOSVD_full(tenXhat);
-    
     for u = 1:length(U)
-        aux = (real(S(1))^(1/length(U)))*U{u}(:,1);
+        aux = (S(1)^(1/length(U)))*U{u}(:,1);
         Ahat{u} = reshape(aux,[rows(u) columns(u)]);
     end
 end

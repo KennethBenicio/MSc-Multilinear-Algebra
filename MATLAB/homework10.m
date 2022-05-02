@@ -47,7 +47,7 @@ ylabel('Error (dB)')
 legend_copy = legend("location", "southwest");
 set(legend_copy,'Interpreter','tex','location','southwest',"fontsize", 12)
 grid on;
-saveas(gcf,'hw9a1.png')
+saveas(gcf,'hw10a1.png')
 
 I = 10;
 J = 4;
@@ -128,4 +128,4 @@ ylabel('NMSE (dB)')
 legend_copy = legend("location", "southwest");
 set(legend_copy,'Interpreter','tex','location','southwest',"fontsize", 12)
 grid on;
-saveas(gcf,'hw9a2.png')
+saveas(gcf,'hw10a2.png')

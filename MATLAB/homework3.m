@@ -9,10 +9,13 @@ X = tensor.mtx_prod_kr(A,B);
 [Ahat,Bhat] = tensor.LSKRF(X,4,6);
 Xhat = tensor.mtx_prod_kr(Ahat,Bhat);
 
+disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with LSKRF:')
 nmsex = (norm(X- Xhat,'fro')^2)/(norm(X,'fro')^2);
 nmsex = 20*log10(nmsex)
+disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
 nmsea = (norm(A- Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmsea = 20*log10(nmsea)
+disp('Checking the NMSE (dB) between the original matrix B and its estimation:')
 nmseb = (norm(B- Bhat,'fro')^2)/(norm(B,'fro')^2);
 nmseb = 20*log10(nmseb)
 
@@ -29,9 +32,9 @@ for snr = 1:length(SNR)
         A = randn(I,R) + 1j*randn(I,R);
         B = randn(J,R) + 1j*randn(J,R);
         X = tensor.mtx_prod_kr(A,B);
-        X = X + noise;
+        X_noisy = X + noise;
         
-        [Ahat,Bhat] = tensor.LSKRF(X,I,J);
+        [Ahat,Bhat] = tensor.LSKRF(X_noisy,I,J);
         Xhat = tensor.mtx_prod_kr(Ahat,Bhat);
         aux = (norm(X- Xhat,'fro')^2)/(norm(X,'fro')^2);
         nmse(snr,1) = nmse(snr,1) + 20*log10(aux);

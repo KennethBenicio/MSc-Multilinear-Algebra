@@ -1,30 +1,35 @@
-%% ----- Homework 5 ----- %%
+%% ----- Homework 6 ----- %%
 clc;
 clear;
 close all;
 
 % My tensor for testing
 disp('Generic Tensor:');
-tsr_xxx = load('test_unfold_fold.mat').xxx
-dimension = size(tsr_xxx);
+load('homework6_unfolding_folding.mat')
+dimension = size(tenX);
 
 % Unfolding
-disp('1st mode unfolding:');
-tsr_xxx_1 = tensor.unfold(tsr_xxx,1)
-disp('2nd mode unfolding:');
-tsr_xxx_2 = tensor.unfold(tsr_xxx,2)
-disp('3rd mode unfolding:');
-tsr_xxx_3 = tensor.unfold(tsr_xxx,3)
+disp('X1./unfold(tenX,1):');
+tenX_1 = tensor.unfold(tenX,1);
+X1./tensor.unfold(tenX,1)
+disp('X2./unfold(tenX,2):');
+tenX_2 = tensor.unfold(tenX,2);
+X2./tensor.unfold(tenX,2)
+disp('X3./unfold(tenX,3):');
+tenX_3 = tensor.unfold(tenX,3);
+X3./tensor.unfold(tenX,3)
 
 % Folding
-disp('1st mode folding:');
-tsr_xxx_1 = tensor.fold(tsr_xxx_1,dimension,1)
-disp('2nd mode folding:');
-tsr_xxx_2 = tensor.fold(tsr_xxx_2,dimension,2)
-disp('3rd mode folding:');
-tsr_xxx_3 = tensor.fold(tsr_xxx_3,dimension,3)
+disp('tenX./fold(unfold(tenX,1),1):');
+tenX./tensor.fold(tenX_1,dimension,1)
+disp('tenX./fold(unfold(tenX,2),2):');
+tenX./tensor.fold(tenX_2,dimension,2)
+disp('tenX./fold(unfold(tenX,3),3):');
+tenX./tensor.fold(tenX_3,dimension,3)
 
 % N-mode product
-Ytest = tensor.n_mode_prod(X,Matrices,Modes);
-nmsey = (norm(Y- Ytest,'fro')^2)/(norm(Y,'fro')^2);
+load('homework6_n_mode.mat')
+tenY_test = tensor.n_mod_prod(tenX,{Z},[1]);
+disp('Checking the NMSE (dB) between the original tensor Y and the one after the N-mode product:')
+nmsey = (norm(tensor.unfold(tenY- tenY_test,1),'fro')^2)/(norm(tensor.unfold(tenY,1),'fro')^2);
 nmsey = 20*log10(nmsey)
