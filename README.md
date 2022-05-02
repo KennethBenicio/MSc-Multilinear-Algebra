@@ -143,6 +143,14 @@
 
 # Homework 5: Kronecker Product Single Value Decomposition (KPSVD)
 
+## Problem 1 -
+
+### Solution:
+
+## Problem 2 -
+
+### Solution:
+
 # Homework 6: Unfolding, Folding, and n-mode Product
 
 ## Problem 1 -
@@ -197,7 +205,31 @@
 
 # Homework 8: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
 
+## Problem 1 -
+
+### Solution:
+
+## Problem 2 -
+
+### Solution:
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw8a1.png" />
+</p>
+
 # Homework 9: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
+
+## Problem 1 -
+
+### Solution:
+
+## Problem 2 -
+
+### Solution:
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw9a1.png" />
+</p>
 
 # Homework 10: Alternating Least Squares (ALS) Algorithm
 
@@ -206,7 +238,7 @@
 ### Solution:
 
 <p align="center">
-  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw9a1.png" />
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw10a1.png" />
 </p>
 
 ## Problem 2 -
@@ -214,7 +246,7 @@
 ### Solution:
 
 <p align="center">
-  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw9a2.png" />
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw10a2.png" />
 </p>
 
 &nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework9.m).
