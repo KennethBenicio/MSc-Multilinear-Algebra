@@ -4,7 +4,7 @@ classdef tensor
 
 % This function computes the vec operator of a given matrix or tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 2022
+% Created: May 2022
 
 function Y = vec(X)
     Y = reshape(X,[],1);
@@ -14,7 +14,7 @@ end
 
 % This function computes the Hadarmard Product of two given matrices.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 2022
+% Created: January 2022
 
 function C = mtx_prod_had(A,B)
     
@@ -39,7 +39,7 @@ end
 
 % This function computes the Kronecker Product of two given matrices. 
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created:2022
+% Created: January 2022
 
 function C = mtx_prod_kron(A,B)
     
@@ -56,7 +56,7 @@ end
 
 % This function computes the Khatri-Rao Product of two given matrices. 
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created:2022
+% Created: January 2022
 
 function C = mtx_prod_kr(A,B)
     [ia,ja] = size(A);
@@ -77,7 +77,7 @@ end
 
 % This function computes the LSKRF of a given matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created:2022
+% Created: February 2022
 
 function [Ahat,Bhat] = LSKRF(C,ia,ib)
     [~, jc] = size(C);
@@ -98,7 +98,7 @@ end
 
 % This function computes the LSKronF of a given matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 2022
+% Created: February 2022
 
 function [Ahat,Bhat] = LSKronF(C,ia,ja,ib,jb)
     [ic,jc] = size(C);
@@ -129,7 +129,7 @@ end
 
 % This function computes the LSKRF of a given matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created:2022
+% Created: March 2022
 
 function [U,S,V,rkp] = KPSVD(X,ia,ja,ib,jb)
     [ix,jx] = size(X);
@@ -157,7 +157,7 @@ end
 
 % This function computes the unfolding of a given tensor in its matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 19/04/2022
+% Created: April 2022
 
 function [A] = unfold(ten,mode)
     dim = size(ten);
@@ -171,7 +171,7 @@ end
 
 % This function computes the folding of a given matrix into its tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 19/04/2022
+% Created: April 2022
 
 % It's interesting to see how the dimmensions get swapped by the unfolding
 % so the understanding of the code is clear.
@@ -197,7 +197,7 @@ end
 
 % This function computes n-mode product of a set of matrices and a tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 20/04/2022
+% Created: April 2022
 
 function [ten] = n_mod_prod(ten,matrices,modes)
     dim = size(ten);
@@ -218,7 +218,7 @@ end
 
 % This function computes the Truncated HOSVD of a given tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 21/04/2022
+% Created: April 2022
 
 function [S,U] = HOSVD_full(ten)
     number = numel(size(ten));
@@ -238,7 +238,7 @@ end
 
 % This function computes the Truncated HOSVD of a given tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 21/04/2022
+% Created: April 2022
 
 function [S,U] = HOSVD_truncated(ten,ranks)
     if nargin < 2
@@ -273,7 +273,7 @@ end
 
 % This function computes the HOOI of a given tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 21/04/2022
+% Created: April 2022
 
 function [S,U] = HOOI(ten)
     max_iter = 5;
@@ -295,7 +295,7 @@ end
 
 % This function computes the MLS-KRF of a given matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 2022
+% Created: March 2022
 
 % The dimensions should be inserted in the order that the products are
 % performed.
@@ -323,9 +323,10 @@ end
 
 % This function computes the MLS-KronF of a given matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 2022
-
-%rows = [ia ib ic] e columns = [ja jb jc]
+% Created: March 2022
+ 
+% It is interesting to note that this process could easily be applied to a
+% random number of matrices in a iterative form considering groups of 3 objects.
 function [Ahat] = MLSKronF(X,rows,columns)
     % 3rd structure
     %[ix,jx] = size(X);
@@ -336,33 +337,34 @@ function [Ahat] = MLSKronF(X,rows,columns)
     blocks_of_X = mat2cell(X,I,J);
     
     % 1st structure
-    N = 0;
+    Z = 1;
     for j = 1:columns(1)
         for i = 1:rows(1)
-           N = N + 1;
            aux = cell2mat(blocks_of_X(i,j));
            I = rows(3) + zeros(1,rows(2));
            J = columns(3) + zeros(1,columns(2));
            blocks_of_aux = mat2cell(aux,I,J);
-           k = 1;
            for jj = 1:columns(2)
                 for ii = 1:rows(2)
                     vec_of_block = cell2mat(blocks_of_aux(ii,jj));
                     vec_of_block = vec_of_block(:);
-                    mtx_1st(:,k,N) = vec_of_block;
-                    k = k + 1;
+                    mtx_1st(:,ii,jj) = vec_of_block;
                 end
            end
-        end
+            Xhat(:,Z) = reshape(mtx_1st,[],1);
+            Z = Z + 1;
+        end 
     end
-    for aux = 1:N
-       Xhat(:,aux) = reshape(mtx_1st(:,:,aux),[],1); 
-    end
-    tenXhat = reshape(Xhat,[rows(1)*columns(1), rows(2)*columns(2), rows(3)*columns(3)]);
+    
+    tenXhat = reshape(Xhat,[rows(3)*columns(3), rows(2)*columns(2), rows(1)*columns(1)]);
     [S,U] = tensor.HOSVD_full(tenXhat);
+    
+    rows = flip(rows);
+    columns = flip(columns);
     for u = 1:length(U)
+        index = length(U) - u + 1;
         aux = (S(1)^(1/length(U)))*U{u}(:,1);
-        Ahat{u} = reshape(aux,[rows(u) columns(u)]);
+        Ahat{index} = reshape(aux,[rows(u) columns(u)]);
     end
 end
 
@@ -370,7 +372,7 @@ end
 
 % This function computes the ALS of a given tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: 2022
+% Created: April 2022
 
 function [Ahat,Bhat,Chat,error] = ALS(X,R)
     I = zeros(R,R,R); 
