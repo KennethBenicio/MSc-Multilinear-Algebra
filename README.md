@@ -151,6 +151,8 @@
 
 ### Solution:
 
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework5.m).
+
 # Homework 6: Unfolding, Folding, and n-mode Product
 
 ## Problem 1 -
@@ -181,13 +183,13 @@
 
 ### Solution:
 
-&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Unfolding, Dimensions, Mode) inside the tensor class. From this will be possible to confirm that the tensor is correctly reconstruct. Inside this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework5.m) will be possible to find an example of using both the unfolding and folding methods.
+&nbsp;&nbsp;&nbsp;&nbsp; In a similar fashion it is possible to reobtain the original tensor from each one of its unfolding by calling the method folding(Unfolding, Dimensions, Mode) inside the tensor class. From this will be possible to confirm that the tensor is correctly reconstruct. Inside this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework6.m) will be possible to find an example of using both the unfolding and folding methods.
 
 ## Problem 3 -  
 
 ### Solution:
 
-&nbsp;&nbsp;&nbsp;&nbsp; Once more it will be possible to find an example in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework5.m) about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
+&nbsp;&nbsp;&nbsp;&nbsp; Once more it will be possible to find an example in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework6.m) about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
 
 # Homework 7: High Order Singular Value Decomposition (HOSVD)
 
@@ -203,6 +205,8 @@
 
 ### Solution:
 
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework7.m).
+
 # Homework 8: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
 
 ## Problem 1 -
@@ -217,6 +221,8 @@
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw8a1.png" />
 </p>
 
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework8.m).
+
 # Homework 9: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
 
 ## Problem 1 -
@@ -230,6 +236,8 @@
 <p align="center">
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw9a1.png" />
 </p>
+
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework9.m).
 
 # Homework 10: Alternating Least Squares (ALS) Algorithm
 
@@ -249,4 +257,4 @@
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw10a2.png" />
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework9.m).
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework10.m).
