@@ -207,7 +207,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework7.m).
 
-# Homework 8: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
+# Homework 8: Higher-Order Orthogonal Iteration (HOOI)
 
 ## Problem 1 -
 
@@ -217,13 +217,7 @@
 
 ### Solution:
 
-<p align="center">
-  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw8a1.png" />
-</p>
-
-&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework8.m).
-
-# Homework 9: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
+# Homework 9: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
 
 ## Problem 1 -
 
@@ -239,9 +233,13 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework9.m).
 
-# Homework 10: Alternating Least Squares (ALS) Algorithm
+# Homework 10: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
 
 ## Problem 1 -
+
+### Solution:
+
+## Problem 2 -
 
 ### Solution:
 
@@ -249,12 +247,24 @@
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw10a1.png" />
 </p>
 
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework10.m).
+
+# Homework 11: Alternating Least Squares (ALS) Algorithm
+
+## Problem 1 -
+
+### Solution:
+
+<p align="center">
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw11a1.png" />
+</p>
+
 ## Problem 2 -
 
 ### Solution:
 
 <p align="center">
-  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw10a2.png" />
+  <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw11a2.png" />
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework10.m).
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework11.m).
