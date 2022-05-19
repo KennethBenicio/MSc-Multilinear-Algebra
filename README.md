@@ -103,7 +103,7 @@
 | --------------------- | -------------------- | -------------------- |
 |  -623.4093 | +11.5658 | +7.8479 |
 
-## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction in the presence of a noisy signal for two different scenarios: (I,J) = (10,10) and (I,J) = (30,10) both with R = 4. 
+## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction in the presence of a noisy signal for two different scenarios: (I,J) = (10,10) and (I,J) = (30,10) both with R = 4. Considering the SNR range [0, 5, 10, 15, 20, 25, 30] dB plot the curves NMSE vs. SNR for the reconstruction of the original matrix.
 
 ### Solution:
 
@@ -119,7 +119,7 @@
 
 # Homework 4: Least Squares Kronecker Product Factorization (LSKronF)
 
-## Problem 1 -
+## Problem 1 - For randomly chosen matrices compute the implementation of LSKronF and compare the original matrices with the ones estimated by the algorithm. What can you conclude? 
 
 ### Solution:
 
@@ -127,7 +127,7 @@
 | --------------------- | -------------------- | -------------------- |
 |  -619.2196 | +13.5472 | +9.5922 |
 
-## Problem 2 -
+## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction in the presence of a noisy signal for two different scenarios: (I,J,P,Q) = (2,4,3,5) and (I,J,P,Q) = (4,8,3,5). Considering the SNR range [0, 5, 10, 15, 20, 25, 30] dB plot the curves NMSE vs. SNR for the reconstruction of the original matrix.
 
 ### Solution:
 
