@@ -7,7 +7,7 @@ N = [1 2 3 4 5 6 7 8];
 time1 = zeros(length(N),1);
 time2 = zeros(length(N),1);
 for nn = 1:length(N)
-    for mc = 1:1000
+    for mc = 1:5000
         A = randn(N(nn),N(nn)) + 1j*randn(N(nn),N(nn));
         B = randn(N(nn),N(nn)) + 1j*randn(N(nn),N(nn));
         tic;
@@ -20,15 +20,15 @@ for nn = 1:length(N)
         time2(nn,1) = time2(nn,1) + aux;
     end
 end
-time1 = time1/1000;
-time2 = time2/1000;
+time1 = time1/5000;
+time2 = time2/5000;
 
 figure
 txt = ['(\bf A_{N \times N} \otimes B_{N \times N})^{-1}'];
-semilogy(N,time1,'-d','color', [0 1 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf A^{-1}_{N \times N} \otimes B^{-1}_{N \times N}'];
-semilogy(N,time2,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Performance of inverse operation'])
 xlabel('Number of columns')
@@ -43,7 +43,7 @@ K = [1 2 3 4 5 6 7 8 9 10];
 time1 = zeros(length(K),1);
 time2 = zeros(length(K),1);
 for kk = 1:length(K)
-    for mc = 1:500
+    for mc = 1:1000
         tic;
         for ii = 1:K(kk)    
             if ii == 1
@@ -72,15 +72,15 @@ for kk = 1:length(K)
         time2(kk,1) = time2(kk,1) + aux;
     end
 end
-time1 = time1/500;
-time2 = time2/500;
+time1 = time1/1000;
+time2 = time2/1000;
 
 figure
 txt = ['\bf (\otimes^{K}_{i = 1}A^{(i)}_{4 \times 4})^{-1}'];
-semilogy(K,time1,'-d','color', [0 1 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(K,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf \otimes^{K}_{i = 1}(A^{(i)}_{4 \times 4})^{-1}'];
-semilogy(K,time2,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(K,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Multiple Kronecker products performance'])
 xlabel('Number of products')

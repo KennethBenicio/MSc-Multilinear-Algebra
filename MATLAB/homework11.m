@@ -2,18 +2,22 @@
 clc;
 clear;
 close all;
-I = 3;
-J = 5;
-K = 7;
+
+% Random tensor example
+% I = 8;
+% J = 4;
+% K = 5;
+% R = 3;
+% A = randn(I,R) + 1j*randn(I,R);
+% B = randn(J,R) + 1j*randn(J,R);
+% C = randn(K,R) + 1j*randn(K,R);
+% X = tensor.fold(A*(tensor.mtx_prod_kr(C,B).'),[I J K],1);
+
+load('homework11_CPD.mat')
+X = tenX;
 R = 3;
 
-A = randn(I,R) + 1j*randn(I,R);
-B = randn(J,R) + 1j*randn(J,R);
-C = randn(K,R) + 1j*randn(K,R);
-X = tensor.fold(A*(tensor.mtx_prod_kr(C,B).'),[I J K],1);
-
 [ia,ib,ic] = size(X);
-
 mode_1 = tensor.unfold(X,1);
 mode_2 = tensor.unfold(X,2);
 mode_3 = tensor.unfold(X,3);
@@ -38,20 +42,36 @@ for i = 2:aux
     end
 end
 
+disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with MLSKRF:')
+Xhat = tensor.fold(Ahat*(tensor.mtx_prod_kr(Chat,Bhat).'),[ia ib ic],1);
+nmsex = (norm(tensor.unfold(X- Xhat,1),'fro')^2)/(norm(tensor.unfold(X,1),'fro')^2);
+nmsex = 20*log10(nmsex)
+disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
+nmsea = (norm(A - Ahat,'fro')^2)/(norm(A,'fro')^2);
+nmsea = 20*log10(nmsea)
+disp('Checking the NMSE (dB) between the original matrix B and its estimation:')
+nmseb = (norm(B - Bhat,'fro')^2)/(norm(B,'fro')^2);
+nmseb = 20*log10(nmseb)
+disp('Checking the NMSE (dB) between the original matrix C and its estimation:')
+nmsec = (norm(C - Chat,'fro')^2)/(norm(C,'fro')^2);
+nmsec = 20*log10(nmsec)
+
 figure
 txt = ['\bf Convergence between iterations'];
-plot(1:i,20*log10(error),'-','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
-title(['ALS convergence: I = ' num2str(I), ', J = ' num2str(J), ', K = ' num2str(K), ' and R = ' num2str(R)])
+plot(1:i,20*log10(error),'-','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+title(['ALS convergence: I = ' num2str(ia), ', J = ' num2str(ib), ', K = ' num2str(ic), ' and R = ' num2str(R)])
 xlabel('Iterations')
 ylabel('Error (dB)')
 legend_copy = legend("location", "southwest");
 set(legend_copy,'Interpreter','tex','location','southwest',"fontsize", 12)
 grid on;
-saveas(gcf,'hw10a1.png')
+saveas(gcf,'hw11a1.png')
 
-I = 10;
+%% ALS in the presence of noisy signals
+
+I = 8;
 J = 4;
-K = 2;
+K = 5;
 R = 3;
 SNR = [0 5 10 15 20 25 30];
 nmse1 = zeros(length(SNR),1);
@@ -111,16 +131,16 @@ nmse4  = nmse4/1000;
 
 figure
 txt = ['\bf A'];
-plot(SNR,nmse1,'-d','color', [1 0 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse1,'--d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf B'];
-plot(SNR,nmse2,'-o','color', [0 1 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse2,'--d','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf C'];
-plot(SNR,nmse3,'-x','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse3,'--d','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['Reconstruction'];
-plot(SNR,nmse4,'-p','color', [0 0 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse4,'-o','color', [0 0.4470 0.7410], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold off;
 title(['ALS performance: I = ' num2str(I), ', J = ' num2str(J), ', K = ' num2str(K), ' and R = ' num2str(R)])
 xlabel('SNR (dB)')
@@ -128,4 +148,4 @@ ylabel('NMSE (dB)')
 legend_copy = legend("location", "southwest");
 set(legend_copy,'Interpreter','tex','location','southwest',"fontsize", 12)
 grid on;
-saveas(gcf,'hw10a2.png')
+saveas(gcf,'hw11a2.png')

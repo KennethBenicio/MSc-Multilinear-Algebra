@@ -25,10 +25,10 @@ time2 = time2/1000;
 
 figure
 txt = ['Native Function'];
-semilogy(N,time1,'-d','color', [0 1 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['Author Function'];
-semilogy(N,time2,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Hadamard product performance'])
 xlabel('Number of columns')
@@ -42,7 +42,7 @@ N = [2 4 8 16 32 64];
 time1 = zeros(length(N),1);
 time2 = zeros(length(N),1);
 for nn = 1:length(N)
-    for mc = 1:250
+    for mc = 1:1000
         A = randn(N(nn),N(nn)) + 1j*randn(N(nn),N(nn));
         B = randn(N(nn),N(nn)) + 1j*randn(N(nn),N(nn));
         tic;
@@ -55,15 +55,15 @@ for nn = 1:length(N)
         time2(nn,1) = time2(nn,1) + aux;
     end
 end
-time1 = time1/250;
-time2 = time2/250;
+time1 = time1/1000;
+time2 = time2/1000;
 
 figure
 txt = ['Native Function'];
-semilogy(N,time1,'-d','color', [0 1 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['Author Function'];
-semilogy(N,time2,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Kronecker product performance'])
 xlabel('Number of columns')
@@ -77,7 +77,7 @@ N = [2 4 8 16 32 64];
 time1 = zeros(length(N),1);
 time2 = zeros(length(N),1);
 for nn = 1:length(N)
-    for mc = 1:250
+    for mc = 1:1000
         A = randn(N(nn),N(nn)) + 1j*randn(N(nn),N(nn));
         B = randn(N(nn),N(nn)) + 1j*randn(N(nn),N(nn));
         tic;
@@ -90,15 +90,15 @@ for nn = 1:length(N)
         time2(nn,1) = time2(nn,1) + aux;
     end
 end
-time1 = time1/250;
-time2 = time2/250;
+time1 = time1/1000;
+time2 = time2/1000;
 
 figure
 txt = ['Native Function'];
-semilogy(N,time1,'-d','color', [0 1 0], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['Author Function'];
-semilogy(N,time2,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Khatri-Rao product performance'])
 xlabel('Number of columns')

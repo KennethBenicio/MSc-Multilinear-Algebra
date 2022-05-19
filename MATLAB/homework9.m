@@ -3,7 +3,7 @@ clc;
 clear;
 close all;
 
-load('homework8_MLSKRF.mat')
+load('homework9_MLSKRF.mat')
 
 N = 3;
 dim = [5 4 8];
@@ -54,12 +54,12 @@ end
 nmse  = nmse/1000;
 
 figure
-txt = ['I = ' num2str(I), ', J = ' num2str(J), ', K = ' num2str(K), ' and R = ' num2str(R)];
-plot(SNR,nmse,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+txt = ['I1 = ' num2str(I), ', I2 = ' num2str(J), ', I3 = ' num2str(K), ' and R = ' num2str(R)];
+plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 title(['MLSKRF performance under imperfect scenario'])
 xlabel('SNR (dB)')
 ylabel('NMSE (dB)')
 legend_copy = legend("location", "northwest");
 set(legend_copy,'Interpreter','tex','location','northeast',"fontsize", 12)
 grid on;
-saveas(gcf,'hw8a1.png')
+saveas(gcf,'hw9a1.png')

@@ -1,11 +1,11 @@
-%% ----- Homework 7 ----- %%
+%% ----- Homework 8 ----- %%
 clc;
 clear;
 close all;
 
 % Full HOSVD
-load('homework7_HOSVD.mat');
-[tenS_hat,U_hat] = tensor.HOSVD_full(tenX);
+load('homework8_HOOI.mat');
+[tenS_hat,U_hat] = tensor.HOOI_full(tenX);
 tenX_hat = tensor.n_mod_prod(tenS_hat,U_hat);
 
 % Checking the orthogonality
@@ -28,9 +28,9 @@ nmseU3 = (norm(U3 - U_hat{3},'fro')^2)/(norm(U3,'fro')^2)
 X = randn(8,4,10) + 1i*randn(8,4,10);
 Y = randn(5,5,5) + 1i*randn(5,5,5);
 
-[S1,U1] = tensor.HOSVD_truncated(X);
+[S1,U1] = tensor.HOOI_truncated(X);
 multilinear_rank1 = size(S1);
-[S2,U2] = tensor.HOSVD_truncated(Y);
+[S2,U2] = tensor.HOOI_truncated(Y);
 multilinear_rank2 = size(S2);
 
 Xhat = tensor.n_mod_prod(S1,U1);

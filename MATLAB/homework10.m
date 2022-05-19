@@ -3,7 +3,7 @@ clc;
 clear;
 close all;
 
-load('homework9_MLSKronF.mat')
+load('homework10_MLSKronF.mat')
 
 rows = [4 4 6];
 columns = [3 2 5];
@@ -11,7 +11,7 @@ columns = [3 2 5];
 
 aux = tensor.mtx_prod_kron(Matrices{1},Matrices{2});
 Xhat = tensor.mtx_prod_kron(aux,Matrices{3});
-disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with MLSKRF:')
+disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with MLSKronF:')
 nmse = (norm(X - Xhat,'fro')^2)/(norm(X,'fro')^2);
 nmse = 20*log10(nmse)
 disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
@@ -57,11 +57,11 @@ nmse  = nmse/1000;
 
 figure
 txt = ['MLSKronF with N = 3'];
-plot(SNR,nmse,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 title(['MLSKronF performance under imperfect scenario'])
 xlabel('SNR (dB)')
 ylabel('NMSE (dB)')
 legend_copy = legend("location", "northwest");
 set(legend_copy,'Interpreter','tex','location','northeast',"fontsize", 12)
 grid on;
-saveas(gcf,'hw9a1.png')
+saveas(gcf,'hw10a1.png')

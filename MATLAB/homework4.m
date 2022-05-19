@@ -45,7 +45,7 @@ nmse  = nmse/1000;
 
 figure
 txt = ['I = ' num2str(I), ', J = ' num2str(J), ', P = ' num2str(P), ' and Q = ' num2str(Q)];
-plot(SNR,nmse,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 title(['LSKronF performance under imperfect scenario'])
 xlabel('SNR (dB)')
 ylabel('NMSE (dB)')
@@ -80,7 +80,7 @@ nmse  = nmse/1000;
 
 figure
 txt = ['I = ' num2str(I), ', J = ' num2str(J), ', P = ' num2str(P), ' and Q = ' num2str(Q)];
-plot(SNR,nmse,'-d','color', [0 0 1], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 title(['LSKronF performance under imperfect scenario'])
 xlabel('SNR (dB)')
 ylabel('NMSE (dB)')

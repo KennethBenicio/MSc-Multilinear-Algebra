@@ -3,10 +3,15 @@ clc;
 clear;
 close all;
 
-% My tensor for testing
+% Tensor for testing
 disp('Generic Tensor:');
 load('homework6_unfolding_folding.mat')
 dimension = size(tenX);
+
+% Kolda example for testing
+% load('homework6_kolda_example.mat')
+% tenX = xxx;
+% dimension = size(tenX);
 
 % Unfolding
 disp('X1./unfold(tenX,1):');
