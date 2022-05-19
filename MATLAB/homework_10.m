@@ -3,7 +3,7 @@ clc;
 clear;
 close all;
 
-load('homework10_MLSKronF.mat')
+load('homework_10_MLSKronF.mat')
 
 rows = [4 4 6];
 columns = [3 2 5];

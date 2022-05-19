@@ -13,7 +13,7 @@ close all;
 % C = randn(K,R) + 1j*randn(K,R);
 % X = tensor.fold(A*(tensor.mtx_prod_kr(C,B).'),[I J K],1);
 
-load('homework11_CPD.mat')
+load('homework_11_CPD.mat')
 X = tenX;
 R = 3;
 
