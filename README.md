@@ -95,7 +95,7 @@
 
 # Homework 3: Least-Squares Khatri-Rao Factorization (LSKRF)
 
-## Problem 1 -
+## Problem 1 - For randomly chosen matrices compute the implementation of LSKRF and compare the original matrices with the ones estimated by the algorithm. What can you conclude? 
 
 ### Solution:
 
@@ -103,7 +103,7 @@
 | --------------------- | -------------------- | -------------------- |
 |  -623.4093 | +11.5658 | +7.8479 |
 
-## Problem 2 -
+## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction in the presence of a noisy signal for two different scenarios: (I,J) = (10,10) and (I,J) = (30,10) both with R = 4. 
 
 ### Solution:
 
