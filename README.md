@@ -196,7 +196,7 @@
 ## Problem 3 - For a given number of matrices implement the operation of multilinear tensor product according the following prototype
 
 <p align="center">
-    <img src="https://latex.codecogs.com/svg.image?\bg{white}\mathcal{Y}&space;=&space;\mathcal{X}&space;\times_{1}&space;\boldsymbol{U}_{1}&space;\times_{2}&space;\cdots&space;\times_{N}&space;\boldsymbol{U}_{N}" title="https://latex.codecogs.com/svg.image?\bg{white}\mathcal{Y} = \mathcal{X} \times_{1} \boldsymbol{U}_{1} \times_{2} \cdots \times_{N} \boldsymbol{U}_{N}" /> 
+    <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\mathcal{Y}&space;=&space;\mathcal{X}&space;\times_{1}&space;\boldsymbol{U}_{1}&space;\times_{2}&space;\cdots&space;\times_{N}&space;\boldsymbol{U}_{N}" title="https://latex.codecogs.com/svg.image?\LARGE \mathcal{Y} = \mathcal{X} \times_{1} \boldsymbol{U}_{1} \times_{2} \cdots \times_{N} \boldsymbol{U}_{N}" />
 </p>
 ### Solution:
 
