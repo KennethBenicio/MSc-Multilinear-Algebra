@@ -273,10 +273,10 @@ end
 
 % This function computes the HOOI of a given tensor.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: April 2022
+% Created: May 2022
 
-function [S,U] = HOOI(ten)
-    max_iter = 5;
+function [S,U,k] = HOOI_full(ten)
+    max_iter = 10;
     [~, U] = tensor.HOSVD_full(ten);
     number = numel(size(ten));
     for k = 1:max_iter
@@ -285,10 +285,55 @@ function [S,U] = HOOI(ten)
             modes(i) = []; % It will skip this mode in the n_mod_prod.
             Un = tensor.n_mod_prod(ten,U,modes);
             [aux,~,~] = svd(tensor.unfold(Un,i));
-            U{i} = aux';
+            U{i} = aux;
         end
     end
-    S = tensor.n_mod_prod(ten,U);
+    % The conjugate transpose
+    Ut = cellfun(@(x) x', U ,'UniformOutput',false);
+    S = tensor.n_mod_prod(ten,Ut); 
+end
+
+%% Truncated High Order Orthogonal Iteration (HOOI)
+
+% This function computes the Truncated HOOI of a given tensor.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: May 2022
+
+function [S,U] = HOOI_truncated(ten,ranks)
+    if nargin < 2
+        max_iter = 10;
+        [~, U] = tensor.HOSVD_full(ten);
+        number = numel(size(ten));
+        for k = 1:max_iter
+            for i = 1:number
+                modes = 1:number;
+                modes(i) = []; % It will skip this mode in the n_mod_prod.
+                Un = tensor.n_mod_prod(ten,U,modes);
+                [aux,eig,~] = svd(tensor.unfold(Un,i));
+                [aa,~] = size(eig(eig > eps));
+                U{i} = aux(:,1:aa);
+            end
+        end
+        % The conjugate transpose
+        Ut = cellfun(@(x) x', U ,'UniformOutput',false);
+        S = tensor.n_mod_prod(ten,Ut); 
+    else
+        max_iter = 10;
+        [~, U] = tensor.HOSVD_full(ten);
+        number = numel(size(ten));
+        for k = 1:max_iter
+            for i = 1:number
+                modes = 1:number;
+                modes(i) = []; % It will skip this mode in the n_mod_prod.
+                Un = tensor.n_mod_prod(ten,U,modes);
+                [aux,~,~] = svd(tensor.unfold(Un,i));
+                U{i} = aux(:,1:ranks(i));
+            end
+        end
+        % The conjugate transpose
+        Ut = cellfun(@(x) x', U ,'UniformOutput',false);
+        S = tensor.n_mod_prod(ten,Ut); 
+    end    
 end
 
 %% Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
@@ -319,7 +364,7 @@ function [A] = MLSKRF(X,N,dim)
     end
 end
 
-%% Multidimensional Least-Squares Kronecker Factorization (MLS-KronF) (CORRIGIR)
+%% Multidimensional Least-Squares Kronecker Factorization (MLS-KronF)
 
 % This function computes the MLS-KronF of a given matrix.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
