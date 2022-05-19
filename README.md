@@ -99,11 +99,11 @@
 
 ### Solution:
 
-| NMSE(**X**,**Xhat**)  | NMSE(**A**,**Bhat**) | NMSE(**B**,**Bhat**) |
+| NMSE(**X**,**Xhat**)  | NMSE(**A**,**Ahat**) | NMSE(**B**,**Bhat**) |
 | --------------------- | -------------------- | -------------------- |
 |  -623.4093 | +11.5658 | +7.8479 |
 
-## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction in the presence of a noisy signal for two different scenarios: (I,J) = (10,10) and (I,J) = (30,10) both with R = 4. Considering the SNR range [0, 5, 10, 15, 20, 25, 30] dB plot the curves NMSE vs. SNR for the reconstruction of the original matrix.
+## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction under the presence of noisy signals for two different scenarios: (I,J) = (10,10) and (I,J) = (30,10) both with R = 4. Considering the SNR range [0, 5, 10, 15, 20, 25, 30] dB plot the curves NMSE vs. SNR for the reconstruction of the original matrix.
 
 ### Solution:
 
@@ -123,11 +123,11 @@
 
 ### Solution:
 
-| NMSE(**X**,**Xhat**)  | NMSE(**A**,**Bhat**) | NMSE(**B**,**Bhat**) |
+| NMSE(**X**,**Xhat**)  | NMSE(**A**,**Ahat**) | NMSE(**B**,**Bhat**) |
 | --------------------- | -------------------- | -------------------- |
 |  -619.2196 | +13.5472 | +9.5922 |
 
-## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction in the presence of a noisy signal for two different scenarios: (I,J,P,Q) = (2,4,3,5) and (I,J,P,Q) = (4,8,3,5). Considering the SNR range [0, 5, 10, 15, 20, 25, 30] dB plot the curves NMSE vs. SNR for the reconstruction of the original matrix.
+## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction under the presence of noisy signals for two different scenarios: (I,J,P,Q) = (2,4,3,5) and (I,J,P,Q) = (4,8,3,5). Considering the SNR range [0, 5, 10, 15, 20, 25, 30] dB plot the curves NMSE vs. SNR for the reconstruction of the original matrix.
 
 ### Solution:
 
@@ -249,11 +249,15 @@
 
 # Homework 9: Multidimensional Least-Squares Khatri-Rao Factorization (MLS-KRF)
 
-## Problem 1 -
+## Problem 1 - For randomly chosen matrices compute the implementation of MLSKRF for a random number of matrices solving the following problem and compare the original matrices with the ones estimated by the algorithm. What can you conclude? 
 
 ### Solution:
 
-## Problem 2 -
+| NMSE(**X**,**Xhat**)  | NMSE(**A1**,**A1hat**) | NMSE(**A2**,**A2hat**) | NMSE(**A3**,**A3hat**) |
+| --------------------- | -------------------- | -------------------- | -------------------- |
+|  -606.2255 | +3.1432 | +5.0165 | +4.7297 |
+
+## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction using the MLS-KRF under the presence of noisy signals in the SNR range of [0, 5, 10, 15, 20, 25, 30] dB for the scenario defined by the matrices of dimmensions: I1 = 2, I2 = 3, I3 = 4 and R = 4. Plot the curve for NMSE vs. SNR considering the reconstructed matrix.
 
 ### Solution:
 
@@ -265,11 +269,15 @@
 
 # Homework 10: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
 
-## Problem 1 -
+## Problem 1 - For randomly chosen matrices compute the implementation of MLS-KronF for a random number of matrices solving the following problem and compare the original matrices with the ones estimated by the algorithm. What can you conclude? 
 
 ### Solution:
 
-## Problem 2 -
+| NMSE(**X**,**Xhat**)  | NMSE(**A1**,**A1hat**) | NMSE(**A2**,**A2hat**) | NMSE(**A3**,**A3hat**) |
+| --------------------- | -------------------- | -------------------- | -------------------- |
+|  -605.1941 | +11.9214 | +11.5548 | +6.0950 |
+
+## Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction using the MLS-KronF under the presence of noisy signals in the SNR range of [0, 5, 10, 15, 20, 25, 30] dB for the scenario defined by the matrices of dimmensions: I1 = J1 = 2, I2 = J2 = 3 and I3 = J3 = 4. Plot the curve for NMSE vs. SNR considering the reconstructed matrix.
 
 ### Solution:
 
