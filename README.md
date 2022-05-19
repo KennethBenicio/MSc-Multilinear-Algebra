@@ -239,13 +239,13 @@
 
 # Homework 8: Higher-Order Orthogonal Iteration (HOOI)
 
-## Problem 1 - For a random order tensor implement the HOSVD operation according the following prototype
+## Problem 1 - For a random order tensor implement the HOOI operation according the following prototype
 
 <p align="center">
     <img src="https://latex.codecogs.com/svg.image?\inline&space;\LARGE&space;[\mathcal{S},&space;\boldsymbol{U}^{(1)},&space;\cdots,&space;\boldsymbol{U}^{(N)}]&space;=&space;\text{HOOI}({\mathcal{X}}),&space;\forall\mathcal{X}&space;\in&space;\mathbb{C}^{I_{n}&space;\times&space;I_{1}&space;\times&space;\cdots&space;\times&space;I_{N}}" title="https://latex.codecogs.com/svg.image?\inline \LARGE [\mathcal{S}, \boldsymbol{U}^{(1)}, \cdots, \boldsymbol{U}^{(N)}] = \text{HOOI}({\mathcal{X}}), \forall\mathcal{X} \in \mathbb{C}^{I_{n} \times I_{1} \times \cdots \times I_{N}}" />
 </p>
 
-### Solution: For the sake of simplicity it was provided in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework7.m) an example of usage of the HOSVD of a third-order tensor where its file is available inside the folders of the project. However, the implemented function does work with any order tensor just fine. Just bellow there is the NMSE analysis of the previous mentioned tensor 
+### Solution: For the sake of simplicity it was provided in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework8.m) an example of usage of the HOOI of a third-order tensor where its file is available inside the folders of the project. However, the implemented function does work with any order tensor just fine. Just bellow there is the NMSE analysis of the previous mentioned tensor 
 
 | NMSE(**tenX**,**tenX_hat**)  | NMSE(**tenS**,**tenS_hat**) | NMSE(**U1**,**U1_hat**) | NMSE(**U2**,**U2_hat**) | NMSE(**U3**,**U3_hat**) |
 | --------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
