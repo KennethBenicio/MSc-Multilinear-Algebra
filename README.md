@@ -145,7 +145,9 @@
 
 ## Problem 1 - Implement the generalization of the LSKronF operation, the KPSVD, according the following structure
 
+<p align="center">
 <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\boldsymbol{X}&space;=&space;\sum^{r_{kp}}_{k&space;=&space;1}&space;\sigma_{k}&space;\boldsymbol{U}_{k}&space;\otimes&space;\boldsymbol{V}_{k}" title="https://latex.codecogs.com/svg.image?\LARGE \boldsymbol{X} = \sum^{r_{kp}}_{k = 1} \sigma_{k} \boldsymbol{U}_{k} \otimes \boldsymbol{V}_{k}" />
+</p>
 
 ### Solution: 
 
