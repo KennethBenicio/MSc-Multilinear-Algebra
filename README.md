@@ -217,16 +217,10 @@
 | --------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
 | -609.1300 | +2.0933 | +2.6551 | +1.9105 | +1.9316 |
 
-## Problem 2 - Considering two random tesor defined as
+## Problem 2 - Considering two random tesors define then their low multilinear rank approximation according the following structure and computes the NMSE error between the origin tensor and its approximation
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\begin{align*}\mathcal{X}&space;&\in&space;\mathbb{C}^{8&space;\times&space;4&space;\times&space;10},&space;\\&space;\mathcal{Y}&space;&\in&space;\mathbb{C}^{5&space;\times&space;5&space;\times&space;5},&space;\end{align*}" title="https://latex.codecogs.com/svg.image?\LARGE \begin{align*}\mathcal{X} &\in \mathbb{C}^{8 \times 4 \times 10}, \\ \mathcal{Y} &\in \mathbb{C}^{5 \times 5 \times 5}, \end{align*}" />
-</p>
-
-## define then one low multilinear rank approximation for each one in the following structure and computes the NMSE error between the origin tensor and its approximation
-
-<p align="center">
-  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\begin{align*}&space;\hat{\mathcal{X}}&space;&\in&space;\mathbb{C}^{R_{1}&space;\times&space;R_{2}&space;\times&space;R_{3}},&space;\\&space;\hat{\mathcal{Y}}&space;&\in&space;\mathbb{C}^{P_{1}&space;\times&space;P_{2}&space;\times&space;P_{3}},&space;\end{align*}" title="https://latex.codecogs.com/svg.image?\LARGE \begin{align*} \hat{\mathcal{X}} &\in \mathbb{C}^{R_{1} \times R_{2} \times R_{3}}, \\ \hat{\mathcal{Y}} &\in \mathbb{C}^{P_{1} \times P_{2} \times P_{3}}, \end{align*}" />
+  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\begin{align*}&space;\mathcal{X}&space;&\in&space;\mathbb{C}^{8&space;\times&space;4&space;\times&space;10}&space;\to&space;\hat{\mathcal{X}}&space;\in&space;\mathbb{C}^{R_{1}&space;\times&space;R_{2}&space;\times&space;R_{3}},&space;\\&space;\mathcal{X}&space;&\in&space;\mathbb{C}^{5&space;\times&space;5&space;\times&space;5}&space;\to&space;\hat{\mathcal{Y}}&space;\in&space;\mathbb{C}^{P_{1}&space;\times&space;P_{2}&space;\times&space;P_{3}},&space;\end{align*}" title="https://latex.codecogs.com/svg.image?\LARGE \begin{align*} \mathcal{X} &\in \mathbb{C}^{8 \times 4 \times 10} \to \hat{\mathcal{X}} \in \mathbb{C}^{R_{1} \times R_{2} \times R_{3}}, \\ \mathcal{X} &\in \mathbb{C}^{5 \times 5 \times 5} \to \hat{\mathcal{Y}} \in \mathbb{C}^{P_{1} \times P_{2} \times P_{3}}, \end{align*}" />
 </p>
 
 ### Solution:
