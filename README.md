@@ -1,7 +1,7 @@
 # Multilinear Algebra Course
 
 
-## Available Reports
+## Available Algorithms and Reports
 0. [Homework 0](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework0.md).
 1. [Homework 1](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework1.md).
 2. [Homework 2](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework2.md).
@@ -14,3 +14,7 @@
 9. [Homework 9](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework9.md).
 10. [Homework 10](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_10.md).
 11. [Homework 11](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_11.md).
+
+## Collection of Created Main Functions
+
+[Tensor Library](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/tensor.m).
