@@ -251,6 +251,10 @@
 
 ## Problem 1 - For randomly chosen matrices compute the implementation of MLSKRF for a random number of matrices solving the following problem and compare the original matrices with the ones estimated by the algorithm. What can you conclude? 
 
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?(\hat{\boldsymbol{A}}^{(1)},&space;\cdots,&space;\hat{\boldsymbol{A}}^{(N)})&space;=&space;\underset{\boldsymbol{A}^{(1)},&space;\cdots,&space;\boldsymbol{A}^{(N)}}{\text{min}}&space;||&space;\boldsymbol{X}&space;-&space;\boldsymbol{A}^{(1)}&space;\diamond&space;\cdots&space;\diamond&space;\boldsymbol{A}^{(N)}&space;||^2_{\text{F}}" title="https://latex.codecogs.com/svg.image?(\hat{\boldsymbol{A}}^{(1)}, \cdots, \hat{\boldsymbol{A}}^{(N)}) = \underset{\boldsymbol{A}^{(1)}, \cdots, \boldsymbol{A}^{(N)}}{\text{min}} || \boldsymbol{X} - \boldsymbol{A}^{(1)} \diamond \cdots \diamond \boldsymbol{A}^{(N)} ||^2_{\text{F}}" />
+</p>
+
 ### Solution:
 
 | NMSE(**X**,**Xhat**)  | NMSE(**A1**,**A1hat**) | NMSE(**A2**,**A2hat**) | NMSE(**A3**,**A3hat**) |
@@ -270,6 +274,10 @@
 # Homework 10: Multidimensional Least-Squares Kronecker Factorization  (MLS-KronF)
 
 ## Problem 1 - For randomly chosen matrices compute the implementation of MLS-KronF for a random number of matrices solving the following problem and compare the original matrices with the ones estimated by the algorithm. What can you conclude? 
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?(\hat{\boldsymbol{A}}^{(1)},&space;\cdots,&space;\hat{\boldsymbol{A}}^{(N)})&space;=&space;\underset{\boldsymbol{A}^{(1)},&space;\cdots,&space;\boldsymbol{A}^{(N)}}{\text{min}}&space;||&space;\boldsymbol{X}&space;-&space;\boldsymbol{A}^{(1)}&space;\otimes&space;\cdots&space;\otimes&space;\boldsymbol{A}^{(N)}&space;||^2_{\text{F}}" title="https://latex.codecogs.com/svg.image?(\hat{\boldsymbol{A}}^{(1)}, \cdots, \hat{\boldsymbol{A}}^{(N)}) = \underset{\boldsymbol{A}^{(1)}, \cdots, \boldsymbol{A}^{(N)}}{\text{min}} || \boldsymbol{X} - \boldsymbol{A}^{(1)} \otimes \cdots \otimes \boldsymbol{A}^{(N)} ||^2_{\text{F}}" />
+</p>
 
 ### Solution:
 
