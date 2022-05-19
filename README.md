@@ -158,7 +158,7 @@
 ## Problem 1 - For a random order tensor implement the operation unfolding according to the following prototype 
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.image?\bg{white}[\mathcal{X}]_{n}&space;=&space;\text{unfold}(\mathcal{X},&space;[I_{1}&space;\cdots&space;I_{N}&space;],&space;n)&space;\in&space;\mathbb{C}^{I_{n}&space;\times&space;I_{1}&space;\cdots&space;I_{n-1}&space;I_{n&plus;1}&space;\cdots&space;I_{N}}" title="https://latex.codecogs.com/svg.image?\bg{white}[\mathcal{X}]_{n} = \text{unfold}(\mathcal{X}, [I_{1} \cdots I_{N} ], n) \in \mathbb{C}^{I_{n} \times I_{1} \cdots I_{n-1} I_{n+1} \cdots I_{N}}" />
+  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;[\mathcal{X}]_{n}&space;=&space;\text{unfold}(\mathcal{X},&space;[I_{1}&space;\cdots&space;I_{N}&space;],&space;n)&space;\in&space;\mathbb{C}^{I_{n}&space;\times&space;I_{1}&space;\cdots&space;I_{n-1}&space;I_{n&plus;1}&space;\cdots&space;I_{N}}" title="https://latex.codecogs.com/svg.image?\LARGE [\mathcal{X}]_{n} = \text{unfold}(\mathcal{X}, [I_{1} \cdots I_{N} ], n) \in \mathbb{C}^{I_{n} \times I_{1} \cdots I_{n-1} I_{n+1} \cdots I_{N}}" />
 </p>
 
 ### Solution:
@@ -186,7 +186,7 @@
 ## Problem 2 - In similar fashion implement the folding operation that will convert back the result from the unfolding operation to its original tensor according to the following prototype
 
 <p align="center">
-  \mathcal{X} = \text{fold}([\mathcal{X}]_{n}, [I_{1} \cdots I_{N} ], n) \in \mathbb{C}^{I_{1} \times \cdots \times I_{N}}
+  <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\mathcal{X}&space;=&space;\text{fold}([\mathcal{X}]_{n},&space;[I_{1}&space;\cdots&space;I_{N}&space;],&space;n)&space;\in&space;\mathbb{C}^{I_{1}&space;\times&space;\cdots&space;\times&space;I_{N}}" title="https://latex.codecogs.com/svg.image?\LARGE \mathcal{X} = \text{fold}([\mathcal{X}]_{n}, [I_{1} \cdots I_{N} ], n) \in \mathbb{C}^{I_{1} \times \cdots \times I_{N}}" />
 </p>
 
 ### Solution:
@@ -198,6 +198,7 @@
 <p align="center">
     <img src="https://latex.codecogs.com/svg.image?\LARGE&space;\mathcal{Y}&space;=&space;\mathcal{X}&space;\times_{1}&space;\boldsymbol{U}_{1}&space;\times_{2}&space;\cdots&space;\times_{N}&space;\boldsymbol{U}_{N}" title="https://latex.codecogs.com/svg.image?\LARGE \mathcal{Y} = \mathcal{X} \times_{1} \boldsymbol{U}_{1} \times_{2} \cdots \times_{N} \boldsymbol{U}_{N}" />
 </p>
+
 ### Solution:
 
 &nbsp;&nbsp;&nbsp;&nbsp; Once more it will be possible to find an example in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework6.m) about the usage of the method n_mod_prod(Tensor, Matrices, Modes) from the class tensor.
