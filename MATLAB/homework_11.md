@@ -26,4 +26,4 @@ The error of the i-th iteration is obtained with
   <img src="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Images/hw11a2.png" />
 </p>
 
-&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework11.m).
+&nbsp;&nbsp;&nbsp;&nbsp; The code for this results can be acessed in this [link](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_11.m).
