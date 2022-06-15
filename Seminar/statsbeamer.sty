@@ -1,0 +1,122 @@
+\pgfdeclareimage[width=3cm]{UFC}{figs/icon.pdf}
+
+% Define the colours that are to be used in the presentation
+\definecolor{oxfordblue}{RGB}{0,33,71}          % Oxford Blue
+% \definecolor{oxfordgold}{cmyk}{0,0.21,0.60,0.30}    % Oxford Gold
+
+%% Title slide formatting %%
+% \setbeamerfont{title}{size=\Large}
+% \setbeamerfont{subtitle}{size=\normalsize}
+
+% Reformat Title Page
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{institute}{fg=white}
+\setbeamercolor*{subtitle}{fg=white}
+\setbeamercolor*{date}{fg=white}
+\setbeamerfont*{date}{size=\small}
+
+\setbeamertemplate{title page}{
+    % \setbeamercolor{background canvas}{bg=oxfordblue}%  blue background
+    \vspace{1cm}
+    \begin{centering}
+        {
+        % \usebeamerfont{title}
+        \LARGE
+        \usebeamercolor[fg]{title}
+        \inserttitle\\[1.5cm]
+        }
+        {
+        % \usebeamerfont{subtitle}
+        \large
+        \usebeamercolor[fg]{subtitle}
+        \insertauthor\\[0.5cm]
+        }
+        {
+        % \usebeamerfont{subtitle}
+        \small
+        \usebeamercolor[fg]{subtitle}
+        \insertinstitute\\[1cm]
+        }
+    \end{centering}
+    
+    \begin{flushright}
+        {
+        \usebeamerfont{date}
+        \usebeamercolor[fg]{date}
+        \insertdate
+        }
+    \end{flushright}
+    
+    \begin{picture}(0,0)
+        \put(0,20){%
+            \pgfuseimage{UFC}
+        }
+    \end{picture}
+    
+    \newcommand{\maketitleoxstats}{
+        \setbeamertemplate{footline}{} %removefootline for this slide
+        \setbeamertemplate{headline}{}
+        \setbeamercolor{background canvas}{bg=oxfordblue}
+        \maketitle
+        \setbeamercolor{background canvas}{bg=}
+    }
+}
+
+%% General slide formatting %%
+
+\setbeamertemplate{frametitle}
+{%
+    \begin{picture}(0,0)
+        \put(-8,-10){%
+            % \Large\color{oxfordblue}\insertframetitle
+            \large\bf\color{oxfordblue}\insertframetitle
+        }
+        \put(-7,-20){%
+            \normalsize\color{oxfordblue}\insertframesubtitle
+        }
+    \end{picture}
+}
+
+% \setbeamertemplate{footline}
+% {%
+%     \begin{picture}(0,0)
+%         \put(20,32){%
+%             \color{oxfordblue}
+%             \rule{320pt}{0.2pt}
+%         }
+%         \put(20,10){%
+%            \pgfuseimage{statslogo2}
+%         }
+%         \put(100,20){%
+%             \color{oxfordblue}
+%             \insertshorttitle
+%         }
+%         \put(230,20){%
+%             \color{oxfordblue}
+%             \insertshortdate
+%         }
+%         \put(337,20){%
+%             \color{oxfordblue}
+%             % \insertpagenumber
+%             \insertframenumber % this allows using pause without increasing page number
+%         }
+%     \end{picture}%
+% }
+
+% Shows table of contents at each section
+% \AtBeginSection[]
+%   {
+%     \ifnum \value{framenumber}>1
+%       \begin{frame}<beamer>
+%       \frametitle{Outline}
+%       \tableofcontents[currentsection]
+%       \end{frame}
+%     \else
+%     \fi
+%   }
+
+\setlength{\abovedisplayskip}{3pt} % reduces spaces above displayed items (e.g. equations)
+\setlength{\belowdisplayskip}{3pt} % reduces spaces below displayed items (e.g. equations)
+
+\raggedbottom % prevents LaTeX from adding vertical white space in strange places on pages that it cannot fill properly.

@@ -1,0 +1,44 @@
+%load any additional packages
+
+\usepackage[UKenglish]{babel}
+\usepackage[utf8]{inputenc} % so we can input characters with accents (e.g. ő)
+
+\usepackage{statsbeamer}
+\usepackage{multirow,booktabs}%pacotes para tabelas
+\usepackage{subcaption}
+\usepackage[font=footnotesize,skip=2pt]{caption}
+%\captionsetup[table]{skip=2pt}
+\usepackage{ragged2e}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\tikzset{%
+  >={Latex[width=2mm,length=2mm]},
+  % Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw=black,
+                           minimum width=4cm, minimum height=1cm,
+                           text centered, font=\sffamily},
+  activityStarts/.style = {base, fill=oxfordblue!30},
+       startstop/.style = {base, fill=oxfordblue!30},
+    activityRuns/.style = {base, fill=oxfordblue!30},
+         process/.style = {base, minimum width=2.5cm, fill=orange!15},
+}
+
+\usepackage{graphicx} % ease graphics management
+\graphicspath{{figs/}} % define folder with images
+\usefonttheme{serif} % change font to allow \textbf{}
+\usepackage{charter} % Nicer fonts
+
+\usepackage{cancel}
+\usepackage{amsmath,amsthm,amssymb} % for math equations
+
+\usepackage[numbers]{natbib} % richer citation
+\usepackage{breakcites} % avoid overfull hbox for long cites
+
+\usepackage{algorithm,algorithmic}                                          % Pseudo-code environment
+\usepackage{amsmath,amsfonts,amsthm,amssymb,bm,mathdots,mathtools,bigints}  % Math packages
+
+\usepackage{caption}                        % Tools for customizing the \caption{} command
+\usepackage{subcaption}						% Environment to create subcaptions
+
+\captionsetup{singlelinecheck = false, format= hang, justification=raggedright, font=footnotesize, labelsep=space} % ABNT Format for Caption

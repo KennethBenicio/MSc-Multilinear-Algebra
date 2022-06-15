@@ -1,0 +1,66 @@
+%% If you have any problems using this template, please contact the author: %%
+%% Chris Carmona: carmona@stats.ox.ac.uk ; chriscarmona.me %%
+
+\documentclass[10pt]{beamer}
+
+\include{preamble}
+%% Information (author, title, etc.) %%
+
+\title[Short Title]{% short title for footer
+    Adaptative Filtering using Alternating Tensor Least Mean Squares 
+    \vspace{0.5cm}
+}
+
+\author{Kenneth B. dos A. Benício}
+
+\institute{
+        \textit{Department of Teleinformatics Engineering}\\
+        \textit{Federal University of Ceará}
+        \vspace{0.5cm}
+}
+\date[Fortaleza, 2021]{% short date for footer
+    Fortaleza, 2021
+}
+
+
+%% Content of slides %%
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%
+
+% Title slide %
+{
+    \setbeamertemplate{footline}{}
+    \setbeamertemplate{headline}{}
+    \setbeamercolor{background canvas}{bg=oxfordblue}
+    \maketitle
+}
+
+%----------------------------%
+% Contents slide
+ \begin{frame}
+ \frametitle{Outline}
+ \tableofcontents
+ \end{frame}
+%----------------------------%
+
+%now include the slides
+\setbeamercovered{transparent}
+%----------------------------%
+\section{Introduction}
+\begin{frame}
+    \frametitle{\insertsection}
+    \begin{itemize}
+        \justifying
+        \item Comparisons with LMS, NLMS, Newton, Deterministic Gradient, ATLMS and TLMS.
+        \item run time vs. Performance
+        \item Impact of digital modulation
+        \item Symbol Error Rate vs. SNR
+        \item Constelattions Diagram 
+        \item Convergence Analysis 
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%
