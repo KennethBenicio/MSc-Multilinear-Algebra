@@ -1,0 +1,348 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amstext,amsmath,amssymb}
+\usepackage[shortlabels]{enumitem}
+
+\setlength{\oddsidemargin}{0cm} %
+\setlength{\evensidemargin}{0cm} %
+\setlength{\topmargin}{0cm} %
+\setlength{\textwidth}{16cm} %
+\setlength{\textheight}{22.5cm} %
+
+\pagestyle{fancy}
+\newcommand{\assunto}{Multilinear Transformations and Rank}
+
+\sloppy
+
+\begin{document}
+
+\input{front.tex}
+\thispagestyle{empty}
+
+\newpage
+
+\thispagestyle{empty}
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{{\Large\bfseries\arabic{enumi}.}}
+   
+    \item This problem can be solved by showing that the multilinear rank of the tensor $\mathcal{Y}$ is the same one as in tensor $\mathcal{X}$. The tensor $\mathcal{X}$ has dimensions $\mathbb{C}^{I_{1} \times ... \times I_{N}}$. Since the multilinear rank is defined by the rank of each unfold of a given tensor we can then define the multilinear rank of $\mathcal{X}$ as the group of values obtained with the following operation
+    
+        \begin{align}
+            \forall n \in \{1, \cdots, N\}, R_{n} &= \text{Rank}\left( \left[ \mathcal{X} \right]_{(n)} \right) \leq \text{min} \left\{ I_{n}, \prod_{m \neq n} I_{m} \right\}. \label{eq:01}
+        \end{align}
+        
+        \paragraph{}In a similar fashion we can define the multilinear rank of the tensor $\mathcal{Y}$  writing its unfoldings according to the equation of the multilinear transformation
+        
+        \begin{align}
+            \mathcal{Y} &= \mathcal{X} \times_{1} \boldsymbol{A}^{(1)} \times_{2} \cdots \times_{N} \boldsymbol{A}^{(N)} \in \mathbb{C}^{I_{1} \times ... \times I_{N}}, \\
+            \left[ \mathcal{Y} \right]_{(n)} &= \boldsymbol{A}^{(n)} \left[ \mathcal{X} \right]_{(n)} \left( \boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right)^{\text{T}} \in \mathbb{C}^{I_{n} \times \prod_{m \neq n} I_{m}}.
+        \end{align}
+        
+        \paragraph{}From equation above we can then write the following expression for the multilinear rank of $\mathcal{Y}$, considering $\forall n \in \{1, \cdots, N\}$, as
+        
+        \begin{align}
+            R_{n} = \text{Rank}\left( \left[ \mathcal{Y} \right]_{(n)} \right) = \text{Rank}\left( \boldsymbol{A}^{(n)} \left[ \mathcal{X} \right]_{(n)} \left( \boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right)^{\text{T}} \right),
+        \end{align}
+        
+        and we know that every $\boldsymbol{A}^{(n)}$ matrix is full-rank since by the definition of the multilinear transformation these matrices are nonsingular. Furthermore, is necessary to remember that the kronecker product will not increase the rank and thus the product on the right will have its rank limited by the rank of $\mathcal{X}$ and will be the product between the ranks of each matrix. In the same manner the matrix on the left will have its rank limited by the tensor $\mathcal{X}$. Consequently, knowing that the column rank and the row rank of a square matrix coincide and that the rank of a nonsquare matrix is at most the minimum between the column rank and the row rank we have
+        
+        \begin{align}
+            \text{Rank}\left( \boldsymbol{A}^{(n)} \right) &= I_{n}, \label{mtx1} \\
+            \text{Rank}\left( \left[ \mathcal{X} \right]_{(n)} \right) &\leq \text{min} \left\{ I_{n}, \prod_{m \neq n} I_{m} \right\}, \label{mtx2} \\
+            \text{Rank}\left( \boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right) &= \prod_{m \neq n} I_{m}. \label{mxt3}
+        \end{align}
+        
+        \paragraph{}Now the product between (\ref{mtx2}) and (\ref{mxt3}) it is a full-rank matrix projected onto the column space of the relevant matrices and its rank is defined as
+        
+        \begin{align}
+            \text{Rank}\left( \left[ \mathcal{X} \right]_{(n)} \left( \boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right) \right) &\leq \text{min} \left\{ \prod_{m \neq n} I_{m}, \prod_{m \neq n} I_{m} \right\}, \\  
+            \text{Rank}\left( \left[ \mathcal{X} \right]_{(n)} \left( \boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right) \right) &= \prod_{m \neq n} I_{m}.
+        \end{align}
+        
+        \paragraph{}Therefore, the product between $\boldsymbol{A}^{(n)}$ and $\left[ \mathcal{X} \right]_{(n)} \left( \boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right) $ is projected onto the column space of these matrices and can be evaluate as
+        
+        \begin{align}
+            \text{Rank}\left( \boldsymbol{A}^{(n)} \left[ \mathcal{X} \right]_{(n)} \left( \boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right) \right) &\leq \text{min} \left\{ I_{n}, \prod_{m \neq n} I_{m} \right\}, \\
+            \text{Rank}\left( \mathcal{Y} \right) &\leq \text{min} \left\{ I_{n}, \prod_{m \neq n} I_{m} \right\}.
+        \end{align}
+        
+        \paragraph{}As consequence we have that the multilinear rank of tensor $\mathcal{Y}$ is limited by the multilinear rank of the core tensor meaning that both share the geometric structure\footnote{Only if the matrices $\boldsymbol{A}^{(n)} \in \mathbb{C}^{I_{n} \times I_{n}}$ are nonsingular.}
+        
+        \begin{align}
+            \forall n \in \{1, \cdots, N\}, R_{n} = \text{Rank}\left( \left[ \mathcal{Y} \right]_{(n)} \right) = \text{Rank}\left( \left[ \mathcal{X} \right]_{(n)} \right).
+        \end{align}
+    
+    \item 
+        
+        \begin{enumerate}
+        
+            \item Proof $\mathcal{Y} = \mathcal{X} \times_{n} \boldsymbol{P}^{(n)}$ that is indeed a projection:
+            
+            \paragraph{}Since we have that the matrix $\boldsymbol{P}^{(n)}$ is idempotent and self-adjoint then $\left(\boldsymbol{P}^{(n)}\right)^2 = \boldsymbol{P}^{(n)}$ and $\left(\boldsymbol{P}^{(n)}\right)^{\text{H}} = \boldsymbol{P}^{(n)}$, respectively. To show that $\boldsymbol{P}^{(n)}$ is a projection of tensor $\mathcal{X}$ onto $\mathcal{Y}$ tensor subspace defined by $\mathcal{Y} = \mathcal{X} \times_{n} \boldsymbol{P}^{(n)}$ we need to show that
+        
+            \begin{align}
+                \left( \mathcal{X} \times_{n} \boldsymbol{P}^{(n)} \right) \times_{n} \boldsymbol{P}^{(n)} &= \left( \mathcal{X} \times_{n} \boldsymbol{P}^{(n)} \right), \\
+                \left< \mathcal{X} \times_{n} \boldsymbol{P}^{(n)}, \mathcal{Y} \right> &= \left< \mathcal{X},  \mathcal{Y} \times_{n} \boldsymbol{P}^{(n)}\right>.  
+            \end{align}
+            
+            \paragraph{}The first expression can be obtained if we develop the nth mode product by using the unfolding operation
+            
+            \begin{align}
+                \left( \mathcal{X} \times_{n} \boldsymbol{P}^{(n)} \right) \times_{n} \boldsymbol{P}^{(n)}, \\
+                \left( \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} \right) \times_{n} \boldsymbol{P}^{(n)}, \\
+                \boldsymbol{P}^{(n)} \left( \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} \right) = \left(\boldsymbol{P}^{(n)}\right)^2 \left[\mathcal{X}\right]_{(n)}, \\
+            \end{align}
+            
+            and because we have $\left(\boldsymbol{P}^{(n)}\right)^2 = \boldsymbol{P}^{(n)}$ then 
+            
+            \begin{align}
+                \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} = \mathcal{X} \times_{n} \boldsymbol{P}^{(n)}.
+            \end{align}
+            
+            \paragraph{}Relatively to the nth mode product self-adjoint property we can start by writing 
+            
+            \begin{align}
+                \mathcal{X} \times_{n} \boldsymbol{P}^{(n)} &= \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}, \\
+                \mathcal{Y} \times_{n} \left(\boldsymbol{P}^{(n)}\right)^{\text{H}} &= \left(\boldsymbol{P}^{(n)}\right)^{\text{H}} \left[\mathcal{Y}\right]_{(n)}, \\
+            \end{align}
+            
+            \paragraph{} and starting from the inner-product expression we can write
+            
+            \begin{align}
+                \left< \mathcal{X} \times_{n} \boldsymbol{P}^{(n)}, \mathcal{Y} \right>, \\
+                \left< \mathcal{X} \times_{n} \boldsymbol{P}^{(n)}, \mathcal{X} \times_{n} \boldsymbol{P}^{(n)} \right>, \\
+                \left< \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}, \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} \right>,
+            \end{align}
+        
+            and as long as $\boldsymbol{P}^{(n)}$ has a self-adjoint
+            
+            \begin{align}
+                \left< \left[\mathcal{X}\right]_{(n)}, \left( \boldsymbol{P}^{(n)} \right)^{\text{H}} \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} \right>, \\
+                \left< \left[\mathcal{X}\right]_{(n)}, \boldsymbol{P}^{(n)} \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} \right>,
+            \end{align}
+            
+            and knowing that $\left[\mathcal{Y}\right]_{(n)} = \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}$ 
+            
+            \begin{align}
+                \left< \left[\mathcal{X}\right]_{(n)}, \boldsymbol{P}^{(n)} \left[\mathcal{Y}\right]_{(n)} \right>,
+            \end{align}
+            
+            and redoing the nth mode product leads to
+            
+            \begin{align}
+                \left< \mathcal{X}, \mathcal{Y} \times_{n} \boldsymbol{P}^{(n)} \right>.
+            \end{align}
+            
+            \item Proof the nonexpansiveness of $|| \mathcal{X} \times_{n} \boldsymbol{P}^{(n)} ||_{\text{F}} = || \mathcal{X} ||_{\text{F}}$:
+            
+            \paragraph{}We can start by writing the squared Frobenius norm with the inner product notation and then defining the self-adjoint of the projection
+            
+            \begin{align}
+                || \mathcal{X} \times_{n} \boldsymbol{P}^{(n)} ||^{2}_{\text{F}} &= || \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} ||^{2}_{\text{F}} , \\ || <\boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}, \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}>||^{2}_{\text{F}} &= || < \left( \boldsymbol{P}^{(n)} \right)^{*} \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}, \left[\mathcal{X}\right]_{(n)}>||^{2}_{\text{F}}, \\
+                || < \boldsymbol{P}^{(n)} \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}, \left[\mathcal{X}\right]_{(n)}>||^{2}_{\text{F}} &= || < \left( \boldsymbol{P}^{(n)} \right)^{2} \left[\mathcal{X}\right]_{(n)}, \left[\mathcal{X}\right]_{(n)}>||^{2}_{\text{F}},
+            \end{align}
+            
+            and since we already know that $\boldsymbol{P}^{(n)}$ is idempotent then
+            
+            \begin{align}
+                || \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} ||^{2}_{\text{F}} &= || < \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}, \left[\mathcal{X}\right]_{(n)}>||^{2}_{\text{F}}. \label{eq:03}
+            \end{align}
+            
+            \paragraph{}Equation (\ref{eq:03}) is a well known expression from Linear Algebra and with this the tensor expression could be reduced to a regular matrix expression. To finish, we can apply the Cauchy-Schwarz inequality and
+            
+            \begin{align}
+                || \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} ||^{2}_{\text{F}} &= || < \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}, \left[\mathcal{X}\right]_{(n)}>||^{2}_{\text{F}}, \\
+                || \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} ||^{2}_{\text{F}} &\leq || \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)}||_{\text{F}} \hspace{.25cm} || \left[\mathcal{X}\right]_{(n)} ||_{\text{F}} , \\
+                || \boldsymbol{P}^{(n)} \left[\mathcal{X}\right]_{(n)} ||_{\text{F}} &\leq || \left[\mathcal{X}\right]_{(n)} ||_{\text{F}}.
+            \end{align}
+            
+            \paragraph{}Thus, the nth-mode product is a non-expansive operation.
+            
+        \end{enumerate}
+        
+    \item From previous problems we know that the multilinear rank of $\mathcal{X} \in \mathbb{C}^{I_{1} \times \cdots \times I_{N}}$ is $(R_{1}, \cdots, R_{N})$ and that we can easily acquire an expression for it by analyzing the profile of the unfoldings of said tensor. Moreover we can define a multilinear transformation where tensor $\mathcal{X}$ acts as the core tensor. Thus, we define another tensor, let's call it $\mathcal{Y}$, where its nth mode unfolding can be written as
+        
+        \begin{align}
+            \mathcal{Y} &= \mathcal{X} \times_{1} \boldsymbol{A}^{(1)} \times_{2} \cdots \times_{N} \boldsymbol{A}^{(N)} \in \mathbb{C}^{I_{1} \times ... \times I_{N}}, \\
+            \left[\mathcal{Y}\right]_{(n)} &= \boldsymbol{A}^{(n)} \left[\mathcal{X}\right]_{(n)} \left(\boldsymbol{A}^{(N)} \otimes \cdots \otimes \boldsymbol{A}^{(n+1)} \otimes \boldsymbol{A}^{(n-1)} \otimes \cdots \otimes \boldsymbol{A}^{(1)} \right)^{T} \in \mathbb{C}^{I_{n} \times \prod_{m \neq n} I_{m}}. \label{eq:02}
+        \end{align}
+    
+        \paragraph{}From Equation (\ref{eq:02}) and with a similar procedure already developed in a previous problem we can obtain an expression for the multilinear rank of $\mathcal{Y}$ as
+        
+        \begin{align}
+            \forall n \in \{1, \cdots, N\}, \text{Rank} \left( \left[\mathcal{Y}\right]_{(n)} \right) \leq \text{min} \left\{ I_{n}, \prod_{m \neq n} I_{m} \right\},
+        \end{align}
+        
+        and as proofed before we know that tensors are objects with a well-defined geometry and that the multilinear rank is in fact a property of the tensor that is not lost when a multilinear transformation is applied\footnote{If the group of factor matrices are nonsingular.}. Thus, we can guarantee that the multilinear rank of the tensor $\mathcal{Y}$ will be the same as the one for the tensor $\mathcal{X}$
+
+        \begin{align}
+            \forall n \in \{1, \cdots, N\}, \text{Rank} \left( \left[\mathcal{X}\right]_{(n)} \right) \leq \text{min} \left\{ I_{n}, \prod_{m \neq n} I_{m} \right\},
+        \end{align}
+        
+    \item In the context of multilinear transformation
+        
+        \begin{enumerate}
+           
+            \item Proof that the operation is linear in the transformed tensor:
+            
+                \begin{align}
+                    (\alpha_{1} \mathcal{X}_{1} + \alpha_{2} \mathcal{X}_{2}) \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{N} \boldsymbol{A}^{(N)} \in \mathbb{C}^{I_{1} \times ... \times I_{N}}.
+                \end{align}
+                
+                \paragraph{}Starting by applying the following property of the n-mode product we can reorder the expression in a usefully way
+                
+                \begin{align}
+                    \mathcal{X} \times_{m} \boldsymbol{A}^{(m)} \times_{n} \boldsymbol{A}^{(n)} = \mathcal{X} \times_{n} \boldsymbol{A}^{(n)} \times_{m} \boldsymbol{A}^{(m)}. 
+                \end{align}
+                
+                \paragraph{}The core of this demonstration is the fact that we can reduce the nth mode product to a regular product between matrices which is known to be a linear operation. Thus, 
+                
+                \begin{align}
+                    &(\alpha_{1} \mathcal{X}_{1} + \alpha_{2} \mathcal{X}_{2}) \times_{n} \boldsymbol{A}^{(n)} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)}, \\
+                    &\boldsymbol{A}^{(n)} \left( \alpha_{1} \left[\mathcal{X}_{1}\right]_{(n)} +  \alpha_{2} \left[\mathcal{X}_{2}\right]_{(n)} \right) \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)},
+                \end{align}
+                
+                and now considering that the product between matrices is linear we have
+                
+                \begin{align}
+                    \left(\alpha_{1} \boldsymbol{A}^{(n)} \left[\mathcal{X}_{1}\right]_{(n)}\right) \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)} + \\ 
+                    \left(\alpha_{2} \boldsymbol{A}^{(n)} \left[\mathcal{X}_{2}\right]_{(n)}\right)  \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)},
+                \end{align}
+                
+                and finally redoing the nth mode product leads to
+                
+                \begin{align}
+                    \alpha_{1} \mathcal{X}_{1} \times_{n} \boldsymbol{A}^{(n)} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)} + \\ 
+                    \alpha_{2} \mathcal{X}_{2} \times_{n} \boldsymbol{A}^{(n)} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)},
+                \end{align}
+                
+            \item Proof that the operation is linear for each factor matrix: 
+                
+                \begin{align}
+                    \mathcal{X} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n} (\alpha_{1} \boldsymbol{Z}^{(n)}_{1} + \alpha_{2} \boldsymbol{Z}^{(n)}_{2}) \times_{n+1} \cdots \times_{N} \boldsymbol{A}^{(N)} \in \mathbb{C}^{I_{1} \times ... \times I_{N}}.
+                \end{align}
+                
+                \paragraph{}In a similar view of the previous item we can start by reordering the n-mode product and explore the regular properties of the product between matrices
+                
+                \begin{align*}
+                    \mathcal{X} \times_{n} (\alpha_{1} \boldsymbol{Z}^{(n)}_{1} + \alpha_{2} \boldsymbol{Z}^{(n)}_{2}) \times_{1} \boldsymbol{A}^{(1)} \cdots  \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)} \in \mathbb{C}^{I_{1} \times ... \times I_{N}}, \\
+                    (\alpha_{1} \boldsymbol{Z}^{(n)}_{1} + \alpha_{2} \boldsymbol{Z}^{(n)}_{2}) \left[\mathcal{X}\right]_{(n)} \times_{1} \boldsymbol{A}^{(1)} \cdots  \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)}.
+                \end{align*}
+                
+                \paragraph{}Now applying the distribute property and redoing the nth mode product notation
+                
+                \begin{align*}
+                    &\alpha_{1} \boldsymbol{Z}^{(n)}_{1} \left[\mathcal{X}\right]_{(n)} \times_{1} \boldsymbol{A}^{(1)}  \cdots  \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)} + \\
+                    &\alpha_{2} \boldsymbol{Z}^{(n)}_{2} \left[\mathcal{X}\right]_{(n)} \times_{1} \boldsymbol{A}^{(1)} \cdots  \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)}, \\
+                    &\alpha_{1} \mathcal{X} \times_{n} \boldsymbol{Z}^{(n)}_{1} \times_{1} \boldsymbol{A}^{(1)} \cdots  \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)} + \\
+                    &\alpha_{2} \mathcal{X} \times_{n} \boldsymbol{Z}^{(n)}_{2} \times_{1} \boldsymbol{A}^{(1)} \cdots  \times_{n-1} \boldsymbol{A}^{(n-1)} \times_{n+1} \boldsymbol{A}^{(n+1)} \cdots \times_{N} \boldsymbol{A}^{(N)},
+                \end{align*}
+                
+                and reordering the expression results the following expression
+                
+                \begin{align*}
+                    &\alpha_{1} \mathcal{X}  \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n} \boldsymbol{Z}^{(n)}_{1} \cdots \times_{N} \boldsymbol{A}^{(N)} + \\
+                    &\alpha_{2} \mathcal{X}  \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{n} \boldsymbol{Z}^{(n)}_{2} \cdots \times_{N} \boldsymbol{A}^{(N)},
+                \end{align*}
+                
+            \item Using the previous problems obtain an expression for:
+            
+                \begin{align}
+                    \mathcal{X} = \boldsymbol{u}_{1} \circ \boldsymbol{v}_{1} \circ \boldsymbol{w}_{1} + \boldsymbol{u}_{2} \circ \boldsymbol{v}_{2} \circ \boldsymbol{w}_{2} \rightarrow \mathcal{X} \times_{1} \boldsymbol{A} \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C}.
+                \end{align}
+            
+                \paragraph{}First, we can input the low-rank decomposition of tensor $\mathcal{X}$ into the multilinear transformation
+                
+                \begin{align}
+                    \mathcal{X} &\times_{1} \boldsymbol{A} \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C}, \\
+                    \left( \boldsymbol{u}_{1} \circ \boldsymbol{v}_{1} \circ \boldsymbol{w}_{1} + \boldsymbol{u}_{2} \circ \boldsymbol{v}_{2} \circ \boldsymbol{w}_{2} \right) &\times_{1} \boldsymbol{A} \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C},
+                \end{align}
+                
+                and knowing that the nth mode product is a linear operation
+                
+                \begin{align}
+                    \left( \boldsymbol{u}_{1} \circ \boldsymbol{v}_{1} \circ \boldsymbol{w}_{1} \right) &\times_{1} \boldsymbol{A} \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C} + \left( \boldsymbol{u}_{2} \circ \boldsymbol{v}_{2} \circ \boldsymbol{w}_{2} \right) \times_{1} \boldsymbol{A} \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C},
+                \end{align}
+                
+                considering that both terms have the same structure we can focus on only one and later apply the result to the other. Before we proceed we should define the unfolding of the subtensor formed by the outer product of $\mathcal{X}_{1} = \boldsymbol{u}_{1} \circ \boldsymbol{v}_{1} \circ \boldsymbol{w}_{1}$ as\footnote{Since we are manipulating vectors the Khatri-Rao product can be simply reduced to the Kronecker product.}
+                
+                \begin{align}
+                    \left[\mathcal{X}_{1}\right]_{(1)} = \boldsymbol{u}_{1} (\boldsymbol{v}_{1} \otimes \boldsymbol{w}_{1})^{\text{T}} \in \mathbb{C}^{I_{1} \times I_{2} I_{3}}, \\
+                    \left[\mathcal{X}_{1}\right]_{(2)} = \boldsymbol{v}_{1} (\boldsymbol{u}_{1} \otimes \boldsymbol{w}_{1})^{\text{T}} \in \mathbb{C}^{I_{2} \times I_{1} I_{3}}, \\
+                    \left[\mathcal{X}_{1}\right]_{(3)} = \boldsymbol{w}_{1} (\boldsymbol{u}_{1} \otimes \boldsymbol{v}_{1})^{\text{T}} \in \mathbb{C}^{I_{3} \times I_{1} I_{2}}.
+                \end{align}
+                
+                \paragraph{}Now applying these expressions onto the multilinear transformation of the first subtensor as
+                
+                \begin{align}
+                    \left( \boldsymbol{A} \left[\mathcal{X}_{1}\right]_{(1)} \right) \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C} = \left[ \boldsymbol{A}\boldsymbol{u}_{1} (\boldsymbol{v}_{1} \otimes \boldsymbol{w}_{1})^{\text{T}}  \right] \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C},
+                \end{align}
+                
+                and by understanding that $\boldsymbol{A}\boldsymbol{u}_{1} \in \mathbb{C}^{I_{1} \times 1}$ is a vector we can redo the outer product by doing the folding operation, creating a new subtensor each time, and repeat the process for each factor matrix. By the end of this we reach the expression 
+                
+                \begin{align}
+                    \left( \boldsymbol{A} \boldsymbol{u}_{1} \circ \boldsymbol{v}_{1} \circ \boldsymbol{w}_{1} \right) \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C}, \\
+                    \left( \boldsymbol{A} \boldsymbol{u}_{1} \circ \boldsymbol{B} \boldsymbol{v}_{1} \circ \boldsymbol{w}_{1} \right) \times_{3} \boldsymbol{C}, \\
+                    \left( \boldsymbol{A} \boldsymbol{u}_{1} \circ \boldsymbol{B} \boldsymbol{v}_{1} \circ \boldsymbol{C} \boldsymbol{w}_{1} \right) \in \mathbb{C}^{I_{1} \times I_{2} \times I_{3}}.
+                \end{align}
+                
+                \paragraph{}Now we can apply the same process to the other subtensor defined as $\mathcal{X}_{2} = \boldsymbol{u}_{2} \circ \boldsymbol{v}_{2} \circ \boldsymbol{w}_{2}$ and sum the contributions of each one since the nth mode product is already known to be a linear operation
+                
+                \begin{align}
+                    \mathcal{X} &\times_{1} \boldsymbol{A} \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C} = \left( \boldsymbol{A} \boldsymbol{u}_{1} \circ \boldsymbol{B} \boldsymbol{v}_{1} \circ \boldsymbol{C} \boldsymbol{w}_{1} \right) + \left( \boldsymbol{A} \boldsymbol{u}_{2} \circ \boldsymbol{B} \boldsymbol{v}_{2} \circ \boldsymbol{C} \boldsymbol{w}_{2} \right) \in \mathbb{C}^{I_{1} \times I_{2} \times I_{3}}.
+                \end{align}
+                
+                \paragraph{}Thus, by applying the nth mode product between a tensor and a factor matrix we are projecting the fibers of said tensor onto the column space of the corespondent factor matrix.
+        \end{enumerate}
+    
+    \item In the context of High-Order Single Value Decomposition (HOSVD)
+    
+        \begin{enumerate}
+            
+            \item Show that, for any orthogonal projector $\boldsymbol{P}$ and any mode $\boldsymbol{n}$, we have
+            
+                \begin{align}
+                    \left< \mathcal{X} \times_{n} \boldsymbol{P}, \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) \right> &= 0, \label{eq:04} \\
+                    || \mathcal{X} \times_{n} \boldsymbol{P} - \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}} &= || \mathcal{X} \times_{n} \boldsymbol{P} ||^{2}_{\text{F}} + ||  \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}} \label{eq:05}.
+                \end{align}
+                
+                \paragraph{}To obtain Equation (\ref{eq:04}) we can just reduce it to the matrix case by developing the nth mode product
+                
+                \begin{align}
+                    \left< \mathcal{X} \times_{n} \boldsymbol{P}, \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) \right> &=\left< \boldsymbol{P} \left[\mathcal{X}\right]_{(n)}, (\boldsymbol{I} - \boldsymbol{P}) \left[\mathcal{X}\right]_{(n)} \right>,
+                \end{align}
+                
+                but we know from Linear Algebra that the matrix $(\boldsymbol{I} - \boldsymbol{P})$ is the orthogonal complement of the projection $\boldsymbol{P}$ meaning that the inner product between $\boldsymbol{P} \left[\mathcal{X}\right]_{(n)}$ and $(\boldsymbol{I} - \boldsymbol{P}) \left[\mathcal{X}\right]_{(n)}$ will be zero. In sequence we can use this knowledge to develop the expression for $|| \mathcal{X} \times_{n} \boldsymbol{P} - \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}}$ as
+                
+                \begin{align*}
+                    || \mathcal{X} \times_{n} \boldsymbol{P} - \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}} &= || \mathcal{X} \times_{n} \boldsymbol{P} ||^{2}_{\text{F}} + ||  \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}} -2 ||  \mathcal{X} \times_{n} \boldsymbol{P}  ||_{\text{F}} || \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||_{\text{F}},
+                \end{align*}
+                
+                and we know that $||  \mathcal{X} \times_{n} \boldsymbol{P}  ||_{\text{F}} || \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||_{\text{F}} = \left< \mathcal{X} \times_{n} \boldsymbol{P}, \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) \right> = 0$ which leads to
+                
+                \begin{align*}
+                    || \mathcal{X} \times_{n} \boldsymbol{P} - \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}} &= || \mathcal{X} \times_{n} \boldsymbol{P} ||^{2}_{\text{F}} + || \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}} -2 \cdot 0, \\
+                    || \mathcal{X} \times_{n} \boldsymbol{P} - \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}} &= || \mathcal{X} \times_{n} \boldsymbol{P} ||^{2}_{\text{F}} + || \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}}.
+                \end{align*}
+                
+                \paragraph{}An interesting way to see this expression is by the Pythagorean theorem where $|| \mathcal{X} \times_{n} \boldsymbol{P} ||^{2}_{\text{F}}$ and $|| \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}}$ acts as the opposing sides to the hypotenuse $|| \mathcal{X} \times_{n} \boldsymbol{P} - \mathcal{X} \times_{n} (\boldsymbol{I} - \boldsymbol{P}) ||^{2}_{\text{F}}$.
+                
+            \item 
+            
+            \item
+            
+            \item
+            
+        \end{enumerate}
+    
+\end{enumerate}
+
+%\bibliographystyle{ieeetr}
+%\bibliography{bibliography.bib}
+
+\end{document}
+
