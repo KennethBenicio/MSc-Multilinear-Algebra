@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  15 JUN 2022 09:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  20 JUN 2022 18:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -928,20 +928,20 @@ Package caption Info: End \AtBeginDocument code.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/icon.pdf>] (./manuscript.toc) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <10> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 62.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 61.
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <7> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 62.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 61.
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <5> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 62.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 61.
  [3
 
 ]
@@ -972,7 +972,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,484b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on manuscript.pdf (3 pages, 144239 bytes).
+Output written on manuscript.pdf (3 pages, 144062 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  104 compressed objects within 2 object streams

@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1655295000 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" "manuscript.pdf" "manuscript" 1655295001
-  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" 1655295000 1582 c7d9a1be73337e38b295377616a2a859 ""
+["pdflatex"] 1655759730 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" "manuscript.pdf" "manuscript" 1655759731
+  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" 1655759730 1522 f51caa5d41387482ba61315ade00853f ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/bitstrea/charter/bchb7t.tfm" 1650183167 2732 006d846b4d54f9b40899c7c3eecd771a ""
@@ -236,11 +236,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652447722 4274140 6ffef722bc1262edc9440643c3ef1781 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652447705 2927660 d3c8a37f6e65a821ab2eaf136b52d860 ""
   "figs/icon.pdf" 1655305188 94232 e60cae5ced1f1be830392164a88a8dfb ""
-  "manuscript.aux" 1655295001 1725 67663c191891339ab9a379b9d41d15b4 "pdflatex"
-  "manuscript.nav" 1655295001 639 722ef7ea70fcd0af668aa9dd49dafe94 "pdflatex"
-  "manuscript.out" 1655295001 103 47949ac7c3dcedddeefe3cd50587dda1 "pdflatex"
-  "manuscript.tex" 1655295000 1582 c7d9a1be73337e38b295377616a2a859 ""
-  "manuscript.toc" 1655295001 80 263991203b7f4bd8ded1c23ae89802e6 "pdflatex"
+  "manuscript.aux" 1655759731 1725 67663c191891339ab9a379b9d41d15b4 "pdflatex"
+  "manuscript.nav" 1655759731 639 722ef7ea70fcd0af668aa9dd49dafe94 "pdflatex"
+  "manuscript.out" 1655759731 103 47949ac7c3dcedddeefe3cd50587dda1 "pdflatex"
+  "manuscript.tex" 1655759730 1522 f51caa5d41387482ba61315ade00853f ""
+  "manuscript.toc" 1655759731 80 263991203b7f4bd8ded1c23ae89802e6 "pdflatex"
   "preamble.tex" 1655305188 1797 eb73ea914d9b4d4c3ce2df3ef778e521 ""
   "statsbeamer.sty" 1655294567 3278 c56108c359eeb8ff995491ea5d03c98f ""
   (generated)

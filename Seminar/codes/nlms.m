@@ -1,88 +1,40 @@
-%% NLMS Filter Implementation
+%% Normalized LMS Algorithm
 clc;
 close all;
 clear all;
 
-% Learning rate
-mi = 0.5;
-% Filter order
-order = 2;
-% Number of samples
-Samples = 5000;
-% Defining the mse error and filter coeficients vectors.
-error = zeros(Samples,1);
-weights = zeros(order, Samples);
+runs = 5;
+mu = 0.005;
 
-%Wiener Solution
-wiener = [0.35;-0.15];
+QAM = 2;
+snr = 30;
+var_noise = 1/(10^(snr/10));     
 
-% Defining the energy of the noise vector.
-SNR_dB = inf;
-SNR_li = 10^(SNR_dB/10);
-variance_noise = 1/SNR_li;
-noise = sqrt(variance_noise/2).*randn(Samples,1);
-
-% Generating the original signal.
-signal_d = randn(Samples,1);
-
-% Convolving the channel and the signal.
-Hz = [1 1.6];
-signal_x = filter(Hz,1,signal_d);
-
-% Generating the noisy received signal.
-signal_x = signal_x + noise;
-
-% Defining the autocorrelation matrix and the cross-correlation vector.
-Rx = [3.56, 1.60; 1.60, 3.56;];
-p = [1; 0;];
-
-% To prevent the missmatch between the filtered signal and the desired
-% signal. After some hours of debug I found out that the filtered signal
-% was a shifted version of the desired signal.
-signal_d = signal_d(order:end,1); 
-for ss = 1:(Samples - order - 1)
-    % Normalized learning rate.
-    mi_normalized = mi/(norm(signal_x));
-    % Error between the desired signal and the filtered signal.
-    error(ss) = signal_d(ss) - weights(:,ss)' * signal_x(ss:ss+order-1); 
-    % Recursive expression.
-    weights(:,ss+1) = weights(:,ss) +  2 * mi_normalized * error(ss) * signal_x(ss:ss+order-1);
+order = 10;
+Samples = 10000;
+mse = zeros(Samples,1);
+weights = complex(zeros(order, Samples),0);
+for rr = 1:runs
+    signal_d = randi([0,1],Samples,1);
+    signal_d = 1/sqrt(2) * qammod(signal_d,QAM);
+    noise = (sqrt(var_noise/2))*(randn(Samples,1) + randn(Samples,1));
+    signal_x = signal_d + noise;
+    for kk = 1:(Samples - order - 1)
+        mu_normalized = mu/(norm(signal_x(kk:kk+order-1)));
+       % Error between the desired signal and the filtered signal.
+        error(kk) = signal_d(kk) - weights(:,kk)' * signal_x(kk:kk+order-1); 
+        % Recursive expression.
+        weights(:,kk+1) = weights(:,kk) + mu_normalized * error(kk) * signal_x(kk:kk+order-1);
+        mse(kk,1) =  mse(kk,1) + abs(signal_d(kk) - weights(:,kk+1)'*signal_x(kk:kk+order-1)).^2;
+    end
 end
-weights = flip(weights); 
+mse = mse/runs;
 
 % MSE Curve
 figure
-semilogy(1:Samples, error.^2,'-','color', [0.3010 0.7450 0.9330], "linewidth", 1, "markersize", 8);
+plot(1:Samples, 10*log10(mse),'-','color', [0.3010 0.7450 0.9330], "linewidth", 1, "markersize", 8);
 title('NLMS Behavior');
 xlabel('Samples');
 ylabel('MSE');
 grid on;
 saveas(gcf,'nlms_mse.png')
-
-% Contour
-figure
-p = [1; 0;];
-Rx = [3.56, 1.60; 1.60, 3.56;];
-[W0, W1] = meshgrid (-1:0.01:1,-1:0.01:1);
-w0 = reshape(W0,[],1);
-w1 = reshape(W1,[],1);
-[aux,~] = size(w0);
-for i = 1:aux
-   w = [w0(i); w1(i)]; 
-   % We are considering that the desired signal has unitary variance.
-   Z(i) = 1 - 2*w.'*p + w.'*Rx*w;
-end
-Z = reshape(Z,size(W0));
-contour(W0,W1,Z);
-colormap('gray')
-hold on;
-for ss = 1:(Samples - order)
-   plot(weights(1,ss),weights(2,ss),".-",'color', [0.3010 0.7450 0.9330],"markersize", 8);  
-end
-plot(wiener(1,1),wiener(2,1),"x",'color', [0.4660 0.6740 0.1880],"markersize", 6); 
-hold off;
-title('NLMS Contour');
-xlabel('W_1');
-ylabel('W_0');
-grid on;
-saveas(gcf,'nlms_contour.png')
