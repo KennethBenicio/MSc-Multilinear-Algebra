@@ -16,6 +16,7 @@
 10. [Homework 10: Multidimensional Least-Squares Kronecker Factorization
 (MLS-KronF)](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_10.md)
 11. [Homework 11: Alternating Least Squares (ALS) Algorithm](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_11.md)
+12. [Homework 12: Tensor Kronecker Product Single Value Decomposition (TKPSVD)](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_12.md)
 
 ## Libraries developed throughout the Multilinear Algebra course
 
@@ -26,3 +27,11 @@
 ## Collection of Computational Homeworks for Multilinear Algebra Course
 
 [PDF files for the proposed computational homeworks](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Homeworks)
+
+## Seminar about Tensor Least Mean Squares and its Family
+
+[Seminar Codes](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Seminar/codes)
+
+[Seminar Figures](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Seminar/figs)
+
+[Seminar Presentation](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Seminar/manuscript.pdf)

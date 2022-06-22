@@ -74,6 +74,23 @@ function C = mtx_prod_kr(A,B)
     end
 end
 
+%% Tensor Kronecker Product
+
+% This function computes the Tensor Kronecker Product of two given tensors. 
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: January 2022
+
+function C = ten_prod_kron(A,B)
+    
+    aux1 = num2cell([size(A)]);
+    aux2 = num2cell([size(B)]);
+
+    A = repelem(A,aux2{:});
+    B = repmat(B,aux1{:});
+    C = A.*B;
+    
+end
+
 %% Least-Squares Khatri-Rao Factorization (LSKRF)
 
 % This function computes the LSKRF of a given matrix.   
@@ -435,7 +452,7 @@ function [Ahat,Bhat,Chat,error] = ALS(X,R)
     Bhat = randn(ib,R) + 1j*randn(ib,R);
     Chat = randn(ic,R) + 1j*randn(ic,R);
 
-    aux = 1000;
+    aux = 10000;
     error = zeros(1,aux);
     error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
     for i = 2:aux
@@ -443,30 +460,13 @@ function [Ahat,Bhat,Chat,error] = ALS(X,R)
         Chat = mode_3*pinv((tensor.mtx_prod_kr(Bhat,Ahat)).');
         Ahat = mode_1*pinv((tensor.mtx_prod_kr(Chat,Bhat)).');
         error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
-        if abs(error(i) - error(i-1)) < eps
-            error = error(1:i);
-            break;
-        else
-            continue;
-        end
+        %if abs(error(i) - error(i-1)) < eps
+            %error = error(1:i);
+            %break;
+        %else
+            %continue;
+        %end
     end
-end
-
-%% Tensor Kronecker Product
-
-% This function computes the Tensor Kronecker Product of two given tensors. 
-% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: June 2022
-
-function C = ten_prod_kron(A,B)
-    
-    aux1 = num2cell([size(A)]);
-    aux2 = num2cell([size(B)]);
-
-    A = repelem(A,aux2{:});
-    B = repmat(B,aux1{:});
-    C = A.*B;
-    
 end
 
 %% Tensor Kronecker Product Single Value Decomposition (TKPSVD)
@@ -475,7 +475,7 @@ end
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
 % Created: June 2022
 
-function [Ahat,Bhat,Chat] = TKPSVD(tenX,tenSize,tenDim,N,R)
+function [tenAhat,tenBhat,tenChat] = TKPSVD(tenX,tenSize,tenDim,N)
     % First reorder
     var = 1:length(tenSize);
     for n = 1:N
@@ -484,16 +484,11 @@ function [Ahat,Bhat,Chat] = TKPSVD(tenX,tenSize,tenDim,N,R)
     tenXhatreorder = cell2mat(tenXhatreorder);
     tenXhat = reshape(tenX,tenXhatreorder);
     % Second reorder
-    var = 1:length(tenSize);
-    for n = 1:N
-        tenXhatpermute{n} = var(n:N:length(tenSize));
-    end
-    tenXhatpermute = cell2mat(tenXhatpermute);
-    tenXhat = permute(tenXhat,tenXhatpermute);
+    tenXhat = permute(tenXhat,[1 4 7 2 5 8 3 6 9]);
     % Third reorder
     tenXhat = reshape(tenXhat,tenDim{:});
     % ALS estimation
-    [Ahat,Bhat,Chat,~] = tensor.ALS(tenXhat,R);
+    [tenAhat,tenBhat,tenChat,~] = tensor.ALS(tenXhat,1);
 end
 
 %% Tensor Train Single Value Decomposition (TT-SVD)

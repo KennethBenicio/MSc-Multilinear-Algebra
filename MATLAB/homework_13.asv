@@ -1,9 +1,0 @@
-%% ----- Homework 13 ----- %%
-clc;
-clear;
-close all;
-
-% I need to implement th
-Ranks = [5 5 5];
-X = randn(5,5,5,5);
-[G] = tensor.TTSVD(X,Ranks);

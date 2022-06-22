@@ -42,7 +42,7 @@ for i = 2:aux
     end
 end
 
-disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with MLSKRF:')
+disp('Checking the NMSE (dB) between the original tensor X and its reconstruction with MLSKRF:')
 Xhat = tensor.fold(Ahat*(tensor.mtx_prod_kr(Chat,Bhat).'),[ia ib ic],1);
 nmsex = (norm(tensor.unfold(X- Xhat,1),'fro')^2)/(norm(tensor.unfold(X,1),'fro')^2);
 nmsex = 20*log10(nmsex)
