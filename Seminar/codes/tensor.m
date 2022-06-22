@@ -73,6 +73,7 @@ function C = mtx_prod_kr(A,B)
     end
 end
 
+
 %% Least-Squares Khatri-Rao Factorization (LSKRF)
 
 % This function computes the LSKRF of a given matrix.   

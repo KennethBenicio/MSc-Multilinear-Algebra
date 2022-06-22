@@ -1,5 +1,6 @@
 classdef tensor
     methods(Static)
+%addpath("~/MATLAB/tensorlab")
 %% Vectorize
 
 % This function computes the vec operator of a given matrix or tensor.   
@@ -71,6 +72,23 @@ function C = mtx_prod_kr(A,B)
             C(:,j) = tensor.mtx_prod_kron(A(:,j),B(:,j));
         end
     end
+end
+
+%% Tensor Kronecker Product
+
+% This function computes the Tensor Kronecker Product of two given tensors. 
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: January 2022
+
+function C = ten_prod_kron(A,B)
+    
+    aux1 = num2cell([size(A)]);
+    aux2 = num2cell([size(B)]);
+
+    A = repelem(A,aux2{:});
+    B = repmat(B,aux1{:});
+    C = A.*B;
+    
 end
 
 %% Least-Squares Khatri-Rao Factorization (LSKRF)
@@ -450,6 +468,41 @@ function [Ahat,Bhat,Chat,error] = ALS(X,R)
         end
     end
 end
-    
+
+%% Tensor Train Single Value Decomposition (TT-SVD)
+
+% This function computes the TT-SVD of a fourth order tensor but can be extended.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: June 2022
+
+function [G] = TTSVD(X,Ranks)
+    X_size = size(X);
+    % Step 1
+    X1 = tensor.unfold(X,1);
+    [U1,S1,V1] = svd(X1,'econ');
+    G1 = U1*sqrt(S1);
+    G1 = G1(:,1:Ranks(1));
+    G{1} = G1;
+    % Step 2
+    V1 = sqrt(S1)*V1';
+    V1 = V1(1:Ranks(1),:);
+    X2 = reshape(V1,[Ranks(1)*X_size(2) X_size(3)*X_size(4)]);
+    [U2,S2,V2] = svd(X2,'econ');
+    G2 = U2*sqrt(S2);
+    G2 = G2(:,1:Ranks(2));
+    G{2} = reshape(G2, [Ranks(1) X_size(2) Ranks(2)]);
+    % Step 3
+    V2 = sqrt(S2)*V2';
+    V2 = V2(1:Ranks(2),:);
+    X3 = reshape(V2,[Ranks(2)*X_size(3) X_size(4)]);
+    [U3,S3,V3] = svd(X3,'econ');
+    G3 = U3*sqrt(S3);
+    G3 = G3(:,1:Ranks(3));
+    G{3} = reshape(G3, [Ranks(2) X_size(3) Ranks(3)]);
+    V3 = sqrt(S3)*V3';
+    V3 = V3(1:Ranks(3),:);
+    G{4} = V3;
+end
+
     end
 end

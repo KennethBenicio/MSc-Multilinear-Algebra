@@ -7,7 +7,7 @@ clear all;
 Nh = 5;
 Nv = 5;
 QAM = 2;
-runs = 1000;
+runs = 2500;
 buffer = Nh*Nv;
 Samples = 15000;
 
@@ -25,6 +25,7 @@ mse = zeros(Samples,1);
 Kb = floor(Samples/(Kh + Kv));
 tic();
 for rr = 1:runs
+	rr
     % Filter weights
     weights_v = complex(ones(Nv,Samples),ones(Nv,Samples));
     weights_h = complex(ones(Nh,Samples),ones(Nh,Samples));

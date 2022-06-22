@@ -7,7 +7,7 @@ clear all;
 Nh = 5;
 Nv = 5;
 QAM = 2;
-runs = 1000;
+runs = 2500;
 buffer = Nh*Nv;
 Samples = 15000;
 
@@ -21,6 +21,7 @@ mu = 0.1;
 % Monter Carlo simulations
 mse = zeros(Samples,1);
 for rr = 1:runs
+	rr
     % Filter weights
     weights_v = complex(randn(Nv,Samples),randn(Nv,Samples));
     weights_h = complex(randn(Nh,Samples),randn(Nh,Samples));

@@ -5,7 +5,7 @@ clear all;
 
 % System parameters
 QAM = 2;
-runs = 1000;
+runs = 2500;
 order = 1;
 Samples = 15000;
 
@@ -19,6 +19,7 @@ mu = 0.1;
 % Monter Carlo simulations
 mse = zeros(Samples,1);
 for rr = 1:runs
+	rr
     % Filter weights
     weights = complex(zeros(order, Samples),0);
     
