@@ -62,4 +62,4 @@ ylabel('NMSE (dB)')
 legend_copy = legend("location", "northwest");
 set(legend_copy,'Interpreter','tex','location','northeast',"fontsize", 12)
 grid on;
-saveas(gcf,'hw9a1.png')
+saveas(gcf,'hw9.png')

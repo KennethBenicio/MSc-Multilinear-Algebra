@@ -45,13 +45,7 @@ nmse  = nmse/1000;
 figure
 txt = ['I = ' num2str(I), ', J = ' num2str(J), ' and R = ' num2str(R)];
 plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
-title(['LSKRF performance under imperfect scenario'])
-xlabel('SNR (dB)')
-ylabel('NMSE (dB)')
-legend_copy = legend("location", "northwest");
-set(legend_copy,'Interpreter','tex','location','northeast',"fontsize", 12)
-grid on;
-saveas(gcf,'hw3a1.png')
+hold on;
 
 I = 30;
 J = 10;
@@ -76,13 +70,13 @@ for snr = 1:length(SNR)
 end
 nmse  = nmse/1000;
 
-figure
 txt = ['I = ' num2str(I), ', J = ' num2str(J), ' and R = ' num2str(R)];
-plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse,'-d','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+hold off;
 title(['LSKRF performance under imperfect scenario'])
 xlabel('SNR (dB)')
 ylabel('NMSE (dB)')
 legend_copy = legend("location", "northwest");
 set(legend_copy,'Interpreter','tex','location','northeast',"fontsize", 12)
 grid on;
-saveas(gcf,'hw3a2.png')
+saveas(gcf,'hw3.png')

@@ -50,7 +50,7 @@ disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
 nmsea = (norm(A - Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmsea = 20*log10(nmsea)
 disp('Checking the NMSE (dB) between the original matrix B and its estimation:')
-nmseb = (norm(B - Bhat,'fro')^2)/(norm(B,'fro')^2);
+nmseb = (norm(B - Bhat,'fro')^2)/(norm(B,[0.3010 0.7450 0.9330]'fro')^2);
 nmseb = 20*log10(nmseb)
 disp('Checking the NMSE (dB) between the original matrix C and its estimation:')
 nmsec = (norm(C - Chat,'fro')^2)/(norm(C,'fro')^2);
