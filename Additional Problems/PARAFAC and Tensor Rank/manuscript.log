@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  22 JUN 2022 19:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  22 JUN 2022 21:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -197,20 +197,28 @@ Package pdftex.def Info: figs/icon.png  used on input line 5.
 (pdftex.def)             Requested size: 48.98586pt x 73.27803pt.
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/icon.png>] [2] (./manuscript.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/icon.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2] (./manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 3700 strings out of 478238
- 57960 string characters out of 5850456
- 345369 words of memory out of 5000000
- 21911 multiletter control sequences out of 15000+600000
- 470163 words of font info for 31 fonts, out of 8000000 for 9000
+ 3749 strings out of 478238
+ 58618 string characters out of 5850456
+ 358369 words of memory out of 5000000
+ 21938 multiletter control sequences out of 15000+600000
+ 474619 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,5n,67p,348b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on manuscript.pdf (2 pages, 257075 bytes).
+ 60i,12n,67p,458b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on manuscript.pdf (2 pages, 295555 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
