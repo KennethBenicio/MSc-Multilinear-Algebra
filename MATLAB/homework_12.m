@@ -54,8 +54,11 @@ end
 disp('Checking the NMSE (dB) between the original tensor X and its reconstruction with TKPSVD:')
 nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2);
 nmsex = 20*log10(nmsex)
+disp('Checking the NMSE (dB) between the original matrix A and its reconstruction with TKPSVD:')
 nmsea = 20*log10((norm(A- Ahat,'fro')^2)/(norm(A,'fro')^2))
+disp('Checking the NMSE (dB) between the original matrix B and its reconstruction with TKPSVD:')
 nmseb = 20*log10((norm(B- Bhat,'fro')^2)/(norm(B,'fro')^2))
+disp('Checking the NMSE (dB) between the original matrix C and its reconstruction with TKPSVD:')
 nmsec = 20*log10((norm(C- Chat,'fro')^2)/(norm(C,'fro')^2))
 
 %% Monte Carlo Simulation

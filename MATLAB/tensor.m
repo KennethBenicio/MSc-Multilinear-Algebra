@@ -496,9 +496,31 @@ function [Ahat,Bhat,Chat] = TKPSVD(tenX,tenSize,tenDim,N,R)
     [Ahat,Bhat,Chat,~] = tensor.ALS(tenXhat,R);
 end
 
+%% Tensor Contraction
+
+% This function computes the tensor contraction between a tensor and a matrix
+% or between two tensors.   
+% Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
+% Created: June 2022
+
+function [tenZ] = contraction(tenX,n1,tenY,n2)
+    % Obtaining the unfolds
+    tenX_n = tensor.unfold(tenX,n1);
+    tenY_n = tensor.unfold(tenY,n2);
+    % Obtaining the unfold of the contracted tensor
+    tenZ_n = (tenX_n.')*tenY_n;
+    % Obtaining the fold of the contracted tensor
+    dim_x = size(tenX);
+    dim_x(n1) = [];
+    dim_y = size(tenY);
+    dim_y(n2) = [];
+    dim_z = [dim_x dim_y];
+    tenZ   = tensor.fold(tenZ_n,dim_z,1);
+end
+
 %% Tensor Train Single Value Decomposition (TT-SVD)
 
-% This function computes the TT-SVD of a fourth order tensor but can be extended.   
+% This function computes the TT-SVD of a fourth order tensor but can be extended later.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
 % Created: June 2022
 
