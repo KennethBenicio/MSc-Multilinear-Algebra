@@ -1,7 +1,7 @@
 # Multilinear Algebra Course
 
 
-## Available Algorithms and Reports
+## Available Algorithms and Homework Implementations
 0. [Homework 0: Kronecker Product Run Time](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework0.m)
 1. [Homework 1: Hadamard, Kronecker and Khatri-Rao Products](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework1.m)
 2. [Homework 2: Khatri-Rao Product Run Time](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework2.m)
@@ -18,6 +18,9 @@
 11. [Homework 11: Alternating Least Squares (ALS) Algorithm](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_11.m)
 12. [Homework 12: Tensor Kronecker Product Single Value Decomposition (TKPSVD)](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_12.m)
 13. [Homework 13: Tensor Train Single Value Decomposition (TTSVD)](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_13.m)
+
+## Multilinear Algebra Computational Problems Report
+[Multilinear Algebra Computational Problems Report](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Report/manuscript.pdf)
 
 ## Libraries developed throughout the Multilinear Algebra course
 
