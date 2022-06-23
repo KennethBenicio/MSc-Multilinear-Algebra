@@ -63,8 +63,8 @@
     \item To show that the tensor rank is a property we will begin by writting the following multilinear transformations
     
         \begin{align}
-            \mathcal{X} &= \mathcal{S} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{3} \boldsymbol{A}^{(3)}, \\
-            \mathcal{S} &= \mathcal{X} \times_{1} \boldsymbol{A}^{(1)^{\text{H}}} \cdots \times_{3} \boldsymbol{A}^{(3)^{\text{H}}}.
+            \mathcal{X} &= \mathcal{S} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{3} \boldsymbol{A}^{(3)} \in \mathbb{C}^{I_{1} \times \cdots \times I_{N}}, \\
+            \mathcal{S} &= \mathcal{X} \times_{1} \boldsymbol{A}^{(1)^{\text{H}}} \cdots \times_{3} \boldsymbol{A}^{(3)^{\text{H}}} \in \mathbb{C}^{I_{1} \times \cdots \times I_{N}}.
         \end{align}
 
         First we can begin by defining the core tensor $\mathcal{S}$ by its PARAFAC Decomposition as
@@ -98,20 +98,78 @@
             \text{rank}\left(\mathcal{X}\right) = \text{rank}\left(\mathcal{S}\right).
         \end{align}
 
-    \item
+        Moreover, if we consider the case of dimension reduction where $\mathcal{S} \in \mathbb{C}^{R_{1} \times \cdots \times R_{N}}$ with $R_{n} << I_{n}, \forall n \in \{1, \cdots, N\}$ the if we can guarantee that
+        $\boldsymbol{A}^{(n)^{\dagger}} \boldsymbol{A}^{(n)} = \boldsymbol{I}, \forall n \in \{1, \cdots, N\}$ then we should once more have the same tensor rank for the case where the factor matrices are defined as $\boldsymbol{A}^{n} \in \mathbb{C}^{I_{n} \times R_{n}}, \forall \{1, \cdots, N\}$.
+        
+    \item Proof that the following tensor has rank three if all the vector pairs are non collinear
+    
+        \begin{align}
+            \mathcal{X} = \boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{2} \circ \boldsymbol{c}_{1} + \boldsymbol{a}_{1} \circ \boldsymbol{b}_{2} \circ \boldsymbol{c}_{2} \in \mathbb{C}^{I_{1} \times I_{2} \times I_{3}},
+        \end{align}
 
-        \begin{enumerate}
-                
-            \item
+        First we need to show that above tensor have a multilinear transformation defined as 
+            
+        \begin{align}
+            \mathcal{X} &= \mathcal{S} \times_{1} \boldsymbol{A} \times_{2} \boldsymbol{B} \times_{3} \boldsymbol{C} \in \mathbb{C}^{I_{1} \times I_{2} \times I_{N}},  
+        \end{align}
 
-            \item
+        where the unfoldings of the core tensor $\mathcal{S}$
 
-            \item
+        \begin{align}
+            \left[\boldsymbol{S}\right]_{(1)} = 
+            \begin{bmatrix}
+                1 & 0 & 0 & 1 \\
+                0 & 1 & 0 & 0
+            \end{bmatrix},  
+            \left[\boldsymbol{S}\right]_{(2)} = 
+            \begin{bmatrix}
+                1 & 0 & 0 & 0 \\
+                0 & 1 & 1 & 0
+            \end{bmatrix},  
+            \left[\boldsymbol{S}\right]_{(3)} = 
+            \begin{bmatrix}
+                1 & 0 & 0 & 1 \\
+                0 & 0 & 1 & 0
+            \end{bmatrix},  
+        \end{align}
 
-            \item
+        thus we have that the tensor $\mathcal{X}$ can be written 
 
-        \end{enumerate}
+        \begin{align}
+            \left[\boldsymbol{X}\right]_{(1)} &= \boldsymbol{A} \left[\boldsymbol{S}\right]_{(1)} (\boldsymbol{C} \otimes \boldsymbol{B})^{\text{T}}, \\
+            \left[\boldsymbol{X}\right]_{(1)} &= 
+            \begin{bmatrix}
+                \boldsymbol{a}_{1} & \boldsymbol{a}_{2}
+            \end{bmatrix}
+            \begin{bmatrix}
+                1 & 0 & 0 & 1 \\
+                0 & 1 & 0 & 0
+            \end{bmatrix} 
+            \begin{bmatrix}
+                (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{1})^{\text{T}} & (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{2})^{\text{T}} & (\boldsymbol{c}_{2} \otimes \boldsymbol{b}_{1})^{\text{T}} & (\boldsymbol{c}_{2} \otimes \boldsymbol{b}_{2})^{\text{T}}
+            \end{bmatrix}, \\
+            \left[\boldsymbol{X}\right]_{(1)} &= 
+            \begin{bmatrix}
+                \boldsymbol{a}_{1} & \boldsymbol{a}_{2}
+            \end{bmatrix}
+            \begin{bmatrix}
+                (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{1})^{\text{T}} + (\boldsymbol{c}_{2} \otimes \boldsymbol{b}_{2})^{\text{T}} \\
+                (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{2})^{\text{T}}
+            \end{bmatrix}, \\
+            \left[\boldsymbol{X}\right]_{(1)} &= \boldsymbol{a}_{1} (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{1})^{\text{T}} + \boldsymbol{a}_{1} (\boldsymbol{c}_{2} \otimes \boldsymbol{b}_{2})^{\text{T}} + \boldsymbol{a}_{2} (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{2})^{\text{T}},
+        \end{align}
 
+        and by doing the folding we get
+
+        \begin{align}
+            \mathcal{X} &= \boldsymbol{a}_{1} (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{1})^{\text{T}} + \boldsymbol{a}_{1} (\boldsymbol{c}_{2} \otimes \boldsymbol{b}_{2})^{\text{T}} + \boldsymbol{a}_{2} (\boldsymbol{c}_{1} \otimes \boldsymbol{b}_{2})^{\text{T}}, \\
+            \mathcal{X} &= \boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1} + \boldsymbol{a}_{1} \circ \boldsymbol{b}_{2} \circ \boldsymbol{c}_{2} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{2} \circ \boldsymbol{c}_{1}.
+        \end{align}
+
+        We also know from the previous problem that the tensor rank is indeed a property. Thus, the tensor $\mathcal{X}$ and the core tensor $\mathcal{S}$ of its multilinear transformation will have the same tensor rank.
+        Now, we only need to proof that either one of them are a tensor with rank three. The easiest way to do this is by working with the core tensor of the multilinear transformation, the tensor $\mathcal{S}$, and start a proof by contradiction.
+        
+    
     \item 
 
         \begin{enumerate}
