@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>Multilinear Algebra Course</title>
+        <title>Homework 13&colon; Tensor Train Singular Value Decomposition &lpar;TTSVD&rpar;</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -79,35 +79,9 @@
         
     </head>
     <body class="vscode-body vscode-light">
-        <h1 id="multilinear-algebra-course">Multilinear Algebra Course</h1>
-<h2 id="available-algorithms-and-reports">Available Algorithms and Reports</h2>
-<ol start="0">
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework0.html">Homework 0: Kronecker Product Run Time</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework1.html">Homework 1: Hadamard, Kronecker and Khatri-Rao Products</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework2.html">Homework 2: Khatri-Rao Product Run Time</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework3.html">Homework 3: Least-Squares Khatri-Rao Factorization (LSKRF)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework4.html">Homework 4: Least Squares Kronecker Product Factorization (LSKronF)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework5.html">Homework 5: Kronecker Product Singular Value Decomposition (KPSVD)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework6.html">Homework 6: Unfolding, folding, and n-mode product</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework7.html">Homework 7: High Order Singular Value Decomposition (HOSVD)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework8.html">Homework 8: High Order Order Orthogonal Iteration (HOOI)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework9.html">Homework 9: Multidimensional Least-Squares Khatri-Rao Factorization
-(MLS-KRF)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_10.html">Homework 10: Multidimensional Least-Squares Kronecker Factorization
-(MLS-KronF)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_11.html">Homework 11: Alternating Least Squares (ALS) Algorithm</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_12.html">Homework 12: Tensor Kronecker Product Single Value Decomposition (TKPSVD)</a></li>
-<li><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_13.html">Homework 13: Tensor Train Single Value Decomposition (TTSVD)</a></li>
-</ol>
-<h2 id="libraries-developed-throughout-the-multilinear-algebra-course">Libraries developed throughout the Multilinear Algebra course</h2>
-<p><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/tensor.m">Tensor Methods using Matlab</a></p>
-<p><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Python/tensor.py">Tensor Methods using Python</a></p>
-<h2 id="collection-of-computational-homeworks-for-multilinear-algebra-course">Collection of Computational Homeworks for Multilinear Algebra Course</h2>
-<p><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Homeworks">PDF files for the proposed computational homeworks</a></p>
-<h2 id="seminar-about-separable-least-mean-squares-beamforming-and-tensor-filtering">Seminar about Separable Least-Mean Squares Beamforming and Tensor Filtering</h2>
-<p><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Seminar/codes">Seminar Codes</a></p>
-<p><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Seminar/figs">Seminar Figures</a></p>
-<p><a href="https://github.com/KennethBenicio/MSc-Multilinear-Algebra/tree/master/Seminar/manuscript.pdf">Seminar Presentation</a></p>
+        <h1 id="homework-13-tensor-train-singular-value-decomposition-ttsvd">Homework 13: Tensor Train Singular Value Decomposition (TTSVD)</h1>
+<h2 id="problem-1---implement-the-ttsvd-algorithm-for-a-fourth-order-tensor-created-from-a-tensor-train-process-using-ranks--3-3-3-estimate-the-original-tensor-and-compare-it-with-its-estimation-by-using-the-true-ranks-as-input-and-by-using-ranks--2-2-2-as-input-explain-the-results">Problem 1 - Implement the TTSVD algorithm for a fourth-order tensor created from a tensor train process using ranks = [3 3 3]. Estimate the original tensor and compare it with its estimation by using the true ranks as input and by using ranks = [2 2 2] as input. Explain the results.</h2>
+<h2 id="problem-2---now-assuming-1000-monte-carlo-rounds-analyze-the-impact-of-the-reconstruction-using-the-ttsvd-under-the-presence-of-noisy-signals-in-the-snr-range-of-0-5-10-15-20-25-30-db-for-the-scenario-considering-the-tensor-rank-to-be-3-3-3-plot-the-curve-for-nmse-vs-snr-for-the-reconstruction-of-the-original-tensor">Problem 2 - Now assuming 1000 Monte Carlo rounds analyze the impact of the reconstruction using the TTSVD under the presence of noisy signals in the SNR range of [0, 5, 10, 15, 20, 25, 30] dB for the scenario considering the tensor rank to be [3 3 3]. Plot the curve for NMSE vs. SNR for the reconstruction of the original tensor.</h2>
 
         
         
