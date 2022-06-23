@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1655943073 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" "manuscript.pdf" "manuscript" 1655943073
-  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" 1655943073 3952 991d424eeb139d44ea1be37eb504ace2 ""
+["pdflatex"] 1655992727 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" "manuscript.pdf" "manuscript" 1655992727
+  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" 1655992726 6589 89450915b27f345bc88d4b9627ee4675 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1650183167 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1650183167 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -21,11 +21,15 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm" 1650183167 1524 554068197b70979a55370e6c6495f441 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1650183167 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1650183167 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm" 1650183167 1508 efecb4a315fe0975509670a272d75ef5 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1650183167 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1650183167 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1650183167 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1650183167 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb" 1650183167 36912 b448ef9ad9d7228ec3c6e71005136d55 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1650183167 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1650183167 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1650183167 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1650183167 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1650183167 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1650183167 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -65,8 +69,8 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652447705 2927660 d3c8a37f6e65a821ab2eaf136b52d860 ""
   "figs/icon.png" 1655296099 225873 bd8744586e262fc284cb39e1fe099b01 ""
   "front.tex" 1655296324 765 70cd26cfedb770572cd00fdba9842605 ""
-  "manuscript.aux" 1655943073 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "manuscript.tex" 1655943073 3952 991d424eeb139d44ea1be37eb504ace2 ""
+  "manuscript.aux" 1655992727 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "manuscript.tex" 1655992726 6589 89450915b27f345bc88d4b9627ee4675 ""
   (generated)
   "manuscript.aux"
   "manuscript.log"

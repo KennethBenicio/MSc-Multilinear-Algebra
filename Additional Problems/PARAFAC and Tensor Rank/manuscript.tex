@@ -40,26 +40,64 @@
         \begin{align}
             \mathcal{X} &= \boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{2} \circ \boldsymbol{c}_{2}, \\
             \mathcal{X} &= \boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1}, \\
-            \mathcal{X} &= (\boldsymbol{a}_{1} + \boldsymbol{a}_{2}) \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1}.
+            \mathcal{X} &= (\boldsymbol{a}_{1} + \boldsymbol{a}_{2}) \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1},
         \end{align}
         
-        By inspection of the expression above we can see that the elements that compose vectors $\boldsymbol{a}_{1}$ and $\boldsymbol{a}_{2}$
-        acts as weights in a linear combination of the matrix $\boldsymbol{b}_{1} \circ \boldsymbol{c}_{1}$. Thus, if we assume that the tensor is not rank one then we should at least one of the vectors equals to zero so we can obtain a sum of linearly independent terms that leads to a tensor rank greater than one. 
-        However, this does not makes sense because if we have one of these vectors equals to zero then  we would not have a sum at all. Thus, by contradiction, we know that in the proposed scenario the vectors $\boldsymbol{a}_{1}$ and $\boldsymbol{a}_{2}$ must be collinear meaning that the tensor is indeed rank one.
-        In a similar fashion we can obtain a conclusion for the case
-        where we have $\boldsymbol{b}_{1} \neq \boldsymbol{b}_{2}$ and $\boldsymbol{c}_{1} = \boldsymbol{c}_{2}$ by writting the tensor as
+        and by inspecting above expression we can observe that independent of the vectors $\boldsymbol{a}_{1}$ and $\boldsymbol{a}_{2}$ being collinear we will have a rank one tensor defined as
+        
+        \begin{align}
+            \mathcal{X} &= \boldsymbol{a}_{3} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1},
+        \end{align}
+        
+        where $\boldsymbol{a}_{3} = \boldsymbol{a}_{1} + \boldsymbol{a}_{2}$. In a similar fashion, if we have $\boldsymbol{b}_{1} \neq \boldsymbol{b}_{2}$ and $\boldsymbol{c}_{1} = \boldsymbol{c}_{2}$ then we can rewrite the tensor as
 
         \begin{align}
             \mathcal{X} &= \boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{2} \circ \boldsymbol{c}_{2}, \\
             \mathcal{X} &= \boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} \circ \boldsymbol{c}_{1} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{2} \circ \boldsymbol{c}_{1}, \\
-            \mathcal{X} &= (\boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{2}) \circ \boldsymbol{c}_{1}.
+            \mathcal{X} &= (\boldsymbol{a}_{1} \circ \boldsymbol{b}_{1} + \boldsymbol{a}_{2} \circ \boldsymbol{b}_{2}) \circ \boldsymbol{c}_{1},
         \end{align}
 
-        By inspecting the expression above by the same procedure as before we can once again reach the same conclusion that the only way to the tensor $\mathcal{X}$ to have a rank greater than one in this 
-        scenario is if one of the vectors is zero, but that would be contradictory. Thus, we can guarantee once more that the tensor $\mathcal{X}$ will be rank one in this case.
-  
-    \item
+        but since we can guarantee that the vectors $\boldsymbol{b}_{1}$ and $\boldsymbol{b}_{2}$ are not collinear then we know that the sum in above expression cannot be further reduced. Thus, we will have a tensor 
+        composed of the sum of two subtensors of rank one meaning that our tensor $\mathcal{X}$  will be a rank two tensor.
+
+    \item To show that the tensor rank is a property we will begin by writting the following multilinear transformations
     
+        \begin{align}
+            \mathcal{X} &= \mathcal{S} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{3} \boldsymbol{A}^{(3)}, \\
+            \mathcal{S} &= \mathcal{X} \times_{1} \boldsymbol{A}^{(1)^{\text{H}}} \cdots \times_{3} \boldsymbol{A}^{(3)^{\text{H}}}.
+        \end{align}
+
+        First we can begin by defining the core tensor $\mathcal{S}$ by its PARAFAC Decomposition as
+
+        \begin{align}
+            \mathcal{S} = \sum^{R}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{s}^{(3)}_{r},
+        \end{align}
+
+        and by returning to the original transformation we can rewrite it as 
+
+        \begin{align}
+            \mathcal{X} &= \left(\sum^{R}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{s}^{(N)}_{r}\right) \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{3} \boldsymbol{A}^{(3)}, \\
+            \mathcal{X} &= \left(\sum^{R}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{s}^{(N)}_{r} \times_{1} \boldsymbol{A}^{(1)} \cdots \times_{3} \boldsymbol{A}^{(3)}\right), \\
+            \mathcal{X} &= \sum^{R}_{r = 1} \boldsymbol{A}^{(1)} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{A}^{(N)} \boldsymbol{s}^{(N)}_{r}.
+        \end{align}
+
+        Now considering the inverse multilinear transformation and that $\boldsymbol{A}^{(n)^{\text{H}}} \boldsymbol{A}^{(n)} = \boldsymbol{I}, \forall n \in \{1, \cdots, N\}$ we can rewrite tensor $\mathcal{S}$ as
+
+        \begin{align}
+            \mathcal{S} &= \mathcal{X} \times_{1} \boldsymbol{A}^{(1)^{\text{H}}} \cdots \times_{3} \boldsymbol{A}^{(3)^{\text{H}}}, \\
+            \mathcal{S} &= \left(\sum^{R}_{r = 1} \boldsymbol{A}^{(1)} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{A}^{(N)} \boldsymbol{s}^{(N)}_{r} \right) \times_{1} \boldsymbol{A}^{(1)^{\text{H}}} \cdots \times_{3} \boldsymbol{A}^{(3)^{\text{H}}}, \\
+            \mathcal{S} &= \left(\sum^{R}_{r = 1} \boldsymbol{A}^{(1)} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{A}^{(N)} \boldsymbol{s}^{(N)}_{r} \times_{1} \boldsymbol{A}^{(1)^{\text{H}}} \cdots \times_{3} \boldsymbol{A}^{(3)^{\text{H}}} \right), \\
+            \mathcal{S} &= \sum^{R}_{r = 1} \boldsymbol{A}^{(1)^{\text{H}}} \boldsymbol{A}^{(1)} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{A}^{(N)^{\text{H}}} \boldsymbol{A}^{(N)} \boldsymbol{s}^{(N)}_{r}, \\
+            \mathcal{S} &= \sum^{R}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{s}^{(3)}_{r}
+        \end{align}
+
+        and since the tensor rank is defined by the minimum number of rank one tensors that together compose the original tensor then by analysing above expressions we can observe that we have bounded tensors 
+        $\mathcal{X}$ and $\mathcal{S}$ to the same number of elements that compose them. Thus, the tensor rank is indeed a property and
+
+        \begin{align}
+            \text{rank}\left(\mathcal{X}\right) = \text{rank}\left(\mathcal{S}\right).
+        \end{align}
+
     \item
 
         \begin{enumerate}
