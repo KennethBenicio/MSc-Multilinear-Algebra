@@ -19,7 +19,7 @@
 12. [Homework 12: Tensor Kronecker Product Single Value Decomposition (TKPSVD)](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_12.m)
 13. [Homework 13: Tensor Train Single Value Decomposition (TTSVD)](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/MATLAB/homework_13.m)
 
-## Multilinear Algebra Computational Problems Report
+## Multilinear Algebra Computational Problems Full Report
 [Multilinear Algebra Computational Problems Report](https://github.com/KennethBenicio/MSc-Multilinear-Algebra/blob/master/Report/manuscript.pdf)
 
 ## Libraries developed throughout the Multilinear Algebra course
