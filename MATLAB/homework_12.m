@@ -88,7 +88,7 @@ for snr = 1:length(SNR)
             %tenC = tenC./frob(tenC);
             C(:,r)= tenC(:);
             varr = tensor.ten_prod_kron(tenC,tenB);
-            tenX = tenX + tefigurensor.ten_prod_kron(varr,tenA);
+            tenX = tenX + tensor.ten_prod_kron(varr,tenA);
         end
 
         aux{1} = num2cell(size(tenA));

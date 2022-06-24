@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  23 JUN 2022 19:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  24 JUN 2022 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -201,127 +201,121 @@ Package pdftex.def Info: figs/icon.png  used on input line 5.
 <figs/hw0a1.png, id=11, 429.2838pt x 310.761pt>
 File: figs/hw0a1.png Graphic file (type png)
 <use figs/hw0a1.png>
-Package pdftex.def Info: figs/hw0a1.png  used on input line 36.
+Package pdftex.def Info: figs/hw0a1.png  used on input line 39.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
 <figs/hw0a2.png, id=12, 429.2838pt x 310.761pt>
 File: figs/hw0a2.png Graphic file (type png)
 <use figs/hw0a2.png>
-Package pdftex.def Info: figs/hw0a2.png  used on input line 43.
+Package pdftex.def Info: figs/hw0a2.png  used on input line 46.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [2 <./figs/hw0a1.png (PNG copy)> <./figs/hw0a2.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3]
-<figs/hw1a1.png, id=23, 429.2838pt x 310.761pt>
+) [2 <./figs/hw0a1.png (PNG copy)>]
+<figs/hw1a1.png, id=25, 429.2838pt x 310.761pt>
 File: figs/hw1a1.png Graphic file (type png)
 <use figs/hw1a1.png>
-Package pdftex.def Info: figs/hw1a1.png  used on input line 57.
+Package pdftex.def Info: figs/hw1a1.png  used on input line 69.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw1a2.png, id=24, 429.2838pt x 310.761pt>
+ [3 <./figs/hw0a2.png (PNG copy)> <./figs/hw1a1.png (PNG copy)>]
+<figs/hw1a2.png, id=29, 429.2838pt x 310.761pt>
 File: figs/hw1a2.png Graphic file (type png)
 <use figs/hw1a2.png>
-Package pdftex.def Info: figs/hw1a2.png  used on input line 66.
+Package pdftex.def Info: figs/hw1a2.png  used on input line 78.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw1a3.png, id=25, 429.2838pt x 310.761pt>
+<figs/hw1a3.png, id=30, 429.2838pt x 310.761pt>
 File: figs/hw1a3.png Graphic file (type png)
 <use figs/hw1a3.png>
-Package pdftex.def Info: figs/hw1a3.png  used on input line 75.
+Package pdftex.def Info: figs/hw1a3.png  used on input line 87.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [4 <./figs/hw1a1.png (PNG copy)>]
-<figs/hw2a1.png, id=29, 429.2838pt x 310.761pt>
+ [4 <./figs/hw1a2.png (PNG copy)> <./figs/hw1a3.png (PNG copy)>]
+<figs/hw2a1.png, id=34, 429.2838pt x 310.761pt>
 File: figs/hw2a1.png Graphic file (type png)
 <use figs/hw2a1.png>
-Package pdftex.def Info: figs/hw2a1.png  used on input line 87.
+Package pdftex.def Info: figs/hw2a1.png  used on input line 111.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw2a2.png, id=30, 429.2838pt x 310.761pt>
+<figs/hw2a2.png, id=35, 429.2838pt x 310.761pt>
 File: figs/hw2a2.png Graphic file (type png)
 <use figs/hw2a2.png>
-Package pdftex.def Info: figs/hw2a2.png  used on input line 94.
+Package pdftex.def Info: figs/hw2a2.png  used on input line 118.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw2a3.png, id=31, 429.2838pt x 310.761pt>
+<figs/hw2a3.png, id=36, 429.2838pt x 310.761pt>
 File: figs/hw2a3.png Graphic file (type png)
 <use figs/hw2a3.png>
-Package pdftex.def Info: figs/hw2a3.png  used on input line 103.
+Package pdftex.def Info: figs/hw2a3.png  used on input line 127.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
+ [5 <./figs/hw2a1.png (PNG copy)>]
+Overfull \vbox (15.05263pt too high) has occurred while \output is active []
 
-Overfull \vbox (6.84702pt too high) has occurred while \output is active []
-
- [5 <./figs/hw1a2.png (PNG copy)> <./figs/hw1a3.png (PNG copy)>]
-<figs/hw3.png, id=35, 429.2838pt x 317.5062pt>
+ [6 <./figs/hw2a2.png (PNG copy)> <./figs/hw2a3.png (PNG copy)>]
+<figs/hw3.png, id=46, 429.2838pt x 317.5062pt>
 File: figs/hw3.png Graphic file (type png)
 <use figs/hw3.png>
-Package pdftex.def Info: figs/hw3.png  used on input line 117.
+Package pdftex.def Info: figs/hw3.png  used on input line 154.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
-
-Overfull \vbox (6.84702pt too high) has occurred while \output is active []
-
- [6 <./figs/hw2a1.png (PNG copy)> <./figs/hw2a2.png (PNG copy)>]
-<figs/hw4.png, id=39, 429.2838pt x 317.5062pt>
+ [7 <./figs/hw3.png (PNG copy)>]
+<figs/hw4.png, id=51, 429.2838pt x 317.5062pt>
 File: figs/hw4.png Graphic file (type png)
 <use figs/hw4.png>
-Package pdftex.def Info: figs/hw4.png  used on input line 131.
+Package pdftex.def Info: figs/hw4.png  used on input line 181.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
-
-Overfull \vbox (12.21178pt too high) has occurred while \output is active []
-
- [7 <./figs/hw2a3.png (PNG copy)> <./figs/hw3.png (PNG copy)>] [8 <./figs/hw4.png (PNG copy)>] [9] [10] [11]
-<figs/hw9.png, id=56, 421.575pt x 316.0608pt>
+ [8 <./figs/hw4.png (PNG copy)>] [9] [10] [11] [12]
+<figs/hw9.png, id=71, 421.575pt x 316.0608pt>
 File: figs/hw9.png Graphic file (type png)
 <use figs/hw9.png>
-Package pdftex.def Info: figs/hw9.png  used on input line 174.
+Package pdftex.def Info: figs/hw9.png  used on input line 292.
 (pdftex.def)             Requested size: 341.43306pt x 255.98373pt.
- [12 <./figs/hw9.png (PNG copy)>]
-<figs/hw10.png, id=60, 429.2838pt x 310.761pt>
+ [13 <./figs/hw9.png (PNG copy)>]
+<figs/hw10.png, id=76, 429.2838pt x 310.761pt>
 File: figs/hw10.png Graphic file (type png)
 <use figs/hw10.png>
-Package pdftex.def Info: figs/hw10.png  used on input line 189.
+Package pdftex.def Info: figs/hw10.png  used on input line 320.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [13 <./figs/hw10.png (PNG copy)>]
-<figs/hw11a1.png, id=65, 429.2838pt x 310.761pt>
+ [14 <./figs/hw10.png (PNG copy)>]
+<figs/hw11a1.png, id=80, 429.2838pt x 310.761pt>
 File: figs/hw11a1.png Graphic file (type png)
 <use figs/hw11a1.png>
-Package pdftex.def Info: figs/hw11a1.png  used on input line 203.
+Package pdftex.def Info: figs/hw11a1.png  used on input line 338.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw11a2.png, id=66, 429.2838pt x 310.761pt>
+<figs/hw11a2.png, id=81, 429.2838pt x 310.761pt>
 File: figs/hw11a2.png Graphic file (type png)
 <use figs/hw11a2.png>
-Package pdftex.def Info: figs/hw11a2.png  used on input line 210.
+Package pdftex.def Info: figs/hw11a2.png  used on input line 345.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [14 <./figs/hw11a1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
+ [15 <./figs/hw11a1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
 \OT1/cmr/bx/n/14.4 Tensor Kro-necker Prod-uct Sin-gle Value De-com-po-si-tion
  []
 
-<figs/hw12.png, id=70, 429.2838pt x 317.5062pt>
+<figs/hw12.png, id=85, 429.2838pt x 317.5062pt>
 File: figs/hw12.png Graphic file (type png)
 <use figs/hw12.png>
-Package pdftex.def Info: figs/hw12.png  used on input line 224.
+Package pdftex.def Info: figs/hw12.png  used on input line 372.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
-[15 <./figs/hw11a2.png (PNG copy)>]
-<figs/hw13.png, id=74, 429.2838pt x 317.5062pt>
+[16 <./figs/hw11a2.png (PNG copy)>]
+<figs/hw13.png, id=89, 429.2838pt x 317.5062pt>
 File: figs/hw13.png Graphic file (type png)
 <use figs/hw13.png>
-Package pdftex.def Info: figs/hw13.png  used on input line 238.
+Package pdftex.def Info: figs/hw13.png  used on input line 403.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
- [16 <./figs/hw12.png (PNG copy)>] [17 <./figs/hw13.png (PNG copy)>] (./manuscript.aux) ) 
+ [17 <./figs/hw12.png (PNG copy)>] [18 <./figs/hw13.png (PNG copy)>] (./manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 3890 strings out of 478238
- 60727 string characters out of 5850456
- 345508 words of memory out of 5000000
- 22058 multiletter control sequences out of 15000+600000
- 477577 words of font info for 58 fonts, out of 8000000 for 9000
+ 3916 strings out of 478238
+ 61002 string characters out of 5850456
+ 351508 words of memory out of 5000000
+ 22075 multiletter control sequences out of 15000+600000
+ 482033 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,67p,309b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on manuscript.pdf (17 pages, 794843 bytes).
+ 60i,15n,67p,449b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on manuscript.pdf (18 pages, 913733 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 171 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
