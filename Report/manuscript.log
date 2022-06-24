@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  24 JUN 2022 12:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  24 JUN 2022 17:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -44,6 +44,12 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen139
 \Gin@req@width=\dimen140
+) (/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
 ) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip49
@@ -126,70 +132,104 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box52
 \enit@count@id=\count271
 \enitdp@description=\count272
-) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen151
+\captionmargin=\dimen152
+\caption@leftmargin=\dimen153
+\caption@rightmargin=\dimen154
+\caption@width=\dimen155
+\caption@indent=\dimen156
+\caption@parindent=\dimen157
+\caption@hangindent=\dimen158
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count273
+\c@continuedfloat=\count274
+)
+\c@subfigure=\count275
+\c@subtable=\count276
+) (/usr/share/texmf-dist/tex/latex/mwe/mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+ (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-04-10 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count273
+\l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box53
-) (./manuscript.aux)
+))
+Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count278
+\l__lipsum_a_int=\count279
+\l__lipsum_b_int=\count280
+ (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (/usr/share/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count281
+\c@Blindtext=\count282
+\c@blind@countparstart=\count283
+\blind@countxx=\count284
+\blindtext@numBlindtext=\count285
+\blind@countyy=\count286
+\c@blindlist=\count287
+\c@blindlistlevel=\count288
+\c@blindlist@level=\count289
+\blind@listitem=\count290
+\c@blind@listcount=\count291
+\c@blind@levelcount=\count292
+\blind@mathformula=\count293
+\blind@Mathformula=\count294
+\c@blind@randomcount=\count295
+\c@blind@randommax=\count296
+\c@blind@pangramcount=\count297
+\c@blind@pangrammax=\count298
+)) (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count274
-\scratchdimen=\dimen151
+\scratchcounter=\count299
+\scratchdimen=\dimen159
 \scratchbox=\box54
-\nofMPsegments=\count275
-\nofMParguments=\count276
+\nofMPsegments=\count300
+\nofMParguments=\count301
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count277
-\MPscratchDim=\dimen152
-\MPnumerator=\count278
-\makeMPintoPDFobject=\count279
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen160
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
- (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (./front.tex
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (./front.tex
 <figs/icon.png, id=1, 489.83pt x 732.7375pt>
 File: figs/icon.png Graphic file (type png)
 <use figs/icon.png>
@@ -201,121 +241,153 @@ Package pdftex.def Info: figs/icon.png  used on input line 5.
 <figs/hw0a1.png, id=11, 429.2838pt x 310.761pt>
 File: figs/hw0a1.png Graphic file (type png)
 <use figs/hw0a1.png>
-Package pdftex.def Info: figs/hw0a1.png  used on input line 39.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
+Package pdftex.def Info: figs/hw0a1.png  used on input line 44.
+(pdftex.def)             Requested size: 295.90587pt x 214.2072pt.
 <figs/hw0a2.png, id=12, 429.2838pt x 310.761pt>
 File: figs/hw0a2.png Graphic file (type png)
 <use figs/hw0a2.png>
-Package pdftex.def Info: figs/hw0a2.png  used on input line 46.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+Package pdftex.def Info: figs/hw0a2.png  used on input line 51.
+(pdftex.def)             Requested size: 295.90587pt x 214.2072pt.
+ [2 <./figs/hw0a1.png (PNG copy)> <./figs/hw0a2.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2 <./figs/hw0a1.png (PNG copy)>]
-<figs/hw1a1.png, id=25, 429.2838pt x 310.761pt>
+) [3] [4]
+<figs/hw1a1.png, id=32, 429.2838pt x 310.761pt>
 File: figs/hw1a1.png Graphic file (type png)
 <use figs/hw1a1.png>
-Package pdftex.def Info: figs/hw1a1.png  used on input line 69.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [3 <./figs/hw0a2.png (PNG copy)> <./figs/hw1a1.png (PNG copy)>]
-<figs/hw1a2.png, id=29, 429.2838pt x 310.761pt>
+Package pdftex.def Info: figs/hw1a1.png  used on input line 175.
+(pdftex.def)             Requested size: 295.90587pt x 214.2072pt.
+<figs/hw1a2.png, id=33, 429.2838pt x 310.761pt>
 File: figs/hw1a2.png Graphic file (type png)
 <use figs/hw1a2.png>
-Package pdftex.def Info: figs/hw1a2.png  used on input line 78.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw1a3.png, id=30, 429.2838pt x 310.761pt>
+Package pdftex.def Info: figs/hw1a2.png  used on input line 184.
+(pdftex.def)             Requested size: 295.90587pt x 214.2072pt.
+<figs/hw1a3.png, id=34, 429.2838pt x 310.761pt>
 File: figs/hw1a3.png Graphic file (type png)
 <use figs/hw1a3.png>
-Package pdftex.def Info: figs/hw1a3.png  used on input line 87.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [4 <./figs/hw1a2.png (PNG copy)> <./figs/hw1a3.png (PNG copy)>]
-<figs/hw2a1.png, id=34, 429.2838pt x 310.761pt>
+Package pdftex.def Info: figs/hw1a3.png  used on input line 193.
+(pdftex.def)             Requested size: 295.90587pt x 214.2072pt.
+ [5 <./figs/hw1a1.png (PNG copy)>] [6 <./figs/hw1a2.png (PNG copy)> <./figs/hw1a3.png (PNG copy)>] [7] [8] [9] [10]
+<figs/hw2a1.png, id=54, 429.2838pt x 310.761pt>
 File: figs/hw2a1.png Graphic file (type png)
 <use figs/hw2a1.png>
-Package pdftex.def Info: figs/hw2a1.png  used on input line 111.
+Package pdftex.def Info: figs/hw2a1.png  used on input line 401.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw2a2.png, id=35, 429.2838pt x 310.761pt>
+<figs/hw2a2.png, id=55, 429.2838pt x 310.761pt>
 File: figs/hw2a2.png Graphic file (type png)
 <use figs/hw2a2.png>
-Package pdftex.def Info: figs/hw2a2.png  used on input line 118.
+Package pdftex.def Info: figs/hw2a2.png  used on input line 408.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw2a3.png, id=36, 429.2838pt x 310.761pt>
+<figs/hw2a3.png, id=56, 429.2838pt x 310.761pt>
 File: figs/hw2a3.png Graphic file (type png)
 <use figs/hw2a3.png>
-Package pdftex.def Info: figs/hw2a3.png  used on input line 127.
+Package pdftex.def Info: figs/hw2a3.png  used on input line 420.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [5 <./figs/hw2a1.png (PNG copy)>]
-Overfull \vbox (15.05263pt too high) has occurred while \output is active []
-
- [6 <./figs/hw2a2.png (PNG copy)> <./figs/hw2a3.png (PNG copy)>]
-<figs/hw3.png, id=46, 429.2838pt x 317.5062pt>
+ [11 <./figs/hw2a1.png (PNG copy)>] [12 <./figs/hw2a2.png (PNG copy)> <./figs/hw2a3.png (PNG copy)>] [13] [14] [15]
+<figs/hw3.png, id=73, 429.2838pt x 317.5062pt>
 File: figs/hw3.png Graphic file (type png)
 <use figs/hw3.png>
-Package pdftex.def Info: figs/hw3.png  used on input line 154.
+Package pdftex.def Info: figs/hw3.png  used on input line 601.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
- [7 <./figs/hw3.png (PNG copy)>]
-<figs/hw4.png, id=51, 429.2838pt x 317.5062pt>
+ [16 <./figs/hw3.png (PNG copy)>] [17] [18] [19]
+<figs/hw4.png, id=90, 429.2838pt x 317.5062pt>
 File: figs/hw4.png Graphic file (type png)
 <use figs/hw4.png>
-Package pdftex.def Info: figs/hw4.png  used on input line 181.
+Package pdftex.def Info: figs/hw4.png  used on input line 753.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
- [8 <./figs/hw4.png (PNG copy)>] [9] [10] [11] [12]
-<figs/hw9.png, id=71, 421.575pt x 316.0608pt>
+ [20 <./figs/hw4.png (PNG copy)>] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
+<figs/hw9.png, id=152, 421.575pt x 316.0608pt>
 File: figs/hw9.png Graphic file (type png)
 <use figs/hw9.png>
-Package pdftex.def Info: figs/hw9.png  used on input line 292.
-(pdftex.def)             Requested size: 341.43306pt x 255.98373pt.
- [13 <./figs/hw9.png (PNG copy)>]
-<figs/hw10.png, id=76, 429.2838pt x 310.761pt>
-File: figs/hw10.png Graphic file (type png)
-<use figs/hw10.png>
-Package pdftex.def Info: figs/hw10.png  used on input line 320.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [14 <./figs/hw10.png (PNG copy)>]
-<figs/hw11a1.png, id=80, 429.2838pt x 310.761pt>
-File: figs/hw11a1.png Graphic file (type png)
-<use figs/hw11a1.png>
-Package pdftex.def Info: figs/hw11a1.png  used on input line 338.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw11a2.png, id=81, 429.2838pt x 310.761pt>
-File: figs/hw11a2.png Graphic file (type png)
-<use figs/hw11a2.png>
-Package pdftex.def Info: figs/hw11a2.png  used on input line 345.
-(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
- [15 <./figs/hw11a1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
-\OT1/cmr/bx/n/14.4 Tensor Kro-necker Prod-uct Sin-gle Value De-com-po-si-tion
+Package pdftex.def Info: figs/hw9.png  used on input line 1473.
+(pdftex.def)             Requested size: 295.90587pt x 221.84871pt.
+ [38 <./figs/hw9.png (PNG copy)>] [39] [40]
+<figs/hw10a1.png, id=162, 429.2838pt x 317.5062pt>
+File: figs/hw10a1.png Graphic file (type png)
+<use figs/hw10a1.png>
+Package pdftex.def Info: figs/hw10a1.png  used on input line 1623.
+(pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
+File: figs/hw10a1.png Graphic file (type png)
+<use figs/hw10a1.png>
+Package pdftex.def Info: figs/hw10a1.png  used on input line 1631.
+(pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
+<figs/hw10a3.png, id=163, 429.2838pt x 317.5062pt>
+File: figs/hw10a3.png Graphic file (type png)
+<use figs/hw10a3.png>
+Package pdftex.def Info: figs/hw10a3.png  used on input line 1639.
+(pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
+<figs/hw10a4.png, id=164, 429.2838pt x 317.5062pt>
+File: figs/hw10a4.png Graphic file (type png)
+<use figs/hw10a4.png>
+Package pdftex.def Info: figs/hw10a4.png  used on input line 1647.
+(pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
+ [41] [42 <./figs/hw10a1.png (PNG copy)> <./figs/hw10a3.png (PNG copy)> <./figs/hw10a4.png (PNG copy)>]
+Overfull \hbox (6.75189pt too wide) in paragraph at lines 2000--2000
+[]        \OT1/cmtt/m/n/10 % random number of matrices in a iterative form considering groups of 3 objects.[] 
  []
 
-<figs/hw12.png, id=85, 429.2838pt x 317.5062pt>
+
+Overfull \hbox (54.00148pt too wide) in paragraph at lines 2000--2000
+[]            \OT1/cmtt/m/n/10 tenXhat = reshape(Xhat,[rows(3)*columns(3), rows(2)*columns(2), rows(1)*columns(1)]);[] 
+ []
+
+[43] [44] [45] [46] [47] [48] [49]
+<figs/hw11a1.png, id=195, 429.2838pt x 310.761pt>
+File: figs/hw11a1.png Graphic file (type png)
+<use figs/hw11a1.png>
+Package pdftex.def Info: figs/hw11a1.png  used on input line 2015.
+(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
+<figs/hw11a2.png, id=196, 429.2838pt x 310.761pt>
+File: figs/hw11a2.png Graphic file (type png)
+<use figs/hw11a2.png>
+Package pdftex.def Info: figs/hw11a2.png  used on input line 2022.
+(pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
+ [50 <./figs/hw11a1.png (PNG copy)>]
+Overfull \hbox (153.75061pt too wide) in paragraph at lines 2235--2235
+[]            \OT1/cmtt/m/n/10 error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));[] 
+ []
+
+[51 <./figs/hw11a2.png (PNG copy)>]
+Overfull \hbox (174.75043pt too wide) in paragraph at lines 2235--2235
+[]                \OT1/cmtt/m/n/10 error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));[] 
+ []
+
+[52] [53] [54] [55]
+<figs/hw12.png, id=217, 429.2838pt x 317.5062pt>
 File: figs/hw12.png Graphic file (type png)
 <use figs/hw12.png>
-Package pdftex.def Info: figs/hw12.png  used on input line 372.
+Package pdftex.def Info: figs/hw12.png  used on input line 2259.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
-[16 <./figs/hw11a2.png (PNG copy)>]
-<figs/hw13.png, id=89, 429.2838pt x 317.5062pt>
+ [56 <./figs/hw12.png (PNG copy)>] [57] [58] [59] [60] [61]
+<figs/hw13.png, id=237, 429.2838pt x 317.5062pt>
 File: figs/hw13.png Graphic file (type png)
 <use figs/hw13.png>
-Package pdftex.def Info: figs/hw13.png  used on input line 403.
+Package pdftex.def Info: figs/hw13.png  used on input line 2509.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
- [17 <./figs/hw12.png (PNG copy)>] [18 <./figs/hw13.png (PNG copy)>] (./manuscript.aux) ) 
+ [62 <./figs/hw13.png (PNG copy)>]
+Overfull \hbox (43.50157pt too wide) in paragraph at lines 2682--2682
+[]        \OT1/cmtt/m/n/10 % This function computes the TT-SVD of a fourth order tensor but can be extended later.[] 
+ []
+
+[63] [64] [65] [66] (./manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 3916 strings out of 478238
- 61002 string characters out of 5850456
- 351508 words of memory out of 5000000
- 22075 multiletter control sequences out of 15000+600000
- 482033 words of font info for 75 fonts, out of 8000000 for 9000
+ 5517 strings out of 478238
+ 93911 string characters out of 5850456
+ 480244 words of memory out of 5000000
+ 23664 multiletter control sequences out of 15000+600000
+ 482500 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,15n,67p,449b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on manuscript.pdf (18 pages, 913733 bytes).
+ 87i,15n,91p,449b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on manuscript.pdf (66 pages, 1063322 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 339 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

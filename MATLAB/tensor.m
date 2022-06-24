@@ -1,6 +1,6 @@
+%% Tensor Algebra Using MATLAB
 classdef tensor
     methods(Static)
-%addpath("~/MATLAB/tensorlab")
 %% Vectorize
 
 % This function computes the vec operator of a given matrix or tensor.   
@@ -373,7 +373,8 @@ end
  
 % It is interesting to note that this process could easily be applied to a
 % random number of matrices in a iterative form considering groups of 3 objects.
-function [Ahat] = MLSKronF(X,rows,columns)
+% init controls the initialization: 1 for HOSVD and 2 for HOOI.
+function [Ahat] = MLSKronF(X,rows,columns,init)
     % 3rd structure
     %[ix,jx] = size(X);
     
@@ -403,8 +404,11 @@ function [Ahat] = MLSKronF(X,rows,columns)
     end
     
     tenXhat = reshape(Xhat,[rows(3)*columns(3), rows(2)*columns(2), rows(1)*columns(1)]);
-    [S,U] = tensor.HOSVD_full(tenXhat);
-    
+    if init == '1'
+        [S,U] = tensor.HOSVD_full(tenXhat);
+    elseif init == '2'
+        [S,U] = tensor.HOOI_full(tenXhat);
+    end
     rows = flip(rows);
     columns = flip(columns);
     for u = 1:length(U)

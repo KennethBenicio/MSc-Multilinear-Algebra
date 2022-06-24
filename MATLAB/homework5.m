@@ -27,7 +27,8 @@ for r = 1:rkp
     Vk{r}  = reshape(aux2, [r2 c2]); 
     Ahat = Ahat + S(r,r)*tensor.mtx_prod_kron(Uk{r},Vk{r});
 end 
-disp('Checking the NMSE (dB) between the original matrix A and its reconstruction with KPSVD using full rank:')
+disp('Checking the NMSE (dB) between the original matrix A and its'... 
+    'reconstruction with KPSVD using full rank:')
 Ahat = conj(Ahat);
 nmse = (norm(A - Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmse = 20*log10(nmse)
@@ -41,7 +42,8 @@ for r = 1:3
     Vk{r}  = reshape(aux2, [r2 c2]); 
     Ahat = Ahat + S(r,r)*tensor.mtx_prod_kron(Uk{r},Vk{r});
 end  
-disp('Checking the NMSE (dB) between the original matrix A and its reconstruction with KPSVD using deficient rank:')
+disp('Checking the NMSE (dB) between the original matrix A and its'...
+    'reconstruction with KPSVD using deficient rank:')
 Ahat = conj(Ahat);
 nmse = (norm(A - Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmse = 20*log10(nmse)

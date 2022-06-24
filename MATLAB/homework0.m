@@ -25,10 +25,12 @@ time2 = time2/5000;
 
 figure
 txt = ['(\bf A_{N \times N} \otimes B_{N \times N})^{-1}'];
-semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf A^{-1}_{N \times N} \otimes B^{-1}_{N \times N}'];
-semilogy(N,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Performance of inverse operation'])
 xlabel('Number of columns')
@@ -77,10 +79,12 @@ time2 = time2/1000;
 
 figure
 txt = ['\bf (\otimes^{K}_{i = 1}A^{(i)}_{4 \times 4})^{-1}'];
-semilogy(K,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(K,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf \otimes^{K}_{i = 1}(A^{(i)}_{4 \times 4})^{-1}'];
-semilogy(K,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(K,time2,'-o','color', [0.8500 0.3250 0.0980], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Multiple Kronecker products performance'])
 xlabel('Number of products')

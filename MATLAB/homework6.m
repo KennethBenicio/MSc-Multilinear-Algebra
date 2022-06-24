@@ -35,6 +35,8 @@ tenX./tensor.fold(tenX_3,dimension,3)
 % N-mode product
 load('homework6_n_mode.mat')
 tenY_test = tensor.n_mod_prod(tenX,{Z},[1]);
-disp('Checking the NMSE (dB) between the original tensor Y and the one after the N-mode product:')
-nmsey = (norm(tensor.unfold(tenY- tenY_test,1),'fro')^2)/(norm(tensor.unfold(tenY,1),'fro')^2);
+disp('Checking the NMSE (dB) between the original tensor Y and the one'... 
+    'after the N-mode product:')
+nmsey = (norm(tensor.unfold(tenY- tenY_test,1),'fro')^2)...
+    /(norm(tensor.unfold(tenY,1),'fro')^2);
 nmsey = 20*log10(nmsey)

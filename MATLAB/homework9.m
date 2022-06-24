@@ -11,19 +11,24 @@ dim = [5 4 8];
 Xhat = tensor.mtx_prod_kr(Matrices{1},Matrices{2});
 Xhat = tensor.mtx_prod_kr(Xhat,Matrices{3});
 
-disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with MLSKRF:')
+disp(['Checking the NMSE (dB) between the original matrix X and its'...
+    'reconstruction with MLSKRF:'])
 nmsex = (norm(X - Xhat,'fro')^2)/(norm(X,'fro')^2);
 nmsex = 20*log10(nmsex)
-disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
+disp(['Checking the NMSE (dB) between the original matrix A and its'...
+    'estimation:'])
 nmsea = (norm(A - Matrices{1},'fro')^2)/(norm(A,'fro')^2);
 nmsea = 20*log10(nmsea)
-disp('Checking the NMSE (dB) between the original matrix B and its estimation:')
+disp(['Checking the NMSE (dB) between the original matrix B and its'...
+    'estimation:'])
 nmseb = (norm(B - Matrices{2},'fro')^2)/(norm(B,'fro')^2);
 nmseb = 20*log10(nmseb)
-disp('Checking the NMSE (dB) between the original matrix C and its estimation:')
+disp(['Checking the NMSE (dB) between the original matrix C and its'...
+    'estimation:'])
 nmsec = (norm(C - Matrices{3},'fro')^2)/(norm(C,'fro')^2);
 nmsec = 20*log10(nmsec)
 
+%% Monte Carlo Experiment
 N = 3;
 R  = 4;
 I = 2;
@@ -54,8 +59,10 @@ end
 nmse  = nmse/1000;
 
 figure
-txt = ['I1 = ' num2str(I), ', I2 = ' num2str(J), ', I3 = ' num2str(K), ' and R = ' num2str(R)];
-plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+txt = ['I1 = ' num2str(I), ', I2 = ' num2str(J), ', I3 = ' num2str(K),...
+    ' and R = ' num2str(R)];
+plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 title(['MLSKRF performance under imperfect scenario'])
 xlabel('SNR (dB)')
 ylabel('NMSE (dB)')

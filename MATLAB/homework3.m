@@ -9,13 +9,16 @@ X = tensor.mtx_prod_kr(A,B);
 [Ahat,Bhat] = tensor.LSKRF(X,4,6);
 Xhat = tensor.mtx_prod_kr(Ahat,Bhat);
 
-disp('Checking the NMSE (dB) between the original matrix X and its reconstruction with LSKRF:')
+disp('Checking the NMSE (dB) between the original matrix X and its'... 
+    'reconstruction with LSKRF:')
 nmsex = (norm(X- Xhat,'fro')^2)/(norm(X,'fro')^2);
 nmsex = 20*log10(nmsex)
-disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
+disp('Checking the NMSE (dB) between the original matrix A and its'...
+    'estimation:')
 nmsea = (norm(A- Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmsea = 20*log10(nmsea)
-disp('Checking the NMSE (dB) between the original matrix B and its estimation:')
+disp('Checking the NMSE (dB) between the original matrix B and its'... 
+    'estimation:')
 nmseb = (norm(B- Bhat,'fro')^2)/(norm(B,'fro')^2);
 nmseb = 20*log10(nmseb)
 
@@ -44,7 +47,8 @@ nmse  = nmse/1000;
 
 figure
 txt = ['I = ' num2str(I), ', J = ' num2str(J), ' and R = ' num2str(R)];
-plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 
 I = 30;
@@ -71,7 +75,8 @@ end
 nmse  = nmse/1000;
 
 txt = ['I = ' num2str(I), ', J = ' num2str(J), ' and R = ' num2str(R)];
-plot(SNR,nmse,'-d','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse,'-d','color', [0.4660 0.6740 0.1880], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold off;
 title(['LSKRF performance under imperfect scenario'])
 xlabel('SNR (dB)')

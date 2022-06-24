@@ -1,4 +1,4 @@
-%% ----- Homework 13 ----- %%
+%% ----- Homework 12 ----- %%
 clc;
 clear;
 close all;
@@ -51,14 +51,19 @@ for r = 1:R
     tenXhat = tenXhat + tensor.ten_prod_kron(varr,tenAhat_r);
 end
 
-disp('Checking the NMSE (dB) between the original tensor X and its reconstruction with TKPSVD:')
-nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2);
+disp('Checking the NMSE (dB) between the original tensor X and its'...
+    'reconstruction with TKPSVD:')
+nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)...
+    /(norm(tensor.unfold(tenX,1),'fro')^2);
 nmsex = 20*log10(nmsex)
-disp('Checking the NMSE (dB) between the original matrix A and its reconstruction with TKPSVD:')
+disp('Checking the NMSE (dB) between the original matrix A and its'...
+    'reconstruction with TKPSVD:')
 nmsea = 20*log10((norm(A- Ahat,'fro')^2)/(norm(A,'fro')^2))
-disp('Checking the NMSE (dB) between the original matrix B and its reconstruction with TKPSVD:')
+disp('Checking the NMSE (dB) between the original matrix B and its'...
+    'reconstruction with TKPSVD:')
 nmseb = 20*log10((norm(B- Bhat,'fro')^2)/(norm(B,'fro')^2))
-disp('Checking the NMSE (dB) between the original matrix C and its reconstruction with TKPSVD:')
+disp('Checking the NMSE (dB) between the original matrix C and its'...
+    'reconstruction with TKPSVD:')
 nmsec = 20*log10((norm(C- Chat,'fro')^2)/(norm(C,'fro')^2))
 
 %% Monte Carlo Simulation
@@ -95,7 +100,8 @@ for snr = 1:length(SNR)
         aux{2} = num2cell(size(tenB));
         aux{3} = num2cell(size(tenC));
         tenSize = horzcat(aux{:});
-        tenDim = cellfun(@(aux) prod(cell2mat(aux)), aux,'UniformOutput',false);
+        tenDim = cellfun(@(aux) prod(cell2mat(aux)), aux,...
+            'UniformOutput',false);
 
         tenX = tensor.ten_prod_kron(tenC,tenB);
         tenX = tensor.ten_prod_kron(tenX,tenA);
@@ -127,7 +133,8 @@ for snr = 1:length(SNR)
         nmse2(snr,1) = nmse2(snr,1) + 20*log10(var2);
         var3 = (norm(C - Chat,'fro')^2)/(norm(C,'fro')^2);
         nmse3(snr,1) = nmse3(snr,1) + 20*log10(var3);
-        nmse4(snr,1) = nmse4(snr,1) + 20*log10((norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2));
+        nmse4(snr,1) = nmse4(snr,1) + 20*log10((norm(tensor.unfold(tenX...
+            - tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2));
         
     end
 end
@@ -138,16 +145,20 @@ nmse4  = nmse4/1000;
 
 figure
 txt = ['\bf A'];
-plot(SNR,nmse1,'--d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse1,'--d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf B'];
-plot(SNR,nmse2,'--d','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse2,'--d','color', [0.8500 0.3250 0.0980], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf C'];
-plot(SNR,nmse3,'--d','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse3,'--d','color', [0.4660 0.6740 0.1880], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['Reconstruction'];
-plot(SNR,nmse4,'-o','color', [0 0.4470 0.7410], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse4,'-o','color', [0 0.4470 0.7410], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold off;
 title(['TKPSVD performance under imperfect scenario'])
 xlabel('SNR (dB)')

@@ -17,7 +17,8 @@ for ii = 1:length(I)
         aux = toc;
         time1(ii,1) = time1(ii,1) + aux;
         tic;
-        (tensor.mtx_prod_kr(A,B).'*tensor.mtx_prod_kr(A,B))\(tensor.mtx_prod_kr(A,B).');
+        (tensor.mtx_prod_kr(A,B).'*tensor.mtx_prod_kr(A,B))...
+            \(tensor.mtx_prod_kr(A,B).');
         aux = toc;
         time2(ii,1) = time2(ii,1) + aux;
         tic;
@@ -32,13 +33,16 @@ time3 = time3/250;
 
 figure
 txt = ['1st Method'];
-plot(I,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(I,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['2nd Method'];
-plot(I,time2,'-d','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(I,time2,'-d','color', [0.8500 0.3250 0.0980], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['3rd Method'];
-plot(I,time3,'-d','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(I,time3,'-d','color', [0.4660 0.6740 0.1880], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Khatri-Rao product performance considering 2 columns'])
 xlabel('Number of rows')
@@ -62,7 +66,8 @@ for ii = 1:length(I)
         aux = toc;
         time1(ii,1) = time1(ii,1) + aux;
         tic;
-        (tensor.mtx_prod_kr(A,B).'*tensor.mtx_prod_kr(A,B))\(tensor.mtx_prod_kr(A,B).');
+        (tensor.mtx_prod_kr(A,B).'*tensor.mtx_prod_kr(A,B))...
+            \(tensor.mtx_prod_kr(A,B).');
         aux = toc;
         time2(ii,1) = time2(ii,1) + aux;
         tic;
@@ -77,13 +82,16 @@ time3 = time3/250;
 
 figure
 txt = ['1st Method'];
-plot(I,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(I,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['2nd Method'];
-plot(I,time2,'-d','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(I,time2,'-d','color', [0.8500 0.3250 0.0980], "linewidth",...
+    2, "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['3rd Method'];
-plot(I,time3,'-d','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(I,time3,'-d','color', [0.4660 0.6740 0.1880], "linewidth",...
+    2, "markersize", 8, "DisplayName", txt);
 hold off;
 title(['Khatri-Rao product performance considering 4 columns'])
 xlabel('Number of rows')
@@ -118,7 +126,8 @@ time1 = time1/250;
 
 figure
 txt = ['\bf ⋄^{N}_{n = 1} (A^{(n)}_{4 \times 2})'];
-semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+semilogy(N,time1,'-d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 title(['Multiple Khatri-Rao products performance'])
 xlabel('Number of Products')
 ylabel('Time (s)')

@@ -28,12 +28,14 @@ Chat = randn(ic,R) + 1j*randn(ic,R);
 
 aux = 10000;
 error = zeros(1,aux);
-error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
+error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).'))...
+    ,'fro'))^2)/((norm(mode_1,'fro')^2));
 for i = 2:aux
     Bhat = mode_2*pinv((tensor.mtx_prod_kr(Chat,Ahat)).');
     Chat = mode_3*pinv((tensor.mtx_prod_kr(Bhat,Ahat)).');
     Ahat = mode_1*pinv((tensor.mtx_prod_kr(Chat,Bhat)).');
-    error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
+    error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).'))...
+        ,'fro'))^2)/((norm(mode_1,'fro')^2));
     if abs(error(i) - error(i-1)) < eps
         error = error(1:i);
         break;
@@ -42,24 +44,28 @@ for i = 2:aux
     end
 end
 
-disp('Checking the NMSE (dB) between the original tensor X and its reconstruction with MLSKRF:')
+disp('NMSE (dB) between the original tensor X and its'...
+    'reconstruction with MLSKRF:')
 Xhat = tensor.fold(Ahat*(tensor.mtx_prod_kr(Chat,Bhat).'),[ia ib ic],1);
-nmsex = (norm(tensor.unfold(X- Xhat,1),'fro')^2)/(norm(tensor.unfold(X,1),'fro')^2);
+nmsex = (norm(tensor.unfold(X- Xhat,1),'fro')^2)...
+    /(norm(tensor.unfold(X,1),'fro')^2);
 nmsex = 20*log10(nmsex)
-disp('Checking the NMSE (dB) between the original matrix A and its estimation:')
+disp('NMSE (dB) between the original matrix A and its estimation:')
 nmsea = (norm(A - Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmsea = 20*log10(nmsea)
-disp('Checking the NMSE (dB) between the original matrix B and its estimation:')
+disp('NMSE (dB) between the original matrix B and its estimation:')
 nmseb = (norm(B - Bhat,'fro')^2)/(norm(B,[0.3010 0.7450 0.9330]'fro')^2);
 nmseb = 20*log10(nmseb)
-disp('Checking the NMSE (dB) between the original matrix C and its estimation:')
+disp('NMSE (dB) between the original matrix C and its estimation:')
 nmsec = (norm(C - Chat,'fro')^2)/(norm(C,'fro')^2);
 nmsec = 20*log10(nmsec)
 
 figure
 txt = ['\bf Convergence between iterations'];
-plot(1:i,20*log10(error),'-','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
-title(['ALS convergence: I = ' num2str(ia), ', J = ' num2str(ib), ', K = ' num2str(ic), ' and R = ' num2str(R)])
+plot(1:i,20*log10(error),'-','color', [0.3010 0.7450 0.9330],...
+    "linewidth", 2, "markersize", 8, "DisplayName", txt);
+title(['ALS convergence: I = ' num2str(ia), ', J = ' num2str(ib),...
+    ', K = ' num2str(ic), ' and R = ' num2str(R)])
 xlabel('Iterations')
 ylabel('Error (dB)')
 legend_copy = legend("location", "southwest");
@@ -99,12 +105,14 @@ for snr = 1:length(SNR)
         Chat = randn(ic,R) + 1j*randn(ic,R);
         aux = 1000;
         error = zeros(1,aux);
-        error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
+        error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat...
+            ,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
         for i = 2:aux
             Bhat = mode_2*pinv((tensor.mtx_prod_kr(Chat,Ahat)).');
             Chat = mode_3*pinv((tensor.mtx_prod_kr(Bhat,Ahat)).');
             Ahat = mode_1*pinv((tensor.mtx_prod_kr(Chat,Bhat)).');
-            error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
+            error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat...
+                ,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));
             if abs(error(i) - error(i-1)) < 1e-6
                 error = error(1:i);
                 break;
@@ -112,7 +120,8 @@ for snr = 1:length(SNR)
                 continue;
             end
         end
-        Xhat = tensor.fold(Ahat*(tensor.mtx_prod_kr(Chat,Bhat).'),[I J K],1);
+        Xhat = tensor.fold(Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')...
+            ,[I J K],1);
         
         aux1 = (norm(A- Ahat,'fro')^2)/(norm(A,'fro')^2);
         nmse1(snr,1) = nmse1(snr,1) + 20*log10(aux1);
@@ -120,7 +129,8 @@ for snr = 1:length(SNR)
         nmse2(snr,1) = nmse2(snr,1) + 20*log10(aux2);
         aux3 = (norm(C- Chat,'fro')^2)/(norm(C,'fro')^2);
         nmse3(snr,1) = nmse3(snr,1) + 20*log10(aux3);
-        aux4 = (norm(tensor.unfold(X- Xhat,1),'fro')^2)/(norm(tensor.unfold(X,1),'fro')^2);
+        aux4 = (norm(tensor.unfold(X- Xhat,1),'fro')^2)...
+            /(norm(tensor.unfold(X,1),'fro')^2);
         nmse4(snr,1) = nmse4(snr,1) + 20*log10(aux4);
     end
 end
@@ -131,18 +141,23 @@ nmse4  = nmse4/1000;
 
 figure
 txt = ['\bf A'];
-plot(SNR,nmse1,'--d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse1,'--d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf B'];
-plot(SNR,nmse2,'--d','color', [0.8500 0.3250 0.0980], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse2,'--d','color', [0.8500 0.3250 0.0980], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['\bf C'];
-plot(SNR,nmse3,'--d','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse3,'--d','color', [0.4660 0.6740 0.1880], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['Reconstruction'];
-plot(SNR,nmse4,'-o','color', [0 0.4470 0.7410], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse4,'-o','color', [0 0.4470 0.7410], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold off;
-title(['ALS performance: I = ' num2str(I), ', J = ' num2str(J), ', K = ' num2str(K), ' and R = ' num2str(R)])
+title(['ALS performance: I = ' num2str(I), ', J = ' num2str(J),...
+    ', K = ' num2str(K), ' and R = ' num2str(R)])
 xlabel('SNR (dB)')
 ylabel('NMSE (dB)')
 legend_copy = legend("location", "southwest");

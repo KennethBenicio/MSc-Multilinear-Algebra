@@ -25,8 +25,10 @@ tenXhat = tensor.contraction(G{1},2,G{2},1);
 tenXhat = tensor.contraction(tenXhat,3,G{3},1);
 tenXhat = tensor.contraction(tenXhat,4,G{4},1);
 
-disp('Checking the TTSVD NMSE (dB) from reconstruction using ranks = [3 3 3]:')
-nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2);
+disp('Checking the TTSVD NMSE (dB) from reconstruction using'... 
+    'ranks = [3 3 3]:')
+nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)...
+    /(norm(tensor.unfold(tenX,1),'fro')^2);
 nmsex = 20*log10(nmsex)
 
 Ranks = [2 2 2];
@@ -35,8 +37,10 @@ Ranks = [2 2 2];
 tenXhat = tensor.contraction(G{1},2,G{2},1);
 tenXhat = tensor.contraction(tenXhat,3,G{3},1);
 tenXhat = tensor.contraction(tenXhat,4,G{4},1);
-disp('Checking the TTSVD NMSE (dB) from reconstruction using ranks = [2 2 2]:')
-nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2);
+disp('Checking the TTSVD NMSE (dB) from reconstruction using'... 
+    'ranks = [2 2 2]:')
+nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)...
+    /(norm(tensor.unfold(tenX,1),'fro')^2);
 nmsex = 20*log10(nmsex)
 
 %% Monte Carlo Simulation
@@ -71,13 +75,15 @@ for snr = 1:length(SNR)
         tenXhat = tensor.contraction(GR1{1},2,GR1{2},1);
         tenXhat = tensor.contraction(tenXhat,3,GR1{3},1);
         tenXhat = tensor.contraction(tenXhat,4,GR1{4},1);
-        nmse1(snr,1) = nmse1(snr,1) + 20*log10((norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2));
+        nmse1(snr,1) = nmse1(snr,1) + 20*log10((norm(tensor.unfold(tenX...
+            - tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2));
         
         [GR2] = tensor.TTSVD(tenX_noisy,Ranks2);
         tenXhat = tensor.contraction(GR2{1},2,GR2{2},1);
         tenXhat = tensor.contraction(tenXhat,3,GR2{3},1);
         tenXhat = tensor.contraction(tenXhat,4,GR2{4},1);
-        nmse2(snr,1) = nmse2(snr,1) + 20*log10((norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2));
+        nmse2(snr,1) = nmse2(snr,1) + 20*log10((norm(tensor.unfold(tenX... 
+            - tenXhat,1),'fro')^2)/(norm(tensor.unfold(tenX,1),'fro')^2));
         
     end
 end
@@ -86,10 +92,12 @@ nmse2  = nmse2/1000;
 
 figure
 txt = ['Ranks = [2 2 2]'];
-plot(SNR,nmse1,'--d','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse1,'--d','color', [0.3010 0.7450 0.9330], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold on;
 txt = ['Ranks = [3 3 3]'];
-plot(SNR,nmse2,'-o','color', [0 0.4470 0.7410], "linewidth", 2, "markersize", 8, "DisplayName", txt);
+plot(SNR,nmse2,'-o','color', [0 0.4470 0.7410], "linewidth", 2,...
+    "markersize", 8, "DisplayName", txt);
 hold off;
 title(['TTSVD performance under imperfect scenario'])
 xlabel('SNR (dB)')
