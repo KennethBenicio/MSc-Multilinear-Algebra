@@ -1594,6 +1594,7 @@
     \end{align}
 
     and by implementing the algorithm it was possible to reach the following table of NMSE (dB) values using the validation files 
+    for the HOSVD and HOOI initialization, respectively.
 
     \begin{table}[ht!]
         \centering
@@ -1604,7 +1605,16 @@
         \end{tabular}
     \end{table}
 
-    as we can see the estimation of the matrix $\boldsymbol{X}$ is perfect, but the estimated factor matrices are far from the original ones. This is simply explained by 
+    \begin{table}[ht!]
+        \centering
+        \begin{tabular}{|l|l|l|l|}
+        \hline
+        NNMSE($\boldsymbol{X}, \boldsymbol{\hat{X}}$) & NMSE($\boldsymbol{A}_{1}, \boldsymbol{\hat{A}}_{1}$) & NMSE($\boldsymbol{A}_{2}, \boldsymbol{\hat{A}}_{2}$) & NMSE($\boldsymbol{A}_{3}, \boldsymbol{\hat{A}}_{3}$) \\ \hline
+        -608.4705 & +5.4597 & +15.0478 & +5.8977 \\ \hline
+        \end{tabular}
+    \end{table}
+
+    as we can see the estimation of the matrix $\boldsymbol{X}$ is perfect, but the estimated factor matrices are far from the original ones for both cases. This is simply explained by 
     the scale ambiguity intrinsic to the MLS-KronF. This could be eliminated if we assume previous knowledge of either the structure of the factor matrices or some of their elements.
     It is also important to say that the produced algorithm was generalized for a random number of factors.
 
@@ -1628,7 +1638,7 @@
         \hfill
         \begin{subfigure}[b]{0.475\textwidth}  
             \centering 
-            \includegraphics[width=\textwidth]{figs/hw10a1.png} 
+            \includegraphics[width=\textwidth]{figs/hw10a2.png} 
             \caption[]%
             {{\small Scenario 2}}    
             \label{fig:hw10a2} 

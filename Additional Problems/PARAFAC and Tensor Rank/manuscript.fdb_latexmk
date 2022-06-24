@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1656013852 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" "manuscript.pdf" "manuscript" 1656013852
-  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" 1656013851 11080 d907270d9604e299bcd9da7dbf6f4104 ""
+["pdflatex"] 1656102788 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" "manuscript.pdf" "manuscript" 1656102789
+  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Additional Problems/PARAFAC and Tensor Rank/manuscript.tex" 1656102788 11379 98fdd7c6493035afd5df78856591213b ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1650183167 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1650183167 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -71,10 +71,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652447722 4274140 6ffef722bc1262edc9440643c3ef1781 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1652447705 2927660 d3c8a37f6e65a821ab2eaf136b52d860 ""
-  "figs/icon.png" 1655296099 225873 bd8744586e262fc284cb39e1fe099b01 ""
+  "figs/icon.png" 1656102737 225873 bd8744586e262fc284cb39e1fe099b01 ""
   "front.tex" 1655296324 765 70cd26cfedb770572cd00fdba9842605 ""
-  "manuscript.aux" 1656013852 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "manuscript.tex" 1656013851 11080 d907270d9604e299bcd9da7dbf6f4104 ""
+  "manuscript.aux" 1656102788 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "manuscript.tex" 1656102788 11379 98fdd7c6493035afd5df78856591213b ""
   (generated)
   "manuscript.aux"
   "manuscript.log"

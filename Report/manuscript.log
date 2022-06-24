@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  24 JUN 2022 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  24 JUN 2022 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,84 +310,85 @@ Package pdftex.def Info: figs/hw9.png  used on input line 1473.
 <figs/hw10a1.png, id=162, 429.2838pt x 317.5062pt>
 File: figs/hw10a1.png Graphic file (type png)
 <use figs/hw10a1.png>
-Package pdftex.def Info: figs/hw10a1.png  used on input line 1623.
+Package pdftex.def Info: figs/hw10a1.png  used on input line 1633.
 (pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
-File: figs/hw10a1.png Graphic file (type png)
-<use figs/hw10a1.png>
-Package pdftex.def Info: figs/hw10a1.png  used on input line 1631.
+<figs/hw10a2.png, id=163, 429.2838pt x 317.5062pt>
+File: figs/hw10a2.png Graphic file (type png)
+<use figs/hw10a2.png>
+Package pdftex.def Info: figs/hw10a2.png  used on input line 1641.
 (pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
-<figs/hw10a3.png, id=163, 429.2838pt x 317.5062pt>
+<figs/hw10a3.png, id=164, 429.2838pt x 317.5062pt>
 File: figs/hw10a3.png Graphic file (type png)
 <use figs/hw10a3.png>
-Package pdftex.def Info: figs/hw10a3.png  used on input line 1639.
+Package pdftex.def Info: figs/hw10a3.png  used on input line 1649.
 (pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
-<figs/hw10a4.png, id=164, 429.2838pt x 317.5062pt>
+<figs/hw10a4.png, id=165, 429.2838pt x 317.5062pt>
 File: figs/hw10a4.png Graphic file (type png)
 <use figs/hw10a4.png>
-Package pdftex.def Info: figs/hw10a4.png  used on input line 1647.
+Package pdftex.def Info: figs/hw10a4.png  used on input line 1657.
 (pdftex.def)             Requested size: 216.24371pt x 159.93481pt.
- [41] [42 <./figs/hw10a1.png (PNG copy)> <./figs/hw10a3.png (PNG copy)> <./figs/hw10a4.png (PNG copy)>]
-Overfull \hbox (6.75189pt too wide) in paragraph at lines 2000--2000
+ [41] [42 <./figs/hw10a1.png (PNG copy)> <./figs/hw10a2.png (PNG copy)> <./figs/hw10a3.png (PNG copy)> <./figs/hw10a4.png (PNG copy)>]
+Overfull \hbox (6.75189pt too wide) in paragraph at lines 2010--2010
 []        \OT1/cmtt/m/n/10 % random number of matrices in a iterative form considering groups of 3 objects.[] 
  []
 
 
-Overfull \hbox (54.00148pt too wide) in paragraph at lines 2000--2000
+Overfull \hbox (54.00148pt too wide) in paragraph at lines 2010--2010
 []            \OT1/cmtt/m/n/10 tenXhat = reshape(Xhat,[rows(3)*columns(3), rows(2)*columns(2), rows(1)*columns(1)]);[] 
  []
 
 [43] [44] [45] [46] [47] [48] [49]
-<figs/hw11a1.png, id=195, 429.2838pt x 310.761pt>
+<figs/hw11a1.png, id=196, 429.2838pt x 310.761pt>
 File: figs/hw11a1.png Graphic file (type png)
 <use figs/hw11a1.png>
-Package pdftex.def Info: figs/hw11a1.png  used on input line 2015.
+Package pdftex.def Info: figs/hw11a1.png  used on input line 2025.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
-<figs/hw11a2.png, id=196, 429.2838pt x 310.761pt>
+<figs/hw11a2.png, id=197, 429.2838pt x 310.761pt>
 File: figs/hw11a2.png Graphic file (type png)
 <use figs/hw11a2.png>
-Package pdftex.def Info: figs/hw11a2.png  used on input line 2022.
+Package pdftex.def Info: figs/hw11a2.png  used on input line 2032.
 (pdftex.def)             Requested size: 341.43306pt x 247.16287pt.
  [50 <./figs/hw11a1.png (PNG copy)>]
-Overfull \hbox (153.75061pt too wide) in paragraph at lines 2235--2235
+Overfull \hbox (153.75061pt too wide) in paragraph at lines 2245--2245
 []            \OT1/cmtt/m/n/10 error(1) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));[] 
  []
 
 [51 <./figs/hw11a2.png (PNG copy)>]
-Overfull \hbox (174.75043pt too wide) in paragraph at lines 2235--2235
+Overfull \hbox (174.75043pt too wide) in paragraph at lines 2245--2245
 []                \OT1/cmtt/m/n/10 error(i) = ((norm((mode_1 - Ahat*(tensor.mtx_prod_kr(Chat,Bhat).')),'fro'))^2)/((norm(mode_1,'fro')^2));[] 
  []
 
 [52] [53] [54] [55]
-<figs/hw12.png, id=217, 429.2838pt x 317.5062pt>
+<figs/hw12.png, id=218, 429.2838pt x 317.5062pt>
 File: figs/hw12.png Graphic file (type png)
 <use figs/hw12.png>
-Package pdftex.def Info: figs/hw12.png  used on input line 2259.
+Package pdftex.def Info: figs/hw12.png  used on input line 2269.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
  [56 <./figs/hw12.png (PNG copy)>] [57] [58] [59] [60] [61]
-<figs/hw13.png, id=237, 429.2838pt x 317.5062pt>
+<figs/hw13.png, id=238, 429.2838pt x 317.5062pt>
 File: figs/hw13.png Graphic file (type png)
 <use figs/hw13.png>
-Package pdftex.def Info: figs/hw13.png  used on input line 2509.
+Package pdftex.def Info: figs/hw13.png  used on input line 2519.
 (pdftex.def)             Requested size: 341.43306pt x 252.52763pt.
  [62 <./figs/hw13.png (PNG copy)>]
-Overfull \hbox (43.50157pt too wide) in paragraph at lines 2682--2682
+Overfull \hbox (43.50157pt too wide) in paragraph at lines 2692--2692
 []        \OT1/cmtt/m/n/10 % This function computes the TT-SVD of a fourth order tensor but can be extended later.[] 
  []
 
 [63] [64] [65] [66] (./manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 5517 strings out of 478238
- 93911 string characters out of 5850456
+ 5524 strings out of 478238
+ 94042 string characters out of 5850456
  480244 words of memory out of 5000000
- 23664 multiletter control sequences out of 15000+600000
+ 23670 multiletter control sequences out of 15000+600000
  482500 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,15n,91p,449b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on manuscript.pdf (66 pages, 1063322 bytes).
+Output written on manuscript.pdf (66 pages, 1093607 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
+ 340 PDF objects out of 1000 (max. 8388607)
  208 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

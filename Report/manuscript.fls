@@ -470,10 +470,11 @@ INPUT figs/hw10a1.png
 INPUT ./figs/hw10a1.png
 INPUT ./figs/hw10a1.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT ./figs/hw10a1.png
-INPUT ./figs/hw10a1.png
-INPUT figs/hw10a1.png
-INPUT ./figs/hw10a1.png
+INPUT ./figs/hw10a2.png
+INPUT ./figs/hw10a2.png
+INPUT figs/hw10a2.png
+INPUT ./figs/hw10a2.png
+INPUT ./figs/hw10a2.png
 INPUT ./figs/hw10a3.png
 INPUT ./figs/hw10a3.png
 INPUT figs/hw10a3.png

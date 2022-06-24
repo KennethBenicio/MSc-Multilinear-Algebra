@@ -70,7 +70,7 @@
         First we can begin by defining the core tensor $\mathcal{S}$ by its PARAFAC Decomposition as
 
         \begin{align}
-            \mathcal{S} = \sum^{R}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{s}^{(3)}_{r},
+            \mathcal{S} = \sum^{R}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \cdots \circ \boldsymbol{s}^{(N)}_{r},
         \end{align}
 
         and by returning to the original transformation we can rewrite it as 
@@ -167,7 +167,12 @@
         \end{align}
 
         We also know from the previous problem that the tensor rank is indeed a property. Thus, the tensor $\mathcal{X}$ and the core tensor $\mathcal{S}$ of its multilinear transformation will have the same tensor rank.
-        Now, we only need to proof that either one of them are a tensor with rank three. The easiest way to do this is by working with the core tensor of the multilinear transformation, the tensor $\mathcal{S}$, and start a proof by contradiction.
+        Now, we only need to proof that either one of them are a tensor with rank three. The easiest way to do this is by working with the core tensor of the multilinear transformation, the tensor $\mathcal{S}$, and start 
+        a proof by contradiction defining that $rank(\mathcal{S}) = 2$. This means that we can write the PARAFAC Decomposition of this tensor assunto
+
+        \begin{align}
+            \mathcal{S} = \sum^{2}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \boldsymbol{s}^{(2)}_{r} \circ \boldsymbol{s}^{(3)}_{r},
+        \end{align}
         
     
     \item 

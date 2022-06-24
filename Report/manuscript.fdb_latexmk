@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1656101796 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" "manuscript.pdf" "manuscript" 1656101796
-  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" 1656101795 105526 3b420b0254057106129ffd49f721582f ""
+["pdflatex"] 1656102461 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" "manuscript.pdf" "manuscript" 1656102462
+  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" 1656102461 106017 b728fcc98519c71a7e72622dfc04031b ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1650183167 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1650183167 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -101,6 +101,7 @@
   "figs/hw0a1.png" 1656019586 26635 6bb36e6d1f7dfb4634b2f7d127ef1549 ""
   "figs/hw0a2.png" 1656019586 36771 1084caa8f866de917ce3788b160ee156 ""
   "figs/hw10a1.png" 1656100671 30102 15048bcd0c521e0a3be09ac640e7f50b ""
+  "figs/hw10a2.png" 1656102186 30050 0672cdcfbd10de822a5868ecc630f914 ""
   "figs/hw10a3.png" 1656101111 30062 12458200de0507ca64ed897ce298e19c ""
   "figs/hw10a4.png" 1656101609 30639 a42042495e3ce5f0e17ff5671de712df ""
   "figs/hw11a1.png" 1656019586 28857 7f7f5183567835e9dfb7efb9a5af31b7 ""
@@ -118,8 +119,8 @@
   "figs/hw9.png" 1656019586 28783 d0ee09ba9ba9e275517bfbac0fdf821c ""
   "figs/icon.png" 1655296099 225873 bd8744586e262fc284cb39e1fe099b01 ""
   "front.tex" 1656023446 765 8d8d779152ebdd6a49a41976848ffb32 ""
-  "manuscript.aux" 1656101796 3415 19f024051b4552c4bb03cbe183d37a05 "pdflatex"
-  "manuscript.tex" 1656101795 105526 3b420b0254057106129ffd49f721582f ""
+  "manuscript.aux" 1656102462 3415 19f024051b4552c4bb03cbe183d37a05 "pdflatex"
+  "manuscript.tex" 1656102461 106017 b728fcc98519c71a7e72622dfc04031b ""
   (generated)
   "manuscript.aux"
   "manuscript.log"
