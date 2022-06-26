@@ -171,10 +171,63 @@
         a proof by contradiction defining that $rank(\mathcal{S}) = 2$. This means that we can write the PARAFAC Decomposition of this tensor assunto
 
         \begin{align}
-            \mathcal{S} = \sum^{2}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \boldsymbol{s}^{(2)}_{r} \circ \boldsymbol{s}^{(3)}_{r},
+            \mathcal{S} &= \sum^{2}_{r = 1} \boldsymbol{s}^{(1)}_{r} \circ \boldsymbol{s}^{(2)}_{r} \circ \boldsymbol{s}^{(3)}_{r},     
         \end{align}
         
-    
+        where it is possible to rewrite the core tensor using the frontal slices notations for the PARAFAC model
+
+        \begin{align}
+            \mathcal{S}_{...1} &= \sum^{2}_{r = 1} s^{(3)}_{1,r} \boldsymbol{s}^{(1)}_{r} \boldsymbol{s}^{(2)^{\text{T}}}_{r} = \boldsymbol{S}^{(1)} \text{D}_{1}\left(\boldsymbol{S}^{(3)}\right) \boldsymbol{S}^{(2)^{\text{T}}}, \\
+            \mathcal{S}_{...2} &= \sum^{2}_{r = 1} s^{(3)}_{2,r} \boldsymbol{s}^{(1)}_{r} \boldsymbol{s}^{(2)^{\text{T}}}_{r} = \boldsymbol{S}^{(1)} \text{D}_{2}\left(\boldsymbol{S}^{(3)}\right) \boldsymbol{S}^{(2)^{\text{T}}}, 
+        \end{align}
+
+        and if we supose that $\mathcal{S}_{...1} = \boldsymbol{I}$ and then rewrite it with the SVD
+
+        \begin{align}
+            \mathcal{S}_{...1} &= \boldsymbol{U} \boldsymbol{\Sigma} \boldsymbol{V}^{\text{T}} = \boldsymbol{S}^{(1)} \text{D}_{1}\left(\boldsymbol{S}^{(3)}\right) \boldsymbol{S}^{(2)^{\text{T}}} = \boldsymbol{I}, \\
+        \end{align}
+
+        and we know that the SVD of the identity matrix leads to $\boldsymbol{U} = \boldsymbol{\Sigma} = \boldsymbol{V}^{\text{T}} = \boldsymbol{I}$. By inspecting above expression it also possible to write the following relations
+
+        \begin{align}
+            \boldsymbol{S}^{(1)} &= \boldsymbol{U} = \boldsymbol{I}, \\
+            \boldsymbol{S}^{(2)} &= \boldsymbol{V} = \boldsymbol{I}, \\
+            \text{D}_{1}\left(\boldsymbol{S}^{(3)}\right) &= \boldsymbol{\Sigma} = \boldsymbol{I}, 
+        \end{align}
+
+        and since $\boldsymbol{S}^{(1)} = \boldsymbol{S}^{(2)}  = \boldsymbol{I}$  then it is possible to write
+
+        \begin{align}
+            \mathcal{S}_{...2} &= \boldsymbol{S}^{(1)} \text{D}_{2}\left(\boldsymbol{S}^{(3)}\right) \boldsymbol{S}^{(2)^{\text{T}}}, \\
+            \mathcal{S}_{...2} &= \boldsymbol{S}^{(1)} \boldsymbol{S}^{(1)} \text{D}_{2}\left(\boldsymbol{S}^{(3)}\right) \boldsymbol{S}^{(2)^{\text{T}}} \boldsymbol{S}^{(1)^{-1}}, \\
+            \mathcal{S}_{...2} &= 
+            \begin{bmatrix}
+                1 & 0 \\
+                0 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+                1 & 0 \\
+                0 & 1
+            \end{bmatrix}
+            \text{D}_{2}\left(\boldsymbol{S}^{(3)}\right)
+            \begin{bmatrix}
+                1 & 0 \\
+                0 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+                1 & 0 \\
+                0 & 1
+            \end{bmatrix}, \\
+            \mathcal{S}_{...2} &= \text{D}_{2}\left(\boldsymbol{S}^{(3)}\right) = 
+            \begin{bmatrix}
+                s_{21} & 0 \\
+                0 & s_{22}
+            \end{bmatrix},
+        \end{align}
+
+        and thus it is possible to diagonalized the second frontal slice $\mathcal{S}_{...2}$ with matrix $\boldsymbol{S}^{(1)}$. However, this similarity transformation leads to an invalid Jordan matrix as defined by $\mathcal{S}_{...2}$. Thus, it is not possible
+        to the core tensor $\mathcal{S}$ be rank two and it must be in fact rank three.  
+
     \item 
 
         \begin{enumerate}
