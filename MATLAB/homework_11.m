@@ -44,8 +44,8 @@ for i = 2:aux
     end
 end
 
-disp('NMSE (dB) between the original tensor X and its'...
-    'reconstruction with MLSKRF:')
+disp(['NMSE (dB) between the original tensor X and its'...
+    'reconstruction with ALS:'])
 Xhat = tensor.fold(Ahat*(tensor.mtx_prod_kr(Chat,Bhat).'),[ia ib ic],1);
 nmsex = (norm(tensor.unfold(X- Xhat,1),'fro')^2)...
     /(norm(tensor.unfold(X,1),'fro')^2);
@@ -54,7 +54,7 @@ disp('NMSE (dB) between the original matrix A and its estimation:')
 nmsea = (norm(A - Ahat,'fro')^2)/(norm(A,'fro')^2);
 nmsea = 20*log10(nmsea)
 disp('NMSE (dB) between the original matrix B and its estimation:')
-nmseb = (norm(B - Bhat,'fro')^2)/(norm(B,[0.3010 0.7450 0.9330]'fro')^2);
+nmseb = (norm(B - Bhat,'fro')^2)/(norm(B,'fro')^2);
 nmseb = 20*log10(nmseb)
 disp('NMSE (dB) between the original matrix C and its estimation:')
 nmsec = (norm(C - Chat,'fro')^2)/(norm(C,'fro')^2);

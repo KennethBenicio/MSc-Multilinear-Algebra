@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1656102461 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" "manuscript.pdf" "manuscript" 1656102462
-  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" 1656102461 106017 b728fcc98519c71a7e72622dfc04031b ""
+["pdflatex"] 1656462198 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" "manuscript.pdf" "manuscript" 1656462198
+  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Report/manuscript.tex" 1656462198 114198 b9704c20cf739fc7c4c315b8e23bc04c ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1650183167 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1650183167 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -119,8 +119,8 @@
   "figs/hw9.png" 1656019586 28783 d0ee09ba9ba9e275517bfbac0fdf821c ""
   "figs/icon.png" 1655296099 225873 bd8744586e262fc284cb39e1fe099b01 ""
   "front.tex" 1656023446 765 8d8d779152ebdd6a49a41976848ffb32 ""
-  "manuscript.aux" 1656102462 3415 19f024051b4552c4bb03cbe183d37a05 "pdflatex"
-  "manuscript.tex" 1656102461 106017 b728fcc98519c71a7e72622dfc04031b ""
+  "manuscript.aux" 1656462198 3415 321345dcc5e9ec1b832c89bf941c4dfc "pdflatex"
+  "manuscript.tex" 1656462198 114198 b9704c20cf739fc7c4c315b8e23bc04c ""
   (generated)
   "manuscript.aux"
   "manuscript.log"
