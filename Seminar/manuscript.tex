@@ -1,13 +1,10 @@
-%% If you have any problems using this template, please contact the author: %%
-%% Chris Carmona: carmona@stats.ox.ac.uk ; chriscarmona.me %%
-
 \documentclass[10pt]{beamer}
 
 \include{preamble}
 %% Information (author, title, etc.) %%
 
 \title[Short Title]{% short title for footer
-    Adaptative Filtering using Alternating Tensor Least Mean Squares 
+    Separable Least-Mean Squares Beamforming 
     \vspace{0.5cm}
 }
 
@@ -24,11 +21,9 @@
 
 
 %% Content of slides %%
-%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-%%%%%%%%%%%%%%%%%%%%
 
-% Title slide %
+%% Title slide
 {
     \setbeamertemplate{footline}{}
     \setbeamertemplate{headline}{}
@@ -36,30 +31,107 @@
     \maketitle
 }
 
-%----------------------------%
-% Contents slide
+
+%% Contents slide
  \begin{frame}
  \frametitle{Outline}
  \tableofcontents
  \end{frame}
-%----------------------------%
 
-%now include the slides
+%% Including the slides
 \setbeamercovered{transparent}
-%----------------------------%
+
+%% Introduction
 \section{Introduction}
 \begin{frame}
     \frametitle{\insertsection}
     \begin{itemize}
         \justifying
         \item Comparisons with LMS, NLMS,ATLMS and TLMS.
-        \item Impact of digital modulation
-        \item Symbol Error Rate/Performance vs. SNR
-        \item Constelattions Diagram 
-        \item Convergence Analysis 
+        \item Convergence Analysis ? 
     \end{itemize}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%
+%% System Model
+\section{System Model}
+\begin{frame}
+    \frametitle{\insertsection}
+
+\end{frame}
+
+%% Implemented Algorithms
+\section{Implemented Algorithms}
+\begin{frame}[allowframebreaks]
+    \frametitle{\insertsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.90\linewidth]{tlms.png}
+        \caption{TLMS algorithm from \cite{ribeiroseparable}.}
+        \label{fig:lms_alg} 
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.60\linewidth]{atlms.png}
+        \caption{ATLMS algorithm from \cite{ribeiroseparable}.}
+        \label{fig:atlms_alg} 
+    \end{figure}
+\end{frame}
+
+%% Numerical Results
+\section{Numerical Results}
+\begin{frame}[allowframebreaks]
+    \frametitle{\insertsection}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.90\linewidth]{lms_mse.png}
+        \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
+        \label{fig:lms} 
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.90\linewidth]{nlms_mse.png}
+        \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
+        \label{fig:nlms} 
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.90\linewidth]{tlms_mse.png}
+        \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
+        \label{fig:tlms} 
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.90\linewidth]{atlms_mse.png}
+        \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
+        \label{fig:atlms} 
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.90\linewidth]{atlms_sampling.png}
+        \caption{Monter Carlo Experiment with 2500 runs for the ATLMS with different sampling intervals.}
+        \label{fig:atlms_sampling} 
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.90\linewidth]{atlms_time.png}
+        \caption{Run time process for ATLMS with different sampling intervals.}
+        \label{fig:atlms_time} 
+    \end{figure}
+\end{frame}
+
+%% References
+\section{References}
+\begin{frame} 
+    \frametitle{\insertsection}
+    \bibliographystyle{ieeetr}
+    \bibliography{references}
+\end{frame}
+
+%% End of Presentation
+\begin{frame}
+    \begin{center}
+        \Huge Thank you for your presence!
+    \end{center}
+\end{frame}
+
 \end{document}
-%%%%%%%%%%%%%%%%%%%%

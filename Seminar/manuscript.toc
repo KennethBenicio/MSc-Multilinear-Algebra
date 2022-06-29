@@ -1,2 +1,6 @@
 \babel@toc {UKenglish}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{System Model}{4}{0}{2}
+\beamer@sectionintoc {3}{Implemented Algorithms}{5}{0}{3}
+\beamer@sectionintoc {4}{Numerical Results}{7}{0}{4}
+\beamer@sectionintoc {5}{References}{13}{0}{5}

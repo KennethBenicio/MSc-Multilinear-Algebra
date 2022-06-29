@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: manuscript.aux
+The style file: ieeetr.bst
+Database file #1: references.bib
+Warning--empty journal in ribeiroseparable
+Warning--empty year in ribeiroseparable
+You've used 1 entry,
+            1876 wiz_defined-function locations,
+            480 strings with 3625 characters,
+and the built_in function-call counts, 194 in all, are:
+= -- 9
+> -- 14
+< -- 0
++ -- 5
+- -- 4
+* -- 18
+:= -- 39
+add.period$ -- 0
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 9
+empty$ -- 18
+format.name$ -- 4
+if$ -- 37
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 6
+num.names$ -- 1
+pop$ -- 7
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 2
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 1
+width$ -- 2
+write$ -- 8
+(There were 2 warnings)

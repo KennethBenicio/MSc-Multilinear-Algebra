@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  20 JUN 2022 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  29 JUN 2022 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -523,7 +523,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \beamer@dimb=\dimen291
 ) (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 6.
+LaTeX Warning: \include should only be used after \begin{document} on input line 3.
 
 (./preamble.tex (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/02/26 3.73 The Babel package
@@ -763,9 +763,9 @@ Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
 ))
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 28.
+(hyperref)                removing `\new@ifnextchar' on input line 24.
 
-LaTeX Font Info:    Trying to load font information for OT1+bch on input line 28.
+LaTeX Font Info:    Trying to load font information for OT1+bch on input line 24.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -775,24 +775,24 @@ File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 ) (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -847,7 +847,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 24.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -857,56 +857,56 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count371
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write5
 \openout5 = `manuscript.out'.
 
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/bch/m/it on input line 28.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/bch/m/it on input line 24.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> OT1/bch/m/it on input line 28.
+(Font)                  OT1/mathkerncmss/bx/sl --> OT1/bch/m/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/bch/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  OT1/cmr/m/n --> OT1/bch/m/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/bch/m/it on input line 28.
+(Font)                  OT1/cmr/m/it --> OT1/bch/m/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/bch/m/it on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+(Font)                  OT1/cmr/bx/it --> OT1/bch/m/it on input line 24.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/bch/m/n --> OT1/bch/b/n on input line 28.
+(Font)                  OT1/bch/m/n --> OT1/bch/b/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/bch/m/it --> OT1/bch/b/it on input line 28.
+(Font)                  OT1/bch/m/it --> OT1/bch/b/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/bch/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/bch/b/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/bch/b/n --> OT1/bch/b/n on input line 28.
+(Font)                  OT1/bch/b/n --> OT1/bch/b/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/bch/m/it --> OT1/bch/b/it on input line 28.
+(Font)                  OT1/bch/m/it --> OT1/bch/b/it on input line 24.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 24.
+LaTeX Font Info:    Redeclaring symbol font `boldpureletters' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/bx/sl --> OT1/bch/bx/it on input line 28.
+(Font)                  OT1/mathkerncmss/bx/sl --> OT1/bch/bx/it on input line 24.
 LaTeX Font Info:    Overwriting symbol font `boldpureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/bx/sl --> OT1/bch/bx/it on input line 28.
+(Font)                  OT1/mathkerncmss/bx/sl --> OT1/bch/bx/it on input line 24.
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -928,21 +928,91 @@ Package caption Info: End \AtBeginDocument code.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/icon.pdf>] (./manuscript.toc) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <10> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 61.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <7> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 61.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <5> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 61.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 53.
  [3
+
+] [4
+
+]
+<figs//tlms.png, id=156, 827.09pt x 582.175pt>
+File: figs//tlms.png Graphic file (type png)
+<use figs//tlms.png>
+Package pdftex.def Info: figs//tlms.png  used on input line 78.
+(pdftex.def)             Requested size: 276.559pt x 194.66783pt.
+<figs//atlms.png, id=159, 814.04124pt x 848.16875pt>
+File: figs//atlms.png Graphic file (type png)
+<use figs//atlms.png>
+Package pdftex.def Info: figs//atlms.png  used on input line 78.
+(pdftex.def)             Requested size: 184.3758pt x 192.09804pt.
+ [5
+
+ <./figs//tlms.png>] [6
+
+
+ <./figs//atlms.png>]
+<figs//lms_mse.png, id=217, 562.2606pt x 421.575pt>
+File: figs//lms_mse.png Graphic file (type png)
+<use figs//lms_mse.png>
+Package pdftex.def Info: figs//lms_mse.png  used on input line 120.
+(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
+<figs//nlms_mse.png, id=218, 562.2606pt x 421.575pt>
+File: figs//nlms_mse.png Graphic file (type png)
+<use figs//nlms_mse.png>
+Package pdftex.def Info: figs//nlms_mse.png  used on input line 120.
+(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
+<figs//tlms_mse.png, id=219, 562.2606pt x 421.575pt>
+File: figs//tlms_mse.png Graphic file (type png)
+<use figs//tlms_mse.png>
+Package pdftex.def Info: figs//tlms_mse.png  used on input line 120.
+(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
+<figs//atlms_mse.png, id=220, 429.2838pt x 317.5062pt>
+File: figs//atlms_mse.png Graphic file (type png)
+<use figs//atlms_mse.png>
+Package pdftex.def Info: figs//atlms_mse.png  used on input line 120.
+(pdftex.def)             Requested size: 276.559pt x 204.54526pt.
+<figs//atlms_sampling.png, id=221, 562.2606pt x 421.575pt>
+File: figs//atlms_sampling.png Graphic file (type png)
+<use figs//atlms_sampling.png>
+Package pdftex.def Info: figs//atlms_sampling.png  used on input line 120.
+(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
+<figs//atlms_time.png, id=222, 562.2606pt x 421.575pt>
+File: figs//atlms_time.png Graphic file (type png)
+<use figs//atlms_time.png>
+Package pdftex.def Info: figs//atlms_time.png  used on input line 120.
+(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
+ [7
+
+ <./figs//lms_mse.png (PNG copy)>] [8
+
+
+ <./figs//nlms_mse.png (PNG copy)>] [9
+
+
+ <./figs//tlms_mse.png (PNG copy)>] [10
+
+
+ <./figs//atlms_mse.png (PNG copy)>] [11
+
+
+ <./figs//atlms_sampling.png (PNG copy)>] [12
+
+
+ <./figs//atlms_time.png (PNG copy)>] (./manuscript.bbl) [13
+
+] [14
 
 ]
 \tf@nav=\write6
@@ -961,21 +1031,21 @@ See the caption package documentation for explanation.
 
 (./manuscript.aux)
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 47949AC7C3DCEDDDEEFE3CD50587DDA1;103.
+(rerunfilecheck)             Checksum: EB6F0E56056E258BA8D1E50044B63EF3;682.
  ) 
 Here is how much of TeX's memory you used:
- 29066 strings out of 478238
- 572276 string characters out of 5850456
- 837128 words of memory out of 5000000
- 46686 multiletter control sequences out of 15000+600000
- 490902 words of font info for 68 fonts, out of 8000000 for 9000
+ 29268 strings out of 478238
+ 575714 string characters out of 5850456
+ 837509 words of memory out of 5000000
+ 46838 multiletter control sequences out of 15000+600000
+ 494364 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,484b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on manuscript.pdf (3 pages, 144062 bytes).
+Output written on manuscript.pdf (14 pages, 682068 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 8 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 425 compressed objects within 5 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
