@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex manuscript"] 1656598987 "manuscript.aux" "manuscript.bbl" "manuscript" 1656599841
+["bibtex manuscript"] 1656598987 "manuscript.aux" "manuscript.bbl" "manuscript" 1656628398
   "/usr/share/texmf-dist/bibtex/bst/base/ieeetr.bst" 1650183167 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "manuscript.aux" 1656599841 6525 2b83d85a46210921eda7e684692d2996 "pdflatex"
+  "manuscript.aux" 1656628398 6525 2b83d85a46210921eda7e684692d2996 "pdflatex"
   "references.bib" 1656521780 181 a94d64e1863a7888a4b156f020a56250 ""
   (generated)
   "manuscript.bbl"
   "manuscript.blg"
-["pdflatex"] 1656599840 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" "manuscript.pdf" "manuscript" 1656599841
-  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" 1656599840 8061 4e1f4dcaba3fe4864e67616238516481 ""
+["pdflatex"] 1656628397 "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" "manuscript.pdf" "manuscript" 1656628398
+  "/home/kenneth_benicio/Projects/Github/Msc-Multilinear-Algebra/Seminar/manuscript.tex" 1656628396 8061 4e1f4dcaba3fe4864e67616238516481 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1650183167 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/bitstrea/charter/bchb7t.tfm" 1650183167 2732 006d846b4d54f9b40899c7c3eecd771a ""
@@ -270,17 +270,17 @@
   "figs//atlms_mse.png" 1656545542 27547 aeebf15ef387edd223c9513d25eee68b ""
   "figs//atlms_sampling.png" 1656546889 34416 86a0f3f6573e047a3b9afd86eee159f8 ""
   "figs//atlms_time.png" 1656547172 30676 a869ed2092fd52e60c9dca78d9e1f9d5 ""
-  "figs//nlms_mse.png" 1656545827 28798 5cacd9cf5fbd0f9846e713e63a6b0649 ""
+  "figs//nlms_mse.png" 1656628268 26939 dfbe1fb10ba088be50a0fd3134fb7e67 ""
   "figs//tlms.png" 1656522615 104877 5c6c6616f0374c32704ab1239c895663 ""
   "figs//tlms_mse.png" 1656545374 27456 47596d5b17a05d373f00c27df739b7a6 ""
   "figs//ura.png" 1656547868 77485 457c56f8da597480c124b06a0d37f567 ""
   "figs/icon.pdf" 1655305188 94232 e60cae5ced1f1be830392164a88a8dfb ""
-  "manuscript.aux" 1656599841 6525 2b83d85a46210921eda7e684692d2996 "pdflatex"
+  "manuscript.aux" 1656628398 6525 2b83d85a46210921eda7e684692d2996 "pdflatex"
   "manuscript.bbl" 1656598987 188 64c390560d783b17e2efc76a0f26cc6f "bibtex manuscript"
-  "manuscript.nav" 1656599841 2810 11249991aec348d047c3e7af96dafe1a "pdflatex"
-  "manuscript.out" 1656599841 657 f5531efa4a4059552a78124ac17f9f77 "pdflatex"
-  "manuscript.tex" 1656599840 8061 4e1f4dcaba3fe4864e67616238516481 ""
-  "manuscript.toc" 1656599841 236 73fafc3f54696756b4719b8c77f8f320 "pdflatex"
+  "manuscript.nav" 1656628398 2810 11249991aec348d047c3e7af96dafe1a "pdflatex"
+  "manuscript.out" 1656628398 657 f5531efa4a4059552a78124ac17f9f77 "pdflatex"
+  "manuscript.tex" 1656628396 8061 4e1f4dcaba3fe4864e67616238516481 ""
+  "manuscript.toc" 1656628398 236 73fafc3f54696756b4719b8c77f8f320 "pdflatex"
   "preamble.tex" 1655305188 1797 eb73ea914d9b4d4c3ce2df3ef778e521 ""
   "statsbeamer.sty" 1655294567 3278 c56108c359eeb8ff995491ea5d03c98f ""
   (generated)

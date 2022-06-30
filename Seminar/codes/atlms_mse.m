@@ -45,7 +45,7 @@ for rr = 1:runs
     signal_x = zeros(Nh*Nv,Samples-R-1);
     for ii = 1:(Samples - R - 1)
         aux = A*signal_d(ii:ii+R-1);
-        noise = (sqrt(var_noise/2))*(randn(Nv*Nh,1) + randn(Nv*Nh,1));
+        noise = (sqrt(var_noise/2))*(randn(Nv*Nh,1) + 1i*randn(Nv*Nh,1));
         signal_x(:,ii) = aux + noise;
     end
     
@@ -173,7 +173,7 @@ for rr = 1:runs
     signal_x = zeros(Nh*Nv,Samples-R-1);
     for ii = 1:(Samples - R - 1)
         aux = A*signal_d(ii:ii+R-1);
-        noise = (sqrt(var_noise/2))*(randn(Nv*Nh,1) + randn(Nv*Nh,1));
+        noise = (sqrt(var_noise/2))*(randn(Nv*Nh,1) + 1i*randn(Nv*Nh,1));
         signal_x(:,ii) = aux + noise;
     end
     
@@ -236,7 +236,7 @@ for rr = 1:runs
     signal_x = zeros(Nh*Nv,Samples-R-1);
     for ii = 1:(Samples - R - 1)
         aux = A*signal_d(ii:ii+R-1);
-        noise = (sqrt(var_noise/2))*(randn(Nv*Nh,1) + randn(Nv*Nh,1));
+        noise = (sqrt(var_noise/2))*(randn(Nv*Nh,1) + 1i*randn(Nv*Nh,1));
         signal_x(:,ii) = aux + noise;
     end
     
