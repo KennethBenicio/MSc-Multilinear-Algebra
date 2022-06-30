@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  29 JUN 2022 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.13)  29 JUN 2022 21:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -928,91 +928,108 @@ Package caption Info: End \AtBeginDocument code.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/icon.pdf>] (./manuscript.toc) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <10> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 53.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 60.
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <7> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 53.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 60.
 LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <5> not available
-(Font)              Font shape `OT1/bch/b/it' tried instead on input line 53.
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 60.
  [3
 
 ] [4
 
 ]
-<figs//tlms.png, id=156, 827.09pt x 582.175pt>
-File: figs//tlms.png Graphic file (type png)
-<use figs//tlms.png>
-Package pdftex.def Info: figs//tlms.png  used on input line 78.
-(pdftex.def)             Requested size: 276.559pt x 194.66783pt.
-<figs//atlms.png, id=159, 814.04124pt x 848.16875pt>
-File: figs//atlms.png Graphic file (type png)
-<use figs//atlms.png>
-Package pdftex.def Info: figs//atlms.png  used on input line 78.
-(pdftex.def)             Requested size: 184.3758pt x 192.09804pt.
+<figs//ura.png, id=163, 725.71124pt x 677.53125pt>
+File: figs//ura.png Graphic file (type png)
+<use figs//ura.png>
+Package pdftex.def Info: figs//ura.png  used on input line 98.
+(pdftex.def)             Requested size: 215.10196pt x 200.8211pt.
+LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <8> not available
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 98.
+LaTeX Font Info:    Font shape `OT1/bch/bx/it' in size <6> not available
+(Font)              Font shape `OT1/bch/b/it' tried instead on input line 98.
  [5
 
- <./figs//tlms.png>] [6
+] [6
 
 
- <./figs//atlms.png>]
-<figs//lms_mse.png, id=217, 562.2606pt x 421.575pt>
-File: figs//lms_mse.png Graphic file (type png)
-<use figs//lms_mse.png>
-Package pdftex.def Info: figs//lms_mse.png  used on input line 120.
-(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
-<figs//nlms_mse.png, id=218, 562.2606pt x 421.575pt>
-File: figs//nlms_mse.png Graphic file (type png)
-<use figs//nlms_mse.png>
-Package pdftex.def Info: figs//nlms_mse.png  used on input line 120.
-(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
-<figs//tlms_mse.png, id=219, 562.2606pt x 421.575pt>
-File: figs//tlms_mse.png Graphic file (type png)
-<use figs//tlms_mse.png>
-Package pdftex.def Info: figs//tlms_mse.png  used on input line 120.
-(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
-<figs//atlms_mse.png, id=220, 429.2838pt x 317.5062pt>
-File: figs//atlms_mse.png Graphic file (type png)
-<use figs//atlms_mse.png>
-Package pdftex.def Info: figs//atlms_mse.png  used on input line 120.
-(pdftex.def)             Requested size: 276.559pt x 204.54526pt.
-<figs//atlms_sampling.png, id=221, 562.2606pt x 421.575pt>
-File: figs//atlms_sampling.png Graphic file (type png)
-<use figs//atlms_sampling.png>
-Package pdftex.def Info: figs//atlms_sampling.png  used on input line 120.
-(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
-<figs//atlms_time.png, id=222, 562.2606pt x 421.575pt>
-File: figs//atlms_time.png Graphic file (type png)
-<use figs//atlms_time.png>
-Package pdftex.def Info: figs//atlms_time.png  used on input line 120.
-(pdftex.def)             Requested size: 276.559pt x 207.35834pt.
+ <./figs//ura.png>]
+<figs//tlms.png, id=225, 827.09pt x 582.175pt>
+File: figs//tlms.png Graphic file (type png)
+<use figs//tlms.png>
+Package pdftex.def Info: figs//tlms.png  used on input line 142.
+(pdftex.def)             Requested size: 276.559pt x 194.66783pt.
+<figs//atlms.png, id=227, 814.04124pt x 848.16875pt>
+File: figs//atlms.png Graphic file (type png)
+<use figs//atlms.png>
+Package pdftex.def Info: figs//atlms.png  used on input line 142.
+(pdftex.def)             Requested size: 184.3758pt x 192.09804pt.
  [7
 
- <./figs//lms_mse.png (PNG copy)>] [8
+] [8
 
 
- <./figs//nlms_mse.png (PNG copy)>] [9
+ <./figs//tlms.png>] [9
 
 
- <./figs//tlms_mse.png (PNG copy)>] [10
+ <./figs//atlms.png>] [10
 
 
- <./figs//atlms_mse.png (PNG copy)>] [11
+] [11
 
+]
+<figs//nlms_mse.png, id=365, 429.2838pt x 317.5062pt>
+File: figs//nlms_mse.png Graphic file (type png)
+<use figs//nlms_mse.png>
+Package pdftex.def Info: figs//nlms_mse.png  used on input line 173.
+(pdftex.def)             Requested size: 276.559pt x 204.54526pt.
+ [12
 
- <./figs//atlms_sampling.png (PNG copy)>] [12
+ <./figs//nlms_mse.png (PNG copy)>]
+<figs//tlms_mse.png, id=392, 429.2838pt x 317.5062pt>
+File: figs//tlms_mse.png Graphic file (type png)
+<use figs//tlms_mse.png>
+Package pdftex.def Info: figs//tlms_mse.png  used on input line 183.
+(pdftex.def)             Requested size: 276.559pt x 204.54526pt.
+ [13
 
+ <./figs//tlms_mse.png (PNG copy)>]
+<figs//atlms_mse.png, id=420, 429.2838pt x 317.5062pt>
+File: figs//atlms_mse.png Graphic file (type png)
+<use figs//atlms_mse.png>
+Package pdftex.def Info: figs//atlms_mse.png  used on input line 193.
+(pdftex.def)             Requested size: 276.559pt x 204.54526pt.
+ [14
 
- <./figs//atlms_time.png (PNG copy)>] (./manuscript.bbl) [13
+ <./figs//atlms_mse.png (PNG copy)>]
+<figs//atlms_sampling.png, id=447, 429.2838pt x 317.5062pt>
+File: figs//atlms_sampling.png Graphic file (type png)
+<use figs//atlms_sampling.png>
+Package pdftex.def Info: figs//atlms_sampling.png  used on input line 203.
+(pdftex.def)             Requested size: 276.559pt x 204.54526pt.
+ [15
 
-] [14
+ <./figs//atlms_sampling.png (PNG copy)>]
+<figs//atlms_time.png, id=474, 429.2838pt x 317.5062pt>
+File: figs//atlms_time.png Graphic file (type png)
+<use figs//atlms_time.png>
+Package pdftex.def Info: figs//atlms_time.png  used on input line 213.
+(pdftex.def)             Requested size: 276.559pt x 204.54526pt.
+ [16
+
+ <./figs//atlms_time.png (PNG copy)>] [17
+
+] (./manuscript.bbl) [18
+
+] [19
 
 ]
 \tf@nav=\write6
@@ -1031,21 +1048,21 @@ See the caption package documentation for explanation.
 
 (./manuscript.aux)
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: EB6F0E56056E258BA8D1E50044B63EF3;682.
+(rerunfilecheck)             Checksum: 9B42DC49C298EC3A45E4E9B47D8778B8;760.
  ) 
 Here is how much of TeX's memory you used:
- 29268 strings out of 478238
- 575714 string characters out of 5850456
- 837509 words of memory out of 5000000
- 46838 multiletter control sequences out of 15000+600000
- 494364 words of font info for 72 fonts, out of 8000000 for 9000
+ 29389 strings out of 478238
+ 577705 string characters out of 5850456
+ 839532 words of memory out of 5000000
+ 46929 multiletter control sequences out of 15000+600000
+ 513180 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,122p,484b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on manuscript.pdf (14 pages, 682068 bytes).
+ 128i,17n,122p,484b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on manuscript.pdf (19 pages, 624559 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
- 44 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 575 compressed objects within 6 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

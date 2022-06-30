@@ -43,28 +43,72 @@
 
 %% Introduction
 \section{Introduction}
-\begin{frame}
+\begin{frame}[allowframebreaks]
     \frametitle{\insertsection}
-    \begin{itemize}
-        \justifying
-        \item Comparisons with LMS, NLMS,ATLMS and TLMS.
-        \item Convergence Analysis ? 
-    \end{itemize}
+    \begin{block}{Classic Wiener Filter }
+        \begin{itemize}
+            \justifying
+            \item Filters
+        \end{itemize}
+    \end{block}
+    \begin{block}{NLMS Adaptative Filter}
+        \begin{itemize}
+            \justifying
+            \item Filters
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Problem Statement}
+    \begin{block}{Objectives}
+        \begin{enumerate}
+            \item Recover a desired source signal by employing a large antenna array following an Uniform Rectangular Array (URA).
+            \item Use spatial filter (beamforming) and optimize it according to the Mean square error (MSE) criterion.
+            \item Solve the problem of slow convergence presented at LMS and NLMS algorithms.
+        \end{enumerate}
+    \end{block}
+    \begin{block}{How to do so?}
+        \begin{enumerate}
+            \item Exploit URA separability to reduce the convergence time of the problem.
+            \item Implementing a beamforming filter of the form $\mathbf{w} = \mathbf{w}_{v} \otimes \mathbf{w}_{h}$, with $\mathbf{w}_{h} \in \mathbb{C}^{N_{h}}$ and $\mathbf{w}_{v} \in \mathbb{C}^{N_{v}}$ and $N = N_{h} N_{v}$.
+        \end{enumerate}
+    \end{block}    
 \end{frame}
 
 %% System Model
 \section{System Model}
-\begin{frame}
-    \frametitle{\insertsection}
-
-\end{frame}
-
-%% Implemented Algorithms
-\section{Implemented Algorithms}
 \begin{frame}[allowframebreaks]
     \frametitle{\insertsection}
+    \begin{itemize}
+        \item The received signal model follows a geometric channel
+            \begin{align}
+                \boldsymbol{x}[k] = \sum^{R}_{r = 1} \boldsymbol{a}(p_{r},q_{r}) s_{r}[k] + \boldsymbol{b}[k] = \boldsymbol{A} \boldsymbol{s}[k] + \boldsymbol{b}[k],
+            \end{align}
+        \item The vector $\boldsymbol{a}(p_{r},q_{r})$ represents an Uniform Rectangular Array (URA)
+            \begin{align}
+                \boldsymbol{a}(p_{r},q_{r}) = \boldsymbol{a}_{v}(q_{r}) \otimes \boldsymbol{a}_{h}(p_{r})
+            \end{align}
+    \end{itemize}
     \begin{figure}
-        \centering
+        \centering 
+        \includegraphics[width=0.70\linewidth]{ura.png}
+        \caption{Unifor Rectangular Array (URA) with $3 \times 3$ elements from \cite{ribeiroseparable}.}
+        \label{fig:ura} 
+    \end{figure}
+\end{frame}
+
+%% Beamforming Methods
+\section{Beamforming Methods}
+\begin{frame}[allowframebreaks]
+    \frametitle{\insertsection}
+    \begin{itemize}
+        
+        \item Colocar as equações de adaptação!
+    
+    \end{itemize}
+    \framebreak
+    \begin{figure}
+        \centering 
         \includegraphics[width=0.90\linewidth]{tlms.png}
         \caption{TLMS algorithm from \cite{ribeiroseparable}.}
         \label{fig:lms_alg} 
@@ -75,42 +119,91 @@
         \caption{ATLMS algorithm from \cite{ribeiroseparable}.}
         \label{fig:atlms_alg} 
     \end{figure}
+    \begin{block}{Convergence and Computational Complexity}
+        \begin{itemize}
+            \justifying
+            \item The convergence for TLMS in MSE is
+            
+                \begin{align}
+                    0 < \mu < \frac{2}{\left|\left|\boldsymbol{u}_{h}[k]\right|\right|^{2}_{2} + \left|\left|\boldsymbol{u}_{v}[k]\right|\right|^{2}_{2}}
+                \end{align}
+            
+            \item The convergence for ATLMS in MSE is
+            
+                \begin{align}
+                    0 < \mu < \frac{2}{\left|\left|\boldsymbol{u}_{i}[k]\right|\right|^{2}_{2}}, i \in \{h,v\},
+                \end{align}
+            
+            \item TLMS and ATLMS has a computational complexity of $O(N_{h} + N_{v})$ and NLMS of $O(N)$. Since all the methods are linear in complexity
+            the most important aspect that we must observe is the convergence rate.
+
+        \end{itemize}
+    \end{block}
 \end{frame}
 
 %% Numerical Results
 \section{Numerical Results}
-\begin{frame}[allowframebreaks]
-    \frametitle{\insertsection}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.90\linewidth]{lms_mse.png}
-        \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
-        \label{fig:lms} 
-    \end{figure}
+\begin{frame}
+    \frametitle{Simulation Scenario}
+    \begin{block}{Parameters}
+        \begin{itemize}
+            
+            \item It was considered an URA of $4 \times 4$ antennas with $R = 4$ multipaths and QPSK information signals.
+            
+            \item The SNR was defined as $\text{SNR} = 1/\sigma^{2}_{b}$.
+
+            \item We set as figure of merit the sample Mean Square Error (MSE) defined and calculated over $K = 10000$ samples
+            
+                \begin{align}
+                    \text{MSE}(\boldsymbol{w}) = \frac{1}{K} \sum^{K}_{k = 1} \left|\left| s_{d}[k] - \boldsymbol{w}^{\text{H}} \boldsymbol{x}[k] \right|\right|^{2},
+                \end{align}
+
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{NLMS MSE Curve}
     \begin{figure}
         \centering
         \includegraphics[width=0.90\linewidth]{nlms_mse.png}
-        \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
+        \caption{Monter Carlo Experiment with 2500 runs for NLMS algorithm.}
         \label{fig:nlms} 
     \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{TLMS MSE Curve}
     \begin{figure}
         \centering
         \includegraphics[width=0.90\linewidth]{tlms_mse.png}
         \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
         \label{fig:tlms} 
     \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ATLMS MSE Curve}
     \begin{figure}
         \centering
         \includegraphics[width=0.90\linewidth]{atlms_mse.png}
         \caption{Monter Carlo Experiment with 2500 runs for LMS algorithm.}
         \label{fig:atlms} 
     \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{ATLMS: Different sampling intervals}
     \begin{figure}
         \centering
         \includegraphics[width=0.90\linewidth]{atlms_sampling.png}
         \caption{Monter Carlo Experiment with 2500 runs for the ATLMS with different sampling intervals.}
         \label{fig:atlms_sampling} 
     \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Processing Time: TLMS vs. ATLMS}
     \begin{figure}
         \centering
         \includegraphics[width=0.90\linewidth]{atlms_time.png}
@@ -119,8 +212,19 @@
     \end{figure}
 \end{frame}
 
+%% Conclusion
+\section{Conclusion}
+\begin{frame}[allowframebreaks]
+    \frametitle{\insertsection}
+    \begin{itemize}
+        \item TLMS and ATLMS algorithms converges faster than the traditional approachs using NLMS.
+        \item TLMS and ATLMS converges to almost the same end, however ATLMS has a greater misadjustment error at the end.
+        \item ATLMS can be slightly faster than the TLMS.
+    \end{itemize}
+\end{frame}
+
 %% References
-\section{References}
+\section*{References}
 \begin{frame} 
     \frametitle{\insertsection}
     \bibliographystyle{ieeetr}
