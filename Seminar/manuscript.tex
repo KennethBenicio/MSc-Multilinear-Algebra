@@ -41,24 +41,7 @@
 %% Including the slides
 \setbeamercovered{transparent}
 
-%% Introduction
-\section{Introduction}
-\begin{frame}[allowframebreaks]
-    \frametitle{\insertsection}
-    \begin{block}{Classic Wiener Filter }
-        \begin{itemize}
-            \justifying
-            \item Filters
-        \end{itemize}
-    \end{block}
-    \begin{block}{NLMS Adaptative Filter}
-        \begin{itemize}
-            \justifying
-            \item Filters
-        \end{itemize}
-    \end{block}
-\end{frame}
-
+%% Problem Statement
 \begin{frame}{Problem Statement}
     \begin{block}{Objectives}
         \begin{enumerate}
@@ -102,9 +85,23 @@
 \begin{frame}[allowframebreaks]
     \frametitle{\insertsection}
     \begin{itemize}
-        
-        \item Colocar as equações de adaptação!
-    
+        \item Filter Problem 
+            \begin{align}
+                \mathbb{E}\{ (s_{d}[k] - \boldsymbol{w}^{\text{H}} \boldsymbol{x}[k] )^{2} \} = 0
+            \end{align}
+        \item Classic Wiener Filter
+            \begin{align}
+                \boldsymbol{w}_{\text{opt}} = \boldsymbol{R}^{-1}_{x} \boldsymbol{p}_{xs},   
+            \end{align}
+        \item NLMS Adaptative Filter
+            \begin{align}
+                y[k] &= \boldsymbol{w}^{\text{H}} \boldsymbol{x}[k], \\
+                \boldsymbol{w}[k+1] &= \boldsymbol{w}[k] + \frac{\mu}{\gamma + \boldsymbol{x}^{\text{T}}[k] \boldsymbol{x}[k]} \boldsymbol{x}[k] e^{*}[k]
+            \end{align}
+        \item Tensor Filters
+            \begin{align}
+                y[k] = \left(\boldsymbol{w}_{v} \otimes \boldsymbol{w}_{h} \right)^{\text{H}} \boldsymbol{x}[k]
+            \end{align}
     \end{itemize}
     \framebreak
     \begin{figure}
