@@ -2,58 +2,70 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Problem Statement}{3}{Problem Statement}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@sectionpages {1}{3}}
-\headcommand {\beamer@subsectionpages {1}{3}}
-\headcommand {\sectionentry {1}{System Model}{4}{System Model}{0}}
-\headcommand {\slideentry {1}{0}{1}{4/4}{}{0}}
+\headcommand {\beamer@sectionpages {3}{3}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\sectionentry {2}{Classic Filter Problems}{4}{Classic Filter Problems}{0}}
+\headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {1}{0}{1}{4/5}{}{0}}
+\headcommand {\slideentry {2}{0}{1}{4/5}{}{0}}
 \headcommand {\beamer@framepages {4}{5}}
-\headcommand {\beamer@sectionpages {4}{5}}
-\headcommand {\beamer@subsectionpages {4}{5}}
-\headcommand {\sectionentry {2}{Beamforming Methods}{6}{Beamforming Methods}{0}}
-\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{0}{1}{6/7}{}{0}}
-\headcommand {\beamer@framepages {6}{7}}
-\headcommand {\slideentry {2}{0}{1}{6/8}{}{0}}
-\headcommand {\beamer@framepages {6}{8}}
-\headcommand {\slideentry {2}{0}{1}{6/9}{}{0}}
-\headcommand {\beamer@framepages {6}{9}}
-\headcommand {\beamer@sectionpages {6}{9}}
-\headcommand {\beamer@subsectionpages {6}{9}}
-\headcommand {\sectionentry {3}{Numerical Results}{10}{Numerical Results}{0}}
-\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{0}{3}{12/12}{}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{0}{4}{13/13}{}{0}}
+\headcommand {\slideentry {2}{0}{1}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\beamer@sectionpages {4}{6}}
+\headcommand {\beamer@subsectionpages {4}{6}}
+\headcommand {\sectionentry {3}{System Model}{7}{System Model}{0}}
+\headcommand {\slideentry {3}{0}{1}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {3}{0}{1}{7/8}{}{0}}
+\headcommand {\beamer@framepages {7}{8}}
+\headcommand {\beamer@sectionpages {7}{8}}
+\headcommand {\beamer@subsectionpages {7}{8}}
+\headcommand {\sectionentry {4}{TLMS and ATLMS}{9}{TLMS and ATLMS}{0}}
+\headcommand {\slideentry {4}{0}{1}{9/9}{}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {4}{0}{1}{9/10}{}{0}}
+\headcommand {\beamer@framepages {9}{10}}
+\headcommand {\slideentry {4}{0}{1}{9/11}{}{0}}
+\headcommand {\beamer@framepages {9}{11}}
+\headcommand {\slideentry {4}{0}{1}{9/12}{}{0}}
+\headcommand {\beamer@framepages {9}{12}}
+\headcommand {\beamer@sectionpages {9}{12}}
+\headcommand {\beamer@subsectionpages {9}{12}}
+\headcommand {\sectionentry {5}{Simulation Results}{13}{Simulation Results}{0}}
+\headcommand {\slideentry {5}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{0}{5}{14/14}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {3}{0}{6}{15/15}{}{0}}
+\headcommand {\slideentry {5}{0}{3}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {10}{15}}
-\headcommand {\beamer@subsectionpages {10}{15}}
-\headcommand {\sectionentry {4}{Conclusion}{16}{Conclusion}{0}}
-\headcommand {\slideentry {4}{0}{1}{16/16}{}{0}}
+\headcommand {\slideentry {5}{0}{4}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@sectionpages {16}{16}}
-\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\sectionentry {5}{References}{17}{References}{0}}
-\headcommand {\beamer@sectionpages {17}{16}}
-\headcommand {\beamer@subsectionpages {17}{16}}
-\headcommand {\sectionentry {6}{References}{17}{References}{0}}
-\headcommand {\slideentry {6}{0}{0}{17/17}{}{0}}
+\headcommand {\slideentry {5}{0}{5}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {6}{0}{1}{18/18}{}{0}}
+\headcommand {\slideentry {5}{0}{6}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {17}{18}}
-\headcommand {\beamer@sectionpages {17}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\gdef \inserttotalframenumber {18}}
+\headcommand {\beamer@sectionpages {13}{18}}
+\headcommand {\beamer@subsectionpages {13}{18}}
+\headcommand {\sectionentry {6}{Conclusion}{19}{Conclusion}{0}}
+\headcommand {\slideentry {6}{0}{1}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@sectionpages {19}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\sectionentry {7}{References}{20}{References}{0}}
+\headcommand {\beamer@sectionpages {20}{19}}
+\headcommand {\beamer@subsectionpages {20}{19}}
+\headcommand {\sectionentry {8}{References}{20}{References}{0}}
+\headcommand {\slideentry {8}{0}{0}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {8}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@partpages {1}{21}}
+\headcommand {\beamer@subsectionpages {20}{21}}
+\headcommand {\beamer@sectionpages {20}{21}}
+\headcommand {\beamer@documentpages {21}}
+\headcommand {\gdef \inserttotalframenumber {21}}

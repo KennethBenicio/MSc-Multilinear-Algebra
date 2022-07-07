@@ -18,8 +18,8 @@ snr = 30;
 var_noise = 1/(10^(snr/10));  
 
 %% ATLMS with Kh = Kv = 50
-Kh = 10;
-Kv = 10;
+Kh = 250;
+Kv = 250;
 
 % Monter Carlo simulations
 mse = zeros(Samples,1);
@@ -82,13 +82,13 @@ mse = mse/runs;
 
 % MSE Curve
 figure
-txt = ['\mu = 0.1 with K_h = K_v = 10'];
+txt = ['\mu = 0.1 with K_h = K_v = 250'];
 plot(1:Samples, 10*log10(mse),'-','color', [0.3010 0.7450 0.9330], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 
 %% ATLMS with Kh = Kv = 250
-Kh = 100;
-Kv = 100;
+Kh = 500;
+Kv = 500;
 
 % Monter Carlo simulations
 mse = zeros(Samples,1);
@@ -149,13 +149,13 @@ aux2 = toc();
 aux2 = aux2/runs;
 mse = mse/runs;
 
-txt = ['\mu = 0.1 with K_h = K_v = 100'];
+txt = ['\mu = 0.1 with K_h = K_v = 500'];
 plot(1:Samples, 10*log10(mse),'-','color', [0.4660 0.6740 0.1880], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold on;
 
 %% ATLMS with Kh = Kv = 500
-Kh = 500;
-Kv = 500;
+Kh = 1000;
+Kv = 1000;
 
 % Monter Carlo simulations
 mse = zeros(Samples,1);
@@ -216,7 +216,7 @@ aux3 = toc();
 aux3 = aux3/runs;
 mse = mse/runs;
 
-txt = ['\mu = 0.1 with K_h = K_v = 500'];
+txt = ['\mu = 0.1 with K_h = K_v = 1000'];
 plot(1:Samples, 10*log10(mse),'-','color', [0.9290 0.6940 0.1250], "linewidth", 2, "markersize", 8, "DisplayName", txt);
 hold off;
 title('ATLMS Behavior for Different Learning Steps and Sampling Rate');

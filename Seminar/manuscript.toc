@@ -1,5 +1,7 @@
 \babel@toc {UKenglish}{}\relax 
-\beamer@sectionintoc {1}{System Model}{4}{0}{1}
-\beamer@sectionintoc {2}{Beamforming Methods}{6}{0}{2}
-\beamer@sectionintoc {3}{Numerical Results}{10}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{16}{0}{4}
+\beamer@sectionintoc {1}{Problem Statement}{3}{0}{1}
+\beamer@sectionintoc {2}{Classic Filter Problems}{4}{0}{2}
+\beamer@sectionintoc {3}{System Model}{7}{0}{3}
+\beamer@sectionintoc {4}{TLMS and ATLMS}{9}{0}{4}
+\beamer@sectionintoc {5}{Simulation Results}{13}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{19}{0}{6}
