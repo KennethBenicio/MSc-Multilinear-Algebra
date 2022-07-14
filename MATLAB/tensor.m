@@ -505,7 +505,7 @@ end
 % This function computes the tensor contraction between a tensor and a matrix
 % or between two tensors.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: June 2022
+% Created: July 2022
 
 function [tenZ] = contraction(tenX,n1,tenY,n2)
     % Obtaining the unfolds
@@ -526,7 +526,7 @@ end
 
 % This function computes the TT-SVD of a fourth order tensor but can be extended later.   
 % Author: Kenneth B. dos A. Benicio <kenneth@gtel.ufc.br>
-% Created: June 2022
+% Created: July 2022
 
 function [G] = TTSVD(tenX,Ranks)
     X_size = size(tenX);

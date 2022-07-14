@@ -3,7 +3,7 @@ clc;
 clear;
 close all;
 
-%% Tensor Train SVD for a fourth order tensor
+%% Tensor Train SVD for a fourth order tensor.
 I1 = 5;
 I2 = 5;
 I3 = 5;
@@ -43,7 +43,7 @@ nmsex = (norm(tensor.unfold(tenX- tenXhat,1),'fro')^2)...
     /(norm(tensor.unfold(tenX,1),'fro')^2);
 nmsex = 20*log10(nmsex)
 
-%% Monte Carlo Simulation
+%% Monte Carlo Experiment
 I1 = 5;
 I2 = 5;
 I3 = 5;
